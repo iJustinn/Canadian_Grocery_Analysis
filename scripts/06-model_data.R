@@ -8,30 +8,36 @@
 # Any other information needed? [...UPDATE THIS...]
 
 
+
 #### Workspace setup ####
+# load library
 library(tidyverse)
 library(rstanarm)
+library(here)
 
-#### Read data ####
-analysis_data <- read_csv("data/analysis_data/analysis_data.csv")
+# laod data
+beef_data <- read_csv(here("data", "02-analysis_data", "beef_data.csv"))
 
-### Model data ####
-first_model <-
+
+
+#### Model data ####
+beef_model <-
   stan_glm(
-    formula = flying_time ~ length + width,
-    data = analysis_data,
+    formula = current_price ~ month + old_price + vendor,
+    data = beef_data,
     family = gaussian(),
     prior = normal(location = 0, scale = 2.5, autoscale = TRUE),
     prior_intercept = normal(location = 0, scale = 2.5, autoscale = TRUE),
     prior_aux = exponential(rate = 1, autoscale = TRUE),
-    seed = 853
+    seed = 304
   )
+
 
 
 #### Save model ####
 saveRDS(
-  first_model,
-  file = "models/first_model.rds"
+  beef_model,
+  file = here("models", "beef_model.rds")
 )
 
 
