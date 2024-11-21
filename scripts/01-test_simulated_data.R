@@ -18,7 +18,7 @@ library(testthat)
 library(here)
 
 # Define file path
-file_path <- here("data", "00-simulated_data", "simulate_soy_data.csv")
+file_path <- here("data", "00-simulated_data", "simulate_beef_data.csv")
 
 # Check if file exists before running tests
 if (!file.exists(file_path)) {

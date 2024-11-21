@@ -42,4 +42,4 @@ simulated_data <- simulated_data %>%
 
 
 #### Save data ####
-write_csv(simulated_data, "data/00-simulated_data/simulate_soy_data.csv")
+write_csv(simulated_data, "data/00-simulated_data/simulate_beef_data.csv")
