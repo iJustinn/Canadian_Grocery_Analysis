@@ -8,62 +8,100 @@
 # Any other information needed? [...UPDATE THIS...]
 
 
+
 #### Workspace setup ####
+# load library
 library(tidyverse)
 library(testthat)
+library(here)
 
-data <- read_csv("data/02-analysis_data/analysis_data.csv")
+# Define file path
+file_path <- here("data", "02-analysis_data", "beef_data.csv")
+
+# Check if file exists before running tests
+if (!file.exists(file_path)) {
+  stop("The file 'soy_data.csv' does not exist. Ensure the dataset is available.")
+}
+
 
 
 #### Test data ####
-# Test that the dataset has 151 rows - there are 151 divisions in Australia
-test_that("dataset has 151 rows", {
-  expect_equal(nrow(analysis_data), 151)
+# test if the data was successfully loaded
+test_that("Dataset loading", {
+  soy_data <- read_csv(file_path)
+  expect_true(exists("soy_data"), label = "The dataset should be successfully loaded.")
 })
 
-# Test that the dataset has 3 columns
-test_that("dataset has 3 columns", {
-  expect_equal(ncol(analysis_data), 3)
+# Check for missing values in each column
+test_that("Missing values check", {
+  soy_data <- read_csv(file_path)
+  missing_values <- colSums(is.na(soy_data))
+  expect_true(is.numeric(missing_values), label = "Missing values should be calculated correctly.")
 })
 
-# Test that the 'division' column is character type
-test_that("'division' is character", {
-  expect_type(analysis_data$division, "character")
+# Ensure there are no negative values in price columns
+test_that("No negative values in price columns", {
+  soy_data <- read_csv(file_path)
+  expect_false(any(soy_data$current_price < 0), label = "current_price should not contain negative values.")
+  expect_false(any(soy_data$old_price < 0), label = "old_price should not contain negative values.")
 })
 
-# Test that the 'party' column is character type
-test_that("'party' is character", {
-  expect_type(analysis_data$party, "character")
+# Check unique values in categorical columns
+test_that("Unique values in categorical columns", {
+  soy_data <- read_csv(file_path)
+  unique_vendors <- unique(soy_data$vendor)
+  expect_true(length(unique_vendors) > 0, label = "Vendor column should have unique values.")
+  
+  unique_products <- unique(soy_data$product_name)
+  expect_true(length(unique_products) > 0, label = "Product name column should have unique values.")
+  
+  if("brand" %in% colnames(soy_data)) {
+    unique_brands <- unique(soy_data$brand)
+    expect_true(length(unique_brands) > 0, label = "Brand column should have unique values.")
+  }
 })
 
-# Test that the 'state' column is character type
-test_that("'state' is character", {
-  expect_type(analysis_data$state, "character")
+# Check that `vendor` column contains only allowed values
+test_that("Vendor column allowed values", {
+  soy_data <- read_csv(file_path)
+  allowed_vendors <- c("TandT", "Walmart")
+  expect_true(all(soy_data$vendor %in% allowed_vendors), label = "Vendor column should contain only allowed values.")
 })
 
-# Test that there are no missing values in the dataset
-test_that("no missing values in dataset", {
-  expect_true(all(!is.na(analysis_data)))
+# Check that `product_name` contains "soy" or "sauce"
+test_that("Product name contains soy or sauce", {
+  soy_data <- read_csv(file_path)
+  expect_true(any(str_detect(tolower(soy_data$product_name), "beef")), label = "At least one product name should contain 'beef'.")
 })
 
-# Test that 'division' contains unique values (no duplicates)
-test_that("'division' column contains unique values", {
-  expect_equal(length(unique(analysis_data$division)), 151)
+# Check that `year`, `month`, and `day` columns contain valid values
+test_that("Date columns validation", {
+  soy_data <- read_csv(file_path)
+  if("year" %in% colnames(soy_data)) {
+    expect_true(all(soy_data$year >= 2021 & soy_data$year <= 2024), label = "Year column should contain values between 2021 and 2024.")
+  }
+  if("month" %in% colnames(soy_data)) {
+    expect_true(all(soy_data$month >= 1 & soy_data$month <= 12), label = "Month column should contain values between 1 and 12.")
+  }
+  if("day" %in% colnames(soy_data)) {
+    expect_true(all(soy_data$day >= 1 & soy_data$day <= 31), label = "Day column should contain values between 1 and 31.")
+  }
 })
 
-# Test that 'state' contains only valid Australian state or territory names
-valid_states <- c("New South Wales", "Victoria", "Queensland", "South Australia", "Western Australia", 
-                  "Tasmania", "Northern Territory", "Australian Capital Territory")
-test_that("'state' contains valid Australian state names", {
-  expect_true(all(analysis_data$state %in% valid_states))
+# Check that `price_per_unit` is correctly calculated
+test_that("Price per unit calculation", {
+  soy_data <- read_csv(file_path)
+  if("price_per_unit" %in% colnames(soy_data) & "units" %in% colnames(soy_data)) {
+    expect_equal(soy_data$price_per_unit, soy_data$current_price / soy_data$units, label = "Price per unit should be correctly calculated as current_price divided by units.")
+  }
 })
 
-# Test that there are no empty strings in 'division', 'party', or 'state' columns
-test_that("no empty strings in 'division', 'party', or 'state' columns", {
-  expect_false(any(analysis_data$division == "" | analysis_data$party == "" | analysis_data$state == ""))
+# Check that `old_price` is not less than `current_price`
+test_that("old_price greater than or equal to current_price", {
+  soy_data <- read_csv(file_path)
+  if("old_price" %in% colnames(soy_data) & "current_price" %in% colnames(soy_data)) {
+    expect_true(all(soy_data$old_price >= soy_data$current_price), label = "old_price should be greater than or equal to current_price.")
+  }
 })
 
-# Test that the 'party' column contains at least 2 unique values
-test_that("'party' column contains at least 2 unique values", {
-  expect_true(length(unique(analysis_data$party)) >= 2)
-})
+

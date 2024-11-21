@@ -56,4 +56,4 @@ cleaned_data <- merge_data %>%
 
 
 #### Save data ####
-write_csv(cleaned_data, "data/02-analysis_data/soy_data.csv")
+write_csv(cleaned_data, "data/02-analysis_data/beef_data.csv")
