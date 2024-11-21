@@ -9,44 +9,37 @@
 # Any other information needed? Make sure you are in the `starter_folder` rproj
 
 
+
 #### Workspace setup ####
 library(tidyverse)
-set.seed(853)
+set.seed(304)
+
 
 
 #### Simulate data ####
-# State names
-states <- c(
-  "New South Wales",
-  "Victoria",
-  "Queensland",
-  "South Australia",
-  "Western Australia",
-  "Tasmania",
-  "Northern Territory",
-  "Australian Capital Territory"
+# rows of simulated data
+n <- 100
+
+# simulation
+simulated_data <- tibble(
+  vendor = sample(c("Walmart", "TandT"), n, replace = TRUE),
+  product_id = sample(1000:9999, n, replace = TRUE),
+  product_name = sample(c("beef steak", "beef ribs", "beef brisket", "beef shank"), n, replace = TRUE),
+  brand = sample(c("BrandA", "BrandB", "BrandC", "BrandD"), n, replace = TRUE),
+  current_price = round(runif(n, 5, 50), 2),
+  old_price = ifelse(runif(n) > 0.3, round(runif(n, 5, 50), 2), NA),
+  units = sample(1:10, n, replace = TRUE),
+  price_per_unit = current_price / units,
+  year = sample(2021:2023, n, replace = TRUE),
+  month = sample(1:12, n, replace = TRUE),
+  day = sample(1:28, n, replace = TRUE)
 )
 
-# Political parties
-parties <- c("Labor", "Liberal", "Greens", "National", "Other")
+# replace NA values in old_price with current_price
+simulated_data <- simulated_data %>%
+  mutate(old_price = ifelse(is.na(old_price), current_price, old_price))
 
-# Create a dataset by randomly assigning states and parties to divisions
-analysis_data <- tibble(
-  division = paste("Division", 1:151),  # Add "Division" to make it a character
-  state = sample(
-    states,
-    size = 151,
-    replace = TRUE,
-    prob = c(0.25, 0.25, 0.15, 0.1, 0.1, 0.1, 0.025, 0.025) # Rough state population distribution
-  ),
-  party = sample(
-    parties,
-    size = 151,
-    replace = TRUE,
-    prob = c(0.40, 0.40, 0.05, 0.1, 0.05) # Rough party distribution
-  )
-)
 
 
 #### Save data ####
-write_csv(analysis_data, "data/00-simulated_data/simulated_data.csv")
+write_csv(simulated_data, "data/00-simulated_data/simulate_soy_data.csv")
