@@ -7,38 +7,53 @@
 # Pre-requisites: [...UPDATE THIS...]
 # Any other information needed? [...UPDATE THIS...]
 
+
+
 #### Workspace setup ####
 library(tidyverse)
+library(here)
+
+
 
 #### Clean data ####
-raw_data <- read_csv("inputs/data/plane_data.csv")
+# load data
+product_data <- read_csv(here("data", "01-raw_data", "hammer-4-product.csv"), show_col_types = FALSE)
+raw_data <- read_csv(here("data", "01-raw_data", "hammer-4-raw.csv"), show_col_types = FALSE)
 
-cleaned_data <-
-  raw_data |>
-  janitor::clean_names() |>
-  select(wing_width_mm, wing_length_mm, flying_time_sec_first_timer) |>
-  filter(wing_width_mm != "caw") |>
+# merge data
+merge_data <- raw_data %>%
+  inner_join(product_data, by = c("product_id" = "id")) %>%
+  select(
+    nowtime,
+    vendor,
+    product_id,
+    product_name,
+    brand,
+    current_price,
+    old_price,
+    units,
+    price_per_unit
+  )
+
+# clean data
+cleaned_data <- merge_data %>%
+  filter(vendor %in% c("Walmart", "TandT")) %>%
+  select(nowtime, vendor, current_price, old_price, product_name) %>%
   mutate(
-    flying_time_sec_first_timer = if_else(flying_time_sec_first_timer == "1,35",
-                                   "1.35",
-                                   flying_time_sec_first_timer)
-  ) |>
-  mutate(wing_width_mm = if_else(wing_width_mm == "490",
-                                 "49",
-                                 wing_width_mm)) |>
-  mutate(wing_width_mm = if_else(wing_width_mm == "6",
-                                 "60",
-                                 wing_width_mm)) |>
-  mutate(
-    wing_width_mm = as.numeric(wing_width_mm),
-    wing_length_mm = as.numeric(wing_length_mm),
-    flying_time_sec_first_timer = as.numeric(flying_time_sec_first_timer)
-  ) |>
-  rename(flying_time = flying_time_sec_first_timer,
-         width = wing_width_mm,
-         length = wing_length_mm
-         ) |> 
+    year = year(nowtime),
+    month = month(nowtime),
+    day = day(nowtime),
+    current_price = parse_number(current_price),
+    old_price = parse_number(old_price)
+    ) %>%
+  filter(str_detect(tolower(product_name), "beef")) %>%
+  filter(!str_detect(tolower(product_name), 
+                     "flavour|vermicelli|rice|noodles|noodle|seasoning|lasagna|broth|soup|ravioli|pasta|plant-based|bun"
+                     )) %>%
+  select(-nowtime) %>%
   tidyr::drop_na()
 
+
+
 #### Save data ####
-write_csv(cleaned_data, "outputs/data/analysis_data.csv")
+write_csv(cleaned_data, "data/02-analysis_data/soy_data.csv")
