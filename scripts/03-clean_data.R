@@ -13,13 +13,13 @@
 library(tidyverse)
 library(here)
 
-
-
-#### Clean data ####
 # load data
 product_data <- read_csv(here("data", "01-raw_data", "hammer-4-product.csv"), show_col_types = FALSE)
 raw_data <- read_csv(here("data", "01-raw_data", "hammer-4-raw.csv"), show_col_types = FALSE)
 
+
+
+#### Clean data ####
 # merge data
 merge_data <- raw_data %>%
   inner_join(product_data, by = c("product_id" = "id")) %>%
