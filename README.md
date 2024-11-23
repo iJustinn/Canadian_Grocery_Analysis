@@ -4,7 +4,7 @@ This repository provides all the necessary information to replicate Ziheng Zhong
 
 ## Paper Overview
 
-This paper utlized data from [xxx](xxx),
+This paper utilized data from [Canadian Grocery Analysis GitHub Repository](https://github.com/iJustinn/Canadian_Grocery_Analysis.git),
 
 ## File Structure
 
