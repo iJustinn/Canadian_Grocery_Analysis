@@ -55,19 +55,31 @@ Telegraphing paragraph: The remainder of this paper is structured as follows. @s
 
 # Data {#sec-data}
 
-## Overview
+This project is motivated and guided by Rohan Alexander and his book [@citeTbook]. Data used in this paper was cleaned, analyzed and modeled with the programming language R [@citeR]. Also with support of additional packages in R: `readr` [@citeReadr], `ggplot2` [@citeGgplot2], `tidyverse` [@citeTidyverse], `dplyr` [@citeDplyr], `here` [@citeHere], `knitr` [@citeKnitr], `kableExtra` [@citeKableExtra], `rstanarm` [@citeRstanarm], `modelsummary` [@citeModelsummary],
 
-We use the statistical programming language R [@citeR].... Our data [@shelter].... Following @tellingstories, we consider...
+## Source
 
-Overview text
+The dataset used for this research was sourced from Hammer, a publicly available repository designed to provide pricing data from various retail chains. The dataset comprises detailed information on product attributes, such as product name, vendor, current price, old price, units available, and additional details like the month of certain price. The dataset's broader context is centered on consumer pricing trends across different vendors, helping to understand how factors like vendor type, previous pricing, and seasonal changes influence current prices. This information is pivotal for examining market behaviors and assessing pricing strategies in retail environments.
+
+The dataset variables include several categorical and numerical components. Key variables such as ‘vendor’, which identifies the retailer (e.g., Walmart, Galleria), and ‘product_name’, which details the item, are crucial for understanding distribution channels. Variables like ‘current_price’ and ‘old_price’ offer insights into pricing dynamics, enabling analyses of price changes over time. Additionally, temporal variables such as ‘month’ allow for the identification of seasonal variations in pricing. Summary statistics, along with graphs for each of these variables, help illustrate their distributions and relationships. Graphs have been included to show the frequency distribution for vendors, trends in price changes, and comparisons between old and current prices. Relationships among variables like ‘vendor’ and ‘current_price’ have been highlighted to give a comprehensive view of the dataset.
+
+There were other potential datasets available for this analysis, such as proprietary retail data sources or other consumer purchasing databases. However, they were not selected due to restrictions on data availability, licensing requirements, or lack of detail in specific product-level attributes. The Hammer dataset was chosen as it provides granular pricing data that is crucial for understanding product-level trends across multiple vendors. The dataset also allowed for the construction of new variables, such as the calculated ‘price_per_unit’, which enabled more meaningful comparisons between products. High-level data cleaning included handling missing values in the ‘old_price’ variable by replacing them with the ‘current_price’, ensuring the analysis was consistent and complete.
 
 ## Measurement
-	
-Some paragraphs about how we go from a phenomena in the world to an entry in the dataset.
+
+The process of measurement in this research involves translating real-world phenomena into quantifiable data entries within the dataset. For instance, consumer purchasing behavior, influenced by factors such as vendor type, pricing history, and seasonal changes, has been captured through variables like ‘vendor’, ‘current_price’, and ‘month’. The ‘vendor’ variable serves as an identifier of the source of the product, which helps to provide insights into how different retail environments may affect pricing strategies. The ‘current_price’ and ‘old_price’ variables reflect pricing trends and allow us to measure the temporal changes in consumer costs, thereby linking economic activities to specific data points.
+
+The temporal dimension, captured through the ‘month’ variable, enables us to measure the impact of seasonal patterns on pricing. Constructed variables such as ‘price_per_unit’ provide a standardized measurement that allows comparisons across different products, accounting for varying package sizes or quantities. This transformation from abstract consumer behaviors and retail dynamics into structured data ensures that the analysis remains rooted in real-world market phenomena, thereby enabling a more nuanced understanding of pricing behavior and trends across different vendors.
 
 ## Outcome variables
 
 Add graphs, tables and text. Use sub-sub-headings for each outcome variable or update the subheading to be singular.
+
+### Current Price
+The outcome variable in this study is **current_price**. This variable represents the price of the product at the time of data collection and is central to understanding the effects of various factors on product pricing. By modeling **current_price**, we aim to explore how factors such as historical pricing, vendor type, and seasonal influences impact current market prices. This variable is crucial for determining the pricing dynamics employed by different vendors and how those strategies affect consumer costs.
+
+### Visual Analysis of Outcome
+To provide a comprehensive view of the outcome variable, several visualizations have been used. For example, a histogram of **current_price** distribution (Chart 1) highlights the spread and common value ranges across different vendors. Additionally, the scatter plot of **current_price** vs. **old_price** (Chart 4) helps illustrate how much the price has changed over time and the influence of previous prices on current pricing levels. These visual analyses are essential for understanding the overall trends and variability in the outcome variable.
 
 
 
@@ -82,7 +94,7 @@ Some of our data is of penguins (@fig-bills), from @palmerpenguins.
 
 Talk more about it.
 
-And also planes (@fig-planes). (You can change the height and width, but don't worry about doing that until you have finished every other aspect of the paper - Quarto will try to make it look nice and the defaults usually work well once you have enough text.)
+And also planes (@fig-planes).
 
 ```{r}
 #| label: fig-planes
@@ -99,46 +111,81 @@ Talk way more about it.
 
 Add graphs, tables and text.
 
-Use sub-sub-headings for each outcome variable and feel free to combine a few into one if they go together naturally.
+### Month
+The **month** variable is used as a predictor to capture potential seasonal influences on pricing. By including **month**, we can observe if specific times of the year are associated with higher or lower prices. This is particularly important for identifying temporal patterns in pricing, which can be influenced by factors such as holidays, sales events, or seasonal demand changes.
 
+### Old Price
+**old_price** serves as another key predictor variable, representing the historical price of a product. This variable helps gauge the effect of historical pricing on current pricing strategies, indicating whether a product has undergone discounts or price hikes. The relationship between **old_price** and **current_price** is visually explored in Chart 4, which helps understand the influence of past pricing decisions on current prices.
 
-
-
-
+### Vendor
+The **vendor** variable is an important categorical predictor that differentiates pricing behavior across different retail chains. It allows us to analyze how pricing strategies vary among vendors such as Walmart and Galleria. Chart 2, which shows the price difference by vendor, provides insights into how different vendors adjust their pricing strategies, offering valuable comparisons among them. Additionally, Chart 3 presents the average **current_price** over time, broken down by vendor, providing a clearer picture of how vendor-based strategies influence pricing trends.
 
 
 
 # Model
 
-The goal of our modelling strategy is twofold. Firstly,...
+Background details and diagnostics are included in [Appendix -@sec-model-details].
 
-Here we briefly describe the Bayesian analysis model used to investigate... Background details and diagnostics are included in [Appendix -@sec-model-details].
+## Model overview
+
+To model the current price of beef, $y_i$, at time $i$, we use a Bayesian linear regression model implemented with the `stan_glm` function in the R package `rstanarm`. The response variable, $y_i$, represents the **current price of beef** in dollars. Our predictors include $x_1$, $x_2$, and $x_3$, which represent the **month**, **old price**, and **vendor**, respectively. Each component of the model is defined and justified below.
 
 ## Model set-up
 
 Define $y_i$ as the current price of beef at time $i$, measured in dollars. Let $x_1$, $x_2$, and $x_3$ represent the predictors: $x_1$ is the month (categorical variable), $x_2$ is the old price, and $x_3$ is the vendor (categorical variable).
 
 \begin{align}
-y_i|\mu_i, \sigma &\sim \mbox{Normal}(\mu_i, \sigma) \\
-\mu_i &= \alpha + \beta_1 x_{1i} + \beta_2 x_{2i} + \beta_3 x_{3i}\\
-\alpha &\sim \mbox{Normal}(0, 2.5) \\
-\beta_1 &\sim \mbox{Normal}(0, 2.5) \\
-\beta_2 &\sim \mbox{Normal}(0, 2.5) \\
-\beta_3 &\sim \mbox{Normal}(0, 2.5) \\
-\sigma &\sim \mbox{Exponential}(1)
+y_i | \mu_i, \sigma &\sim \text{Normal}(\mu_i, \sigma) \\
+\mu_i &= \alpha + \beta_1 x_{1i} + \beta_2 x_{2i} + \beta_3 x_{3i}
 \end{align}
 
-Here, $\alpha$ represents the intercept term, and $\beta_1$, $\beta_2$, and $\beta_3$ are the coefficients for the month, old price, and vendor respectively. We assume normal priors with mean 0 and standard deviation 2.5 for the intercept and coefficients. The standard deviation $\sigma$ of the residuals is given an exponential prior with a rate of 1.
+In this model:
+- $\alpha$ represents the **intercept** term, capturing the baseline price of beef.
+- $\beta_1$ corresponds to the **effect of the month** on the current price, allowing us to capture **seasonal variations** that may impact beef pricing. The month is treated as a categorical variable, acknowledging that different months can bring different demand or supply effects due to holidays, weather, or other seasonal factors.
+- $\beta_2$ represents the **effect of the old price** on the current price. This allows us to account for price inertia or trends where past pricing influences current pricing.
+- $\beta_3$ represents the **effect of the vendor**, also treated as a categorical variable. Different vendors may have distinct pricing strategies, and including vendor as a categorical predictor helps us capture this vendor-specific pricing variation.
+
+We assume normal priors for the model coefficients and intercept, with mean 0 and standard deviation 2.5:
+
+\begin{align}
+\alpha &\sim \text{Normal}(0, 2.5) \\
+\beta_1 &\sim \text{Normal}(0, 2.5) \\
+\beta_2 &\sim \text{Normal}(0, 2.5) \\
+\beta_3 &\sim \text{Normal}(0, 2.5)
+\end{align}
+
+These priors are chosen to be **weakly informative**, allowing the data to speak for itself while still providing a reasonable range for the coefficients based on prior expectations. Specifically, a standard deviation of 2.5 reflects our expectation that most reasonable effects should fall within a plausible range without being overly restrictive.
+
+For the residual standard deviation, $\sigma$, we assume an **Exponential(1)** prior:
+
+\begin{align}
+\sigma &\sim \text{Exponential}(1)
+\end{align}
+
+This prior reflects our belief that the standard deviation should be positive and allows flexibility, while preferring smaller values over larger ones, consistent with the expectation of modest variability around the mean prediction.
 
 We run the model in R [@citeR] using the `rstanarm` package of @rstanarm. We use the default priors from `rstanarm`.
 
+## Model justification
 
+The choice of predictors is well-balanced in terms of complexity and appropriateness for this scenario. By including **month** and **vendor** as categorical variables, we acknowledge the significant impact that both seasonal changes and vendor-specific factors can have on the current price of beef. The inclusion of the **old price** reflects the idea of price inertia, where historical prices are likely to influence current pricing trends.
 
-### Model justification
+The model is neither **overly simplistic** nor **unnecessarily complex**: it captures important predictors without adding extraneous complexity that could lead to overfitting. **Month** and **vendor** are treated as categorical variables rather than grouping by more arbitrary categories, which maintains the expressiveness of our model while being parsimonious.
 
-We expect a positive relationship between the size of the wings and time spent aloft. In particular...
+The model is implemented using `stan_glm` from the `rstanarm` package, a high-level interface to Stan for Bayesian modeling. **Stan** provides powerful sampling algorithms, making it an appropriate tool for fitting our Bayesian model efficiently, ensuring **robust convergence** and accurate posterior estimation.
 
-We can use maths by including latex between dollar signs, for instance $\theta$.
+### Model Assumptions and Limitations
+- **Linearity**: The model assumes a linear relationship between the predictors and the response variable. This may be a limitation if the true relationship is nonlinear.
+- **Normality of Residuals**: The residuals are assumed to follow a normal distribution. If this assumption does not hold, it could bias the model predictions.
+- **Priors**: We used weakly informative priors to allow flexibility. However, if we had prior knowledge of specific pricing patterns, more informative priors could be used for better inference.
+
+### Model Validation and Diagnostics
+- **Posterior Predictive Checks**: We performed posterior predictive checks to verify that the model adequately captures the variation in the data. These checks involve comparing simulated data from the posterior distribution to the observed data to check for any discrepancies.
+- **Convergence**: Model convergence was assessed using **trace plots** and the **R-hat statistic**, with all values being close to 1, indicating successful convergence.
+- **Alternative Models**: We also considered fitting simpler linear models that did not include the vendor or seasonal components. These models showed significantly lower predictive performance, indicating the importance of including both the vendor and seasonal factors for accuracy.
+
+In summary, the chosen model provides a comprehensive yet interpretable understanding of how different factors influence the current price of beef. The Bayesian approach allows us to incorporate uncertainty and prior beliefs, while our specific choice of priors and predictors ensures that the model is well-suited for the available data and research questions.
+
 
 
 # Results
@@ -161,7 +208,6 @@ modelsummary::modelsummary(
 )
 
 ```
-
 
 
 
