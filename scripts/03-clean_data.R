@@ -38,13 +38,16 @@ merge_data <- raw_data %>%
 # clean data
 cleaned_data <- merge_data %>%
   filter(vendor %in% c("Walmart", "TandT")) %>%
-  select(nowtime, vendor, current_price, old_price, product_name) %>%
+  select(nowtime, vendor, current_price, old_price, product_name, price_per_unit) %>%
   mutate(
     year = year(nowtime),
     month = month(nowtime),
     day = day(nowtime),
     current_price = parse_number(current_price),
-    old_price = parse_number(old_price)
+    old_price = parse_number(old_price),
+    price_per_unit = str_extract(price_per_unit, "\\$[0-9\\.]+") %>% 
+      str_remove("\\$") %>%
+      as.numeric()
     ) %>%
   filter(str_detect(tolower(product_name), "beef")) %>%
   filter(!str_detect(tolower(product_name), 
@@ -56,4 +59,4 @@ cleaned_data <- merge_data %>%
 
 
 #### Save data ####
-write_csv(cleaned_data, "data/02-analysis_data/beef_data.csv")
+write_csv(cleaned_data, here("data", "02-analysis_data", "beef_data.csv"))
