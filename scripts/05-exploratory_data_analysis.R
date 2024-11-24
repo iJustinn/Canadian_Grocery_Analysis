@@ -72,11 +72,24 @@ ggplot(beef_data, aes(x = old_price, y = current_price)) +
 
 
 
-#### Model ####
+#### Chart 5 ####
+# Unit Price Distribution
+ggplot(beef_data, aes(x = price_per_unit)) +
+  geom_histogram(binwidth = 0.1, fill = "lightgrey", color = "darkgrey", alpha = 0.7) +
+  geom_density(aes(y = after_stat(count)), color = "red", linewidth = 1) +
+  labs(title = "Distribution of Unit Prices", x = "Unit Price ($ per 100 grams)", y = "Frequency") +
+  theme_minimal()
+
+
+
+#### Model 1 ####
 # Visual summary
 pp_check(beef_model) +
   ggtitle("Posterior Predictive Check for Beef Model")
 
+
+
+#### Model 2 ####
 # Text summary
 summary(beef_model)
 
