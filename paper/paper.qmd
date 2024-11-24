@@ -2,9 +2,8 @@
 title: "My title"
 subtitle: "My subtitle if needed"
 author: 
-  - First author
-  - Another author
-thanks: "Code and data are available at: [https://github.com/RohanAlexander/starter_folder](https://github.com/RohanAlexander/starter_folder)."
+  - Ziheng Zhong
+thanks: "Code and data are available at: [https://github.com/iJustinn/Canadian_Grocery_Analysis.git](https://github.com/iJustinn/Canadian_Grocery_Analysis.git)."
 date: today
 date-format: long
 abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
@@ -17,10 +16,27 @@ bibliography: references.bib
 #| include: false
 #| warning: false
 #| message: false
+# load library
+package_list <- c("tidyverse", "kableExtra", "ggplot2", "dplyr", "here", "knitr", "rstanarm", "modelsummary", "readr", "gridExtra")
 
-library(tidyverse)
-library(palmerpenguins)
+install_and_load <- function(package_list) {
+  for (package in package_list) {
+    if (!require(package, character.only = TRUE)) {
+      install.packages(package)
+      library(package, character.only = TRUE)
+    }
+  }
+}
+
+install_and_load(package_list)
+
+# load data
+beef_data <- read_csv(here("data", "02-analysis_data", "beef_data.csv"), show_col_types = FALSE)
+
+# load model
+beef_model <- readRDS (file = here:: here ("models/beef_model.rds"))
 ```
+
 
 
 # Introduction
@@ -34,9 +50,6 @@ Results paragraph
 Why it matters paragraph
 
 Telegraphing paragraph: The remainder of this paper is structured as follows. @sec-data....
-
-
-
 
 
 
