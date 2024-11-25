@@ -32,6 +32,7 @@ install_and_load <- function(package_list) {
 install_and_load(package_list)
 
 # load data
+ppu_data <- read_csv(here("data", "02-analysis_data", "ppu_data.csv"), show_col_types = FALSE)
 beef_data <- read_csv(here("data", "02-analysis_data", "beef_data.csv"), show_col_types = FALSE)
 
 # load model
@@ -461,20 +462,65 @@ Weaknesses and next steps should also be included.
 
 # Appendix {-}
 
-
 # Additional data details
 
 ## Vendor Choice
+The selection of Walmart and T&T as representative vendors for this analysis was driven by their distinctive characteristics and market coverage, which together offer a comprehensive view of beef pricing dynamics. Walmart is a prominent multinational retailer with a broad presence across North America, making it a well-suited representative of mainstream, large-scale grocery retailing. Its extensive reach and emphasis on standardized pricing provide valuable insights into the general market trends and pricing behaviors that are accessible to a wide segment of consumers. By including Walmart in the analysis, we can capture a perspective that is reflective of the typical shopping experience for many consumers, characterized by competitive pricing and a broad product selection.
+
+On the other hand, T&T Supermarket represents a niche segment of the market, catering specifically to Asian communities and consumers seeking specialty goods that align with Asian culinary traditions. T&T's focus on products tailored to Asian tastes, along with its unique supply chains and vendor relationships, provides an important contrast to Walmart. The inclusion of T&T allows for an exploration of how cultural preferences and niche market positioning influence pricing. By analyzing T&T, we gain insights into pricing practices that reflect the demands of a distinct consumer group and how these differ from the broader market.
+
+The combination of Walmart and T&T enables the analysis to explore both mainstream and culturally specific market behaviors. This choice of vendors thus enriches the study by accounting for variations in consumer preferences, pricing strategies, and market positioning. Walmart's emphasis on scale and cost-efficiency contrasts with T&T's specialization and cultural targeting, allowing us to draw meaningful comparisons in terms of beef pricing strategies between a general and a specialized market context. Such a nuanced understanding is essential for capturing the diversity within the beef retail market, providing a more holistic view of the factors driving beef prices in different retail settings.
 
 ## Price per unit
+
+```{r}
+#| label: tbl-raw_price_per_unit
+#| tbl-cap: "Price per Unit Data for TandT and Walmart"
+#| tbl-subcap: ["Raw Data", "Cleaned Data"]
+#| echo: false
+#| warning: false
+#| message: false
+#| layout-ncol: 2
+
+
+ppu_data %>%
+  filter(vendor == "TandT") %>%
+  head(6) %>%
+  bind_rows(
+    ppu_data %>%
+      filter(vendor == "Walmart") %>%
+      head(6)
+  ) %>%
+  kable(
+    col.names = c("Vendor", "Price per Unit"),
+    booktabs = TRUE
+  )
+
+beef_data %>%
+  filter(vendor %in% c("TandT", "Walmart")) %>%
+  select(vendor, price_per_unit) %>%
+  group_by(vendor) %>%
+  summarise(price_per_unit = list(head(price_per_unit))) %>%
+  tidyr::unnest(price_per_unit) %>%
+  kable(
+    col.names = c("Vendor", "Price per Unit"),
+    booktabs = TRUE
+  )
+
+```
+
+In cleaning the `price_per_unit` variable, I began by extracting the numerical value using `str_extract()`, which allowed me to identify the dollar amounts in the original string (`\\$[0-9\\.]+`), as shown in @tbl-price_per_unit-1. This step ensured that only valid price values, starting with a dollar sign, were captured, removing any extraneous text or symbols.
+
+Next, I removed the dollar sign itself with `str_remove("\\$")` to convert the extracted value into a format suitable for numerical operations. After this, I used `as.numeric()` to convert the string into a numeric type, allowing for further quantitative analysis.
+
+To handle missing values, I applied `ifelse(is.na(price_per_unit), 0, price_per_unit)`, which replaced any `NA` values in the `price_per_unit` column with `0`. This step ensured that all rows had a value for `price_per_unit`, preventing issues during subsequent analysis. Using zero as the replacement helped maintain continuity in the dataset, although I acknowledge that this choice could imply that missing values are negligible, which might require additional context or consideration during interpretation. The price_per_unit column in the dataset after cleaning looks like @tbl-price_per_unit-2.
 
 # Model details {#sec-model-details}
 
 ## Posterior predictive check
+In @fig-ppcheckandposteriorvsprior-1, we implement a posterior predictive check. This plot shows the observed data distribution (in dark lines) compared with simulated datasets from the posterior (in light grey lines). The purpose of this check is to evaluate how well the model can reproduce the observed data. The close alignment between the simulated posterior predictive distributions and the observed data suggests that the model is accurately capturing the underlying patterns in the data. Specifically, we observe that the peaks and troughs in the observed data are well represented by the posterior samples, indicating that the model is capable of capturing key features such as the general shape and spread of the data distribution. The variability across the posterior predictive samples is consistent with the observed variability, suggesting no significant model misfit.
 
-In @fig-ppcheckandposteriorvsprior-1 we implement a posterior predictive check. This shows...
-
-In @fig-ppcheckandposteriorvsprior-2 we compare the posterior with the prior. This shows... 
+In @fig-ppcheckandposteriorvsprior-2, we compare the posterior with the prior distributions for each parameter. The posterior distribution (shown on the left) is more concentrated compared to the prior (shown on the right), which demonstrates how the data has influenced and updated our beliefs about the model parameters. For instance, the posterior distribution for the intercept has shrunk considerably compared to its prior, indicating that the data has substantially informed our estimate of the baseline price level. Similarly, for the other parameters (month, old_price, sigma, and vendorWalmart), the posteriors are less dispersed than the priors, suggesting a meaningful reduction in uncertainty. Notably, the posterior intervals are much narrower, especially for the intercept and old price parameters, indicating that the data has provided strong information about these effects. The results demonstrate that the priors were sufficiently weak, allowing the data to dominate the inference and significantly refine the parameter estimates.
 
 ```{r}
 #| eval: true
@@ -486,13 +532,21 @@ In @fig-ppcheckandposteriorvsprior-2 we compare the posterior with the prior. Th
 #| fig-cap: "Examining how the model fits, and is affected by, the data"
 #| fig-subcap: ["Posterior prediction check", "Comparing the posterior with the prior"]
 
+# Posterior predictive check
+pp_check(beef_model, plotfun = "dens_overlay")
+
+# Comparing posterior with prior
+posterior_vs_prior(beef_model, color_by = "parameter") + theme_minimal() + scale_fill_grey() + scale_color_grey()
 ```
 
 ## Diagnostics
+In @fig-stanareyouokay-1, we present a trace plot. This plot shows the sampled values for each parameter across the MCMC iterations. The trace plot helps assess whether the chains have converged to a stationary distribution. In these plots, we see that each parameter's chains are well mixed, with no discernible trends, indicating that the MCMC algorithm has adequately explored the parameter space. The lack of significant upward or downward drift suggests that all chains are consistently sampling from the target distribution, which is a strong indicator of convergence.
 
-@fig-stanareyouokay-1 is a trace plot. It shows... This suggests...
+Specifically, the chains for each parameter appear to oscillate around a constant mean, and the overlap between the four chains is extensive. This well-mixed appearance across all parameters, including the intercept, month, old price, vendorWalmart, and sigma, gives us confidence that our model has reached convergence, with each chain sampling from similar regions of the posterior distribution.
 
-@fig-stanareyouokay-2 is a Rhat plot. It shows... This suggests...
+In @fig-stanareyouokay-2, we present an Rhat plot. The Rhat statistic (also known as the potential scale reduction factor) measures the ratio of the variance between chains to the variance within chains, and values close to 1 indicate that the chains have converged. In this plot, we see that all Rhat values for the parameters are very close to 1, specifically below the threshold of 1.05, suggesting that convergence has been achieved across all parameters.
+
+The fact that all Rhat values are below 1.05 suggests that the different chains are in agreement about the underlying posterior distributions. This indicates that our model's parameter estimates are stable, and the MCMC algorithm has effectively converged. As such, we can be confident in the reliability of the estimates provided by our Bayesian model.
 
 ```{r}
 #| echo: false
@@ -504,6 +558,11 @@ In @fig-ppcheckandposteriorvsprior-2 we compare the posterior with the prior. Th
 #| fig-subcap: ["Trace plot", "Rhat plot"]
 #| layout-ncol: 2
 
+# Trace plot
+plot(beef_model, plotfun = "trace") + theme_minimal()
+
+# Rhat plot
+plot(beef_model, plotfun = "rhat") + theme_minimal()
 ```
 
 
