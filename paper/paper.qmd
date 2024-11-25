@@ -17,7 +17,7 @@ bibliography: references.bib
 #| warning: false
 #| message: false
 # load library
-package_list <- c("tidyverse", "kableExtra", "ggplot2", "dplyr", "here", "knitr", "rstanarm", "modelsummary", "readr", "gridExtra", "lme4", "tinytex")
+package_list <- c("tidyverse", "kableExtra", "ggplot2", "dplyr", "here", "knitr", "rstanarm", "modelsummary", "readr", "lme4", "tinytex")
 
 install_and_load <- function(package_list) {
   for (package in package_list) {
@@ -76,51 +76,140 @@ The temporal dimension, captured through the ‘month’ variable, enables us to
 Add graphs, tables and text. Use sub-sub-headings for each outcome variable or update the subheading to be singular.
 
 ### Current Price
-The outcome variable in this study is **current_price**. This variable represents the price of the product at the time of data collection and is central to understanding the effects of various factors on product pricing. By modeling **current_price**, we aim to explore how factors such as historical pricing, vendor type, and seasonal influences impact current market prices. This variable is crucial for determining the pricing dynamics employed by different vendors and how those strategies affect consumer costs.
+The outcome variable in this study is current_price. This variable represents the price of the product at the time of data collection and is central to understanding the effects of various factors on product pricing. By modeling current_price, we aim to explore how factors such as historical pricing, vendor type, and seasonal influences impact current market prices. This variable is crucial for determining the pricing dynamics employed by different vendors and how those strategies affect consumer costs.
 
-### Visual Analysis of Outcome
-To provide a comprehensive view of the outcome variable, several visualizations have been used. For example, a histogram of **current_price** distribution (Chart 1) highlights the spread and common value ranges across different vendors. Additionally, the scatter plot of **current_price** vs. **old_price** (Chart 4) helps illustrate how much the price has changed over time and the influence of previous prices on current pricing levels. These visual analyses are essential for understanding the overall trends and variability in the outcome variable.
-
-
-
-Some of our data is of penguins (@fig-bills), from @palmerpenguins.
+To provide a comprehensive view of the outcome variable, Here's a table for easier understanding (@tbl-current_price). This table provides the minimum, maximum, mean, median, and standard deviation of the current_price variable, offering insights into the overall distribution and variability in product prices.
 
 ```{r}
-#| label: fig-bills
-#| fig-cap: Bills of penguins
-#| echo: false
-
-```
-
-Talk more about it.
-
-And also planes (@fig-planes).
-
-```{r}
-#| label: fig-planes
-#| fig-cap: Relationship between wing length and width
+#| label: tbl-current_price
+#| tbl-cap: "Summary statistics for the outcome variable (current_price)"
 #| echo: false
 #| warning: false
 #| message: false
 
+outcome_summary <- beef_data %>%
+  summarise(
+    Statistic = c("Min", "Max", "Mean", "Median", "Standard Deviation"),
+    Value = c(
+      min(current_price, na.rm = TRUE),
+      max(current_price, na.rm = TRUE),
+      mean(current_price, na.rm = TRUE),
+      median(current_price, na.rm = TRUE),
+      sd(current_price, na.rm = TRUE)
+    )
+  )
+
+outcome_summary %>%
+  kable(
+    col.names = c("Statistic", "Value"),
+    booktabs = TRUE
+  )
 ```
 
-Talk way more about it. 
+In addition to the summary table, the distribution of current_price is visualized through a histogram (@fig-current_price), highlighting common price ranges and the overall spread. This visualization helps to identify any skewness or clustering in the data, which may indicate specific pricing patterns. Together, these tables and graphs provide a comprehensive understanding of the outcome variable, offering a detailed view of how product prices vary across different vendors and over time.
+
+```{r}
+#| label: fig-current_price
+#| fig-cap: "Boxplot of the distribution of current prices"
+#| echo: false
+#| warning: false
+#| message: false
+
+library(ggplot2)
+
+ggplot(beef_data, aes(y = current_price)) +
+  geom_boxplot(fill = "lightgrey", color = "darkgrey", alpha = 0.7) +
+  labs(title = "Boxplot of the Distribution of Current Prices", y = "Current Price (in $)") +
+  theme_minimal()
+```
+
+The boxplot (@fig-current_price) presented above provides a detailed summary of the distribution of current_price for the products in the dataset. Boxplots are useful visualization tools for understanding the spread, central tendency, and overall variability of continuous data. In this case, the boxplot helps in identifying key features such as the median price, the interquartile range (IQR), and any potential outliers that may exist in the pricing data.
+
+The median, represented by the horizontal line within the box, provides an indication of the central price of products in the dataset, highlighting where the bulk of prices are situated. The box represents the IQR, showing where the middle 50% of data points lie, thus giving insights into price concentration. The whiskers, extending from the box, represent the range within which most prices fall, excluding any extreme values or outliers. No outliers were visibly identified in this boxplot, which suggests that most product prices are consistently within a particular range.
+
+The flat shape of the boxplot with a wide range of the IQR indicates low variability in current product prices. The relatively small difference between the lower and upper bounds of the box implies that the pricing of the products is consistent, with most prices concentrated around the median. This consistency may suggest that vendors are using similar pricing strategies or that there is limited differentiation in the types of products sold across vendors. Overall, the boxplot is a valuable tool for summarizing and communicating the underlying distribution of current_price, which aids in understanding the dynamics of pricing across different vendors.
 
 ## Predictor variables
 
 Add graphs, tables and text.
 
 ### Month
-The **month** variable is used as a predictor to capture potential seasonal influences on pricing. By including **month**, we can observe if specific times of the year are associated with higher or lower prices. This is particularly important for identifying temporal patterns in pricing, which can be influenced by factors such as holidays, sales events, or seasonal demand changes.
+The month variable is used as a predictor to capture potential seasonal influences on pricing. By including month, we can observe if specific times of the year are associated with higher or lower prices. This is particularly important for identifying temporal patterns in pricing, which can be influenced by factors such as holidays, sales events, or seasonal demand changes. Table (@tbl-month_summary) provides a summary of the observations for each month, showing how frequently each month appears in the dataset. This information can help highlight any periods with higher or lower data collection frequency, which could influence the interpretation of seasonal pricing effects.
+
+```{r}
+#| label: tbl-month_summary
+#| tbl-cap: "Summary statistics for the predictor variable (month)"
+#| echo: false
+#| warning: false
+#| message: false
+
+month_summary <- beef_data %>%
+  group_by(month) %>%
+  summarise(
+    Count = n()
+  )
+
+month_summary %>%
+  kable(
+    col.names = c("Month", "Count"),
+    booktabs = TRUE
+  )
+
+```
 
 ### Old Price
-**old_price** serves as another key predictor variable, representing the historical price of a product. This variable helps gauge the effect of historical pricing on current pricing strategies, indicating whether a product has undergone discounts or price hikes. The relationship between **old_price** and **current_price** is visually explored in Chart 4, which helps understand the influence of past pricing decisions on current prices.
+old_price serves as another key predictor variable, representing the historical price of a product. This variable helps gauge the effect of historical pricing on current pricing strategies, indicating whether a product has undergone discounts or price hikes. Table (@tbl-old_price_summary) provides a summary of key statistics for old_price, including minimum, maximum, mean, median, and standard deviation. Understanding the distribution of old_price helps us assess whether historical prices significantly differ from current prices, and whether pricing adjustments (e.g., discounts) have been applied uniformly across products. The relationship between old_price and current_price is visually explored in Chart 4, which helps understand the influence of past pricing decisions on current prices.
+
+```{r}
+#| label: tbl-old_price_summary
+#| tbl-cap: "Summary statistics for the predictor variable (old_price)"
+#| echo: false
+#| warning: false
+#| message: false
+
+old_price_summary <- beef_data %>%
+  summarise(
+    Statistic = c("Min", "Max", "Mean", "Median", "Standard Deviation"),
+    Value = c(
+      Min = min(old_price, na.rm = TRUE),
+      Max = max(old_price, na.rm = TRUE),
+      Mean = mean(old_price, na.rm = TRUE),
+      Median = median(old_price, na.rm = TRUE),
+      `Standard Deviation` = sd(old_price, na.rm = TRUE)
+  )
+)
+
+old_price_summary %>%
+  kable(
+    col.names = c("Statistic", "Value"),
+    booktabs = TRUE
+  )
+
+```
 
 ### Vendor
-The **vendor** variable is an important categorical predictor that differentiates pricing behavior across different retail chains. It allows us to analyze how pricing strategies vary among vendors such as Walmart and Galleria. Chart 2, which shows the price difference by vendor, provides insights into how different vendors adjust their pricing strategies, offering valuable comparisons among them. Additionally, Chart 3 presents the average **current_price** over time, broken down by vendor, providing a clearer picture of how vendor-based strategies influence pricing trends.
+The vendor variable is an important categorical predictor that differentiates pricing behavior across different retail chains. It allows us to analyze how pricing strategies vary among vendors such as Walmart and Galleria. Table (@tbl-vendor_summary) shows the count of observations for each vendor, allowing us to compare how frequently data was collected for each retail chain. This helps in understanding the representation of each vendor within the dataset and assessing whether certain vendors may have a stronger influence on the overall analysis. Chart 2, which shows the price difference by vendor, provides insights into how different vendors adjust their pricing strategies, offering valuable comparisons among them. Additionally, Chart 3 presents the average current_price over time, broken down by vendor, providing a clearer picture of how vendor-based strategies influence pricing trends.
 
+```{r}
+#| label: tbl-vendor_summary
+#| tbl-cap: "Count of observations for each vendor"
+#| echo: false
+#| warning: false
+#| message: false
 
+vendor_summary <- beef_data %>%
+  group_by(vendor) %>%
+  summarise(
+    Count = n()
+  )
+
+vendor_summary %>%
+  kable(
+    col.names = c("Vendor", "Count"),
+    booktabs = TRUE
+  )
+
+```
 
 # Model
 
