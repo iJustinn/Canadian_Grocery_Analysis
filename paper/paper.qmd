@@ -18,7 +18,7 @@ bibliography: references.bib
 #| warning: false
 #| message: false
 # load library
-package_list <- c("tidyverse", "kableExtra", "ggplot2", "dplyr", "here", "knitr", "rstanarm", "modelsummary", "readr", "lme4", "tinytex")
+package_list <- c("tidyverse", "kableExtra", "ggplot2", "dplyr", "here", "knitr", "rstanarm", "modelsummary", "readr", "lme4", "tinytex", "reshape2")
 
 install_and_load <- function(package_list) {
   for (package in package_list) {
@@ -355,24 +355,39 @@ Entering September and October, there is a pronounced drop in prices, with avera
 
 ```{r}
 #| label: fig-current_vs_old_price
-#| fig-cap: "Distribution of Current vs. Old Price of Beef"
+#| fig-cap: "Heatmap of Price Levels between Current Price and Old Price of Beef"
 #| echo: false
 #| warning: false
 #| message: false
 
-ggplot(beef_data, aes(x = old_price, y = current_price)) +
-  geom_point(color = 'lightgrey', alpha = 0.7) +
-  geom_smooth(method = 'loess', color = 'darkgrey', fill = 'red', alpha = 0.8, se = TRUE) +
-  labs(x = "Old Price (in $)", y = "Current Price (in $)") +
-  theme_minimal()
+# Create price levels for old_price and current_price with finer granularity
+beef_data <- beef_data %>%
+  mutate(
+    old_price_level = cut(old_price, breaks = seq(0, max(old_price, na.rm = TRUE), by = 2), include.lowest = TRUE),
+    current_price_level = cut(current_price, breaks = seq(0, max(current_price, na.rm = TRUE), by = 2), include.lowest = TRUE)
+  )
+
+# Count occurrences of price levels
+price_level_counts <- beef_data %>%
+  count(old_price_level, current_price_level, name = "count")
+
+# Create the heatmap
+ggplot(data = price_level_counts, aes(x = old_price_level, y = current_price_level, fill = count)) +
+  geom_tile(color = "lightgrey") +
+  scale_fill_gradient(low = "lightgrey", high = "red", name = "Frequency") +
+  labs( x = "Old Price Level", y = "Current Price Level") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1))
 
 ```
 
-Figure 5 (@fig-current_vs_old_price) visualizes the relationship between the old price and current price of beef, providing insight into how pricing has evolved over time for various products. The scatter plot includes individual points that represent different observations of beef prices, with the x-axis indicating the old price (in \$) and the y-axis representing the current price (in \$). The grey trend line overlaid on the plot illustrates the overall trend in the data.
+Figure 5 (@fig-current_vs_old_price) has been modified to display a heatmap of the relationship between old and current price levels for beef, providing a more aggregated view of how pricing has evolved over time for various products. The x-axis represents the old price level, while the y-axis indicates the current price level, with each cell in the heatmap representing a specific combination of these price levels. The color intensity, ranging from light red to dark red, corresponds to the frequency of observations, as indicated by the legend on the right.
 
-The plot indicates a strong positive correlation between old prices and current prices. As the old price increases, the current price also tends to increase, suggesting consistency in price adjustments over time. The data points are generally clustered around the trend line, implying a stable relationship with only minor deviations, which highlights that most beef products have seen proportional changes in their pricing. This could indicate the influence of factors such as inflation or consistent pricing practices across vendors.
+The heatmap reveals a clear diagonal pattern where higher old price levels correspond to higher current price levels, indicating a strong positive association between historical and current pricing. The darker cells along the diagonal reflect the highest frequency of observations, suggesting that most products maintain similar relative pricing over time, reinforcing the consistency in price adjustments observed earlier. This alignment along the diagonal suggests that beef pricing adjustments have been proportional and systematic, potentially influenced by inflation, consistent vendor practices, or other market mechanisms.
 
-However, there are some noticeable variations, with data points deviating above and below the trend line. These variations suggest that certain products have experienced different rates of price change, potentially reflecting changes in supply costs, varying consumer demand, or differences in retailer pricing strategies. For instance, products above the trend line indicate higher current prices compared to their historical pricing, possibly pointing towards a higher demand or limited availability. Conversely, points below the trend line indicate products that may have seen reductions or smaller increments in pricing. Overall, the plot reveals a proportional relationship between historical and current beef prices, with a trend towards increasing prices that is likely influenced by broader market forces.
+The off-diagonal cells that are lightly shaded or empty indicate fewer occurrences where current prices deviate significantly from historical ones. The absence of significant variation off the main diagonal suggests that the majority of pricing changes for beef are directly related to past prices, implying stability in pricing trends with limited irregular adjustments. This consistency may be indicative of structured pricing strategies across different market conditions, with only minor deviations that could result from specific product promotions or temporary supply issues.
+
+Overall, the heatmap effectively illustrates the overall pattern of pricing consistency, highlighting that both old and current beef prices are closely aligned. This representation captures the density of occurrences more clearly than individual scatter points, providing a visual summary of the frequency and typicality of price pairings between historical and current beef prices.
 
 ```{r}
 #| label: fig-unit_price_distribution
