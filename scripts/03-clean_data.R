@@ -35,6 +35,12 @@ merge_data <- raw_data %>%
     price_per_unit
   )
 
+# ppu data (price_per_unit)
+ppu_data <- merge_data %>%
+  filter(vendor %in% c("Walmart", "TandT")) %>%
+  filter(str_detect(tolower(product_name), "beef")) %>%
+  select(vendor, price_per_unit)
+
 # clean data
 cleaned_data <- merge_data %>%
   filter(vendor %in% c("Walmart", "TandT")) %>%
@@ -60,4 +66,5 @@ cleaned_data <- merge_data %>%
 
 
 #### Save data ####
+write_csv(ppu_data, here("data", "02-analysis_data", "ppu_data.csv"))
 write_csv(cleaned_data, here("data", "02-analysis_data", "beef_data.csv"))
