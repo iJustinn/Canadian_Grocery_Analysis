@@ -8,6 +8,7 @@ date: today
 date-format: long
 abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
 format: pdf
+toc: true
 number-sections: true
 bibliography: references.bib
 ---
@@ -72,8 +73,7 @@ The process of measurement in this research involves translating real-world phen
 The temporal dimension, captured through the ‘month’ variable, enables us to measure the impact of seasonal patterns on pricing. Constructed variables such as ‘price_per_unit’ provide a standardized measurement that allows comparisons across different products, accounting for varying package sizes or quantities. This transformation from abstract consumer behaviors and retail dynamics into structured data ensures that the analysis remains rooted in real-world market phenomena, thereby enabling a more nuanced understanding of pricing behavior and trends across different vendors.
 
 ## Outcome variables
-
-Add graphs, tables and text. Use sub-sub-headings for each outcome variable or update the subheading to be singular.
+The outcome variable for this study, current_price, serves as the key focus of analysis in understanding product pricing dynamics. This section provides a structured overview of the current_price variable, including its distribution and any observed trends, supported by both summary statistics and visualizations. The aim is to offer a clear understanding of how product prices vary and what factors may influence those variations.
 
 ### Current Price
 The outcome variable in this study is current_price. This variable represents the price of the product at the time of data collection and is central to understanding the effects of various factors on product pricing. By modeling current_price, we aim to explore how factors such as historical pricing, vendor type, and seasonal influences impact current market prices. This variable is crucial for determining the pricing dynamics employed by different vendors and how those strategies affect consumer costs.
@@ -115,12 +115,11 @@ In addition to the summary table, the distribution of current_price is visualize
 #| warning: false
 #| message: false
 
-library(ggplot2)
-
 ggplot(beef_data, aes(y = current_price)) +
   geom_boxplot(fill = "lightgrey", color = "darkgrey", alpha = 0.7) +
   labs(title = "Boxplot of the Distribution of Current Prices", y = "Current Price (in $)") +
   theme_minimal()
+
 ```
 
 The boxplot (@fig-current_price) presented above provides a detailed summary of the distribution of current_price for the products in the dataset. Boxplots are useful visualization tools for understanding the spread, central tendency, and overall variability of continuous data. In this case, the boxplot helps in identifying key features such as the median price, the interquartile range (IQR), and any potential outliers that may exist in the pricing data.
@@ -130,8 +129,7 @@ The median, represented by the horizontal line within the box, provides an indic
 The flat shape of the boxplot with a wide range of the IQR indicates low variability in current product prices. The relatively small difference between the lower and upper bounds of the box implies that the pricing of the products is consistent, with most prices concentrated around the median. This consistency may suggest that vendors are using similar pricing strategies or that there is limited differentiation in the types of products sold across vendors. Overall, the boxplot is a valuable tool for summarizing and communicating the underlying distribution of current_price, which aids in understanding the dynamics of pricing across different vendors.
 
 ## Predictor variables
-
-Add graphs, tables and text.
+The predictor variables in this study—month, old_price, and vendor—each play an important role in explaining variations in current_price. This section outlines how these variables potentially influence pricing, with a focus on capturing temporal patterns, historical effects, and vendor-specific pricing strategies. The summary tables and visual analyses help contextualize the impact of each predictor on the outcome, providing a broad understanding of the pricing dynamics within the dataset.
 
 ### Month
 The month variable is used as a predictor to capture potential seasonal influences on pricing. By including month, we can observe if specific times of the year are associated with higher or lower prices. This is particularly important for identifying temporal patterns in pricing, which can be influenced by factors such as holidays, sales events, or seasonal demand changes. Table (@tbl-month_summary) provides a summary of the observations for each month, showing how frequently each month appears in the dataset. This information can help highlight any periods with higher or lower data collection frequency, which could influence the interpretation of seasonal pricing effects.
@@ -279,18 +277,138 @@ In summary, the chosen model provides a comprehensive yet interpretable understa
 
 # Results
 
-Our results are summarized in @tbl-modelresults.
+## Charts
 
 ```{r}
+#| label: fig-current_price_distribution
+#| fig-cap: "Distribution of Current Prices"
 #| echo: false
-#| eval: true
+#| warning: false
+#| message: false
+
+ggplot(beef_data, aes(x = current_price)) +
+  geom_histogram(binwidth = 1, fill = "lightgrey", color = "darkgrey", alpha = 0.7) +
+  geom_density(aes(y = ..count..), color = "red", size = 1) +
+  labs(x = "Current Price (in $)", y = "Frequency") +
+  theme_minimal()
+
+```
+
+Figure 2 (@fig-current_price_distribution) presents the distribution of current beef prices in the dataset, offering insights into the range and frequency of beef pricing. The horizontal axis represents the price in dollars, ranging from 0 to approximately 25, while the vertical axis indicates the frequency, or the number of observations, within each price range. The grey bars illustrate the frequency distribution, showing how beef prices are spread across different price levels.
+
+The histogram indicates that the most frequent price range is between \$5 and \$10, with a notable peak in the frequency around \$7 to \$8. This suggests that a significant proportion of beef products are priced within this range, making it a central pricing cluster in the market. Additionally, there are smaller peaks around \$13 and \$15, hinting at secondary groupings where beef prices are relatively common. The declining frequency beyond \$15 suggests fewer beef products are priced in the higher range, indicating that higher prices are less typical in this dataset.
+
+The overlaid red line represents a smoothed density curve that helps to visualize the general shape and distribution trend of the prices. The curve follows the histogram closely, showing a skewed distribution with a concentration towards the lower prices, and tails off as prices increase. This pattern suggests that while lower-priced beef products are more common, higher prices are less frequent, potentially indicating a general preference or affordability constraint for lower-cost beef among consumers. The presence of multiple peaks could also imply different pricing tiers, perhaps influenced by factors such as beef quality or specific product types.
+
+```{r}
+#| label: fig-price_difference_by_vendor
+#| fig-cap: "Price Difference by Vendor"
+#| echo: false
+#| warning: false
+#| message: false
+
+beef_data <- beef_data %>%
+  mutate(price_difference = old_price - current_price)
+
+ggplot(beef_data, aes(x = vendor, y = price_difference)) +
+  geom_boxplot(fill = "lightgrey", color = "darkgrey", alpha = 0.7) +
+  labs(x = "Vendor", y = "Price Difference (in $)") +
+  theme_minimal()
+
+```
+
+Figure 3 (@fig-price_difference_by_vendor) illustrates the distribution of price differences between beef products offered by two vendors, T&T and Walmart, providing an insight into the variability of pricing across these retailers. The y-axis represents the price difference in dollars, while the x-axis labels the two vendors under comparison. The boxplots visually depict the range, median, and variability in the price differences for each vendor.
+
+For T&T, the boxplot shows a wider range of price differences, with the interquartile range (IQR) extending from roughly \$1.5 to \$4, indicating a moderate to substantial variability in price differences among the products they sell. The median price difference is around \$2.5, suggesting that many of the products have a price difference near this value. However, T&T also shows significant variability with the presence of two outliers beyond \$7.5 and \$10, indicating that a few beef products exhibit much larger price differences compared to the rest of the data.
+
+In contrast, Walmart exhibits a narrower spread of price differences, as indicated by the more compact boxplot. The IQR for Walmart lies approximately between \$1 and \$2.5, and the median price difference is lower compared to T&T, close to \$1.5. This suggests that Walmart’s beef products tend to have smaller and less variable price differences, indicating more consistent pricing practices. There are also a few outliers above \$4, but these are less extreme compared to T&T's outliers.
+
+Overall, the boxplots suggest that T&T has more variability in their pricing, possibly reflecting differences in product types or marketing strategies, whereas Walmart tends to maintain a narrower price range with fewer significant deviations. This disparity may indicate that Walmart focuses on more standardized pricing practices, which could influence consumer choice based on price predictability and consistency.
+
+```{r}
+#| label: fig-average_price_over_time
+#| fig-cap: "Average Current Price Over Time"
+#| echo: false
+#| warning: false
+#| message: false
+
+beef_data <- beef_data %>%
+  mutate(date = as.Date(paste(year, month, day, sep = "-"), format = "%Y-%m-%d"))
+
+avg_price_per_date <- beef_data %>%
+  group_by(date) %>%
+  summarise(avg_current_price = mean(current_price, na.rm = TRUE))
+
+ggplot(avg_price_per_date, aes(x = date, y = avg_current_price)) +
+  geom_line(color = "darkgrey", size = 1) +
+  labs(x = "Date", y = "Average Current Price (in $)") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+
+Figure 4 (@fig-average_price_over_time) shows the trend of average beef prices over time, providing insight into fluctuations in the market from July to November. The y-axis represents the average current price in \$, while the x-axis represents the date, with labels indicating the progression through the months.
+
+The line chart indicates that average beef prices experienced significant variability throughout the observed period, with several sharp peaks and troughs. In early July, prices were relatively high, reaching a peak of approximately \$13, but this was followed by a rapid decline, dropping to around \$7 by the end of the month. The fluctuations continue through August, where we see notable volatility, including several spikes back to higher average prices of over \$10. Such fluctuations suggest sensitivity in pricing, possibly influenced by seasonal changes, supply chain disruptions, or market demand dynamics.
+
+Entering September and October, there is a pronounced drop in prices, with average prices occasionally dipping below \$6, reflecting a period of reduced pricing. Following this low, prices exhibit recovery and some stabilization, hovering around \$8 to \$9 from October into early November, albeit with some ongoing small fluctuations. The chart’s volatility indicates that beef prices are influenced by various factors throughout these months, with possible implications from supply conditions, retailer pricing strategies, or changing consumer demand. This temporal analysis of beef pricing is critical for understanding market stability and identifying periods of significant price changes that may warrant further investigation.
+
+```{r}
+#| label: fig-current_vs_old_price
+#| fig-cap: "Distribution of Current vs. Old Price of Beef"
+#| echo: false
+#| warning: false
+#| message: false
+
+ggplot(beef_data, aes(x = old_price, y = current_price)) +
+  geom_point(color = 'lightgrey', alpha = 0.7) +
+  geom_smooth(method = 'loess', color = 'darkgrey', fill = 'red', alpha = 0.8, se = TRUE) +
+  labs(x = "Old Price (in $)", y = "Current Price (in $)") +
+  theme_minimal()
+
+```
+
+Figure 5 (@fig-current_vs_old_price) visualizes the relationship between the old price and current price of beef, providing insight into how pricing has evolved over time for various products. The scatter plot includes individual points that represent different observations of beef prices, with the x-axis indicating the old price (in \$) and the y-axis representing the current price (in \$). The grey trend line overlaid on the plot illustrates the overall trend in the data.
+
+The plot indicates a strong positive correlation between old prices and current prices. As the old price increases, the current price also tends to increase, suggesting consistency in price adjustments over time. The data points are generally clustered around the trend line, implying a stable relationship with only minor deviations, which highlights that most beef products have seen proportional changes in their pricing. This could indicate the influence of factors such as inflation or consistent pricing practices across vendors.
+
+However, there are some noticeable variations, with data points deviating above and below the trend line. These variations suggest that certain products have experienced different rates of price change, potentially reflecting changes in supply costs, varying consumer demand, or differences in retailer pricing strategies. For instance, products above the trend line indicate higher current prices compared to their historical pricing, possibly pointing towards a higher demand or limited availability. Conversely, points below the trend line indicate products that may have seen reductions or smaller increments in pricing. Overall, the plot reveals a proportional relationship between historical and current beef prices, with a trend towards increasing prices that is likely influenced by broader market forces.
+
+```{r}
+#| label: fig-unit_price_distribution
+#| fig-cap: "Distribution of Unit Prices"
+#| echo: false
+#| warning: false
+#| message: false
+
+ggplot(beef_data, aes(x = price_per_unit)) +
+  geom_histogram(binwidth = 0.1, fill = "lightgrey", color = "darkgrey", alpha = 0.7) +
+  geom_density(aes(y = after_stat(count)), color = "red", linewidth = 1) +
+  labs(x = "Unit Price ($ per 100 grams)", y = "Frequency") +
+  theme_minimal()
+
+```
+
+Figure 6 (@fig-unit_price_distribution) illustrates the distribution of unit prices for beef, measured in \$ per 100 grams. The x-axis represents the unit price, while the y-axis indicates the frequency of occurrences for each price range. The histogram, represented by grey bars, shows how often each unit price appears in the dataset, and the red curve provides a smoothed density estimate to visualize the general trend.
+
+The most striking feature of this figure is the concentration of unit prices near zero, with a significant spike in the frequency at this price point. This suggests that a substantial number of observations in the dataset have a very low or nominal unit price, which could indicate promotions, discounted products, or even data entry inconsistencies that require further examination. After this initial peak, the frequency drops sharply, followed by a few smaller peaks across higher unit price ranges, particularly around \$1, \$3, and \$6 per 100 grams. These smaller peaks indicate the presence of additional groupings of unit prices, potentially corresponding to different product categories, quality grades, or pricing tiers.
+
+The overall distribution is heavily right-skewed, suggesting that the majority of beef products have lower unit prices, while higher prices are less common and scattered. This right-skewness might be indicative of pricing strategies that cater to a wide consumer base, where most products are priced affordably, with only a few premium items available at significantly higher unit prices. The presence of several distinct peaks, rather than a single uniform distribution, suggests price differentiation that could be driven by various factors, such as beef cut type, quality, or retailer-specific pricing strategies. This distribution pattern highlights the diverse pricing landscape for beef products in the dataset, suggesting the existence of both low-cost and premium segments in the market.
+
+
+
+## Model
+
+```{r}
 #| label: tbl-modelresults
 #| tbl-cap: ""
+#| echo: false
 #| warning: false
+#| message: false
 
 modelsummary::modelsummary(
   list(
-    "First model" = beef_model
+    "Beef model (Bayesian)" = beef_model
   ),
   statistic = "mad",
   fmt = 2
@@ -298,7 +416,13 @@ modelsummary::modelsummary(
 
 ```
 
+Table 5 (@tbl-modelresults) summarizes the results from the Bayesian model applied to analyze beef prices, including key parameter estimates and model diagnostics. The model provides insight into the relationship between the current price of beef and various predictors such as the old price, vendor, and the time of observation (represented by the "month" variable).
 
+The estimated intercept of -0.37 suggests that, after controlling for the predictors in the model, the baseline level of the current price is negative, though this value must be interpreted with caution in terms of its contextual implications. The "month" coefficient is -0.01, indicating a slight negative association between the time variable and current price, although the magnitude of the effect is relatively small. This suggests that as time progresses, there is a minor decrease in the current price, potentially reflecting seasonal effects or gradual changes in market dynamics. The "old_price" coefficient is 0.81, showing a strong positive relationship with the current price, meaning that for each unit increase in the old price, the current price increases by a comparable margin. This result implies a consistent upward adjustment in beef pricing over time, reinforcing the trends seen in previous charts. Finally, the "vendorWalmart" coefficient is 0.56, indicating that beef sold by Walmart tends to be priced higher, on average, than that sold by the baseline vendor (T&T), which aligns with our earlier findings on vendor price differences.
+
+In terms of model fit, the R-squared (R²) value of 0.945 and the adjusted R-squared value of 0.944 indicate a high degree of explained variance, suggesting that the model is capable of capturing the main factors influencing beef prices. The negative log-likelihood value (-4349.672) and expected log pointwise predictive density (ELPD) of -4354.7 provide additional metrics on model fit, while other diagnostic values, such as the leave-one-out information criterion (LOOIC) and Widely Applicable Information Criterion (WAIC), both around 8709, provide an indication of model performance for out-of-sample predictive accuracy. The root mean square error (RMSE) is 1.02, suggesting the model's predictions have a relatively small average deviation from the actual values, indicative of good predictive performance.
+
+These results together illustrate the strong relationship between past pricing and current pricing, as well as vendor influence on beef pricing. The Bayesian approach has provided robust parameter estimates while accounting for uncertainty, as reflected in the provided standard errors. Overall, the model appears to perform well, with high explained variance and reasonable prediction accuracy, making it a valuable tool for understanding and forecasting beef price trends.
 
 # Discussion
 
@@ -324,6 +448,10 @@ Weaknesses and next steps should also be included.
 
 
 # Additional data details
+
+## Vendor Choice
+
+## Price per unit
 
 # Model details {#sec-model-details}
 
