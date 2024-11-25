@@ -47,12 +47,13 @@ cleaned_data <- merge_data %>%
     old_price = parse_number(old_price),
     price_per_unit = str_extract(price_per_unit, "\\$[0-9\\.]+") %>% 
       str_remove("\\$") %>%
-      as.numeric()
-    ) %>%
+      as.numeric(),
+    price_per_unit = ifelse(is.na(price_per_unit), 0, price_per_unit)
+  ) %>%
   filter(str_detect(tolower(product_name), "beef")) %>%
   filter(!str_detect(tolower(product_name), 
                      "flavour|vermicelli|rice|noodles|noodle|seasoning|lasagna|broth|soup|ravioli|pasta|plant-based|bun"
-                     )) %>%
+  )) %>%
   select(-nowtime) %>%
   tidyr::drop_na()
 

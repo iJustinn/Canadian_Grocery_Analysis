@@ -1,4 +1,28 @@
 vendor,current_price,old_price,product_name,price_per_unit,year,month,day
+TandT,10.99,13.43,T&T Japanese Curry Beef (450g),0,2024,6,11
+TandT,10.99,13.43,T&T Japanese Curry Beef (450g),0,2024,6,11
+TandT,10.99,11.99,T&T Japanese Curry Beef (450g),0,2024,6,12
+TandT,10.99,11.99,T&T Japanese Curry Beef (450g),0,2024,6,13
+TandT,7.99,9.99,Shirakiku Cooked Sukiyaki Beef (250g),0,2024,7,12
+TandT,7.99,9.99,Shirakiku Cooked Sukiyaki Beef (250g),0,2024,7,13
+TandT,7.99,9.99,Shirakiku Cooked Sukiyaki Beef (250g),0,2024,7,14
+TandT,7.99,9.99,Shirakiku Cooked Sukiyaki Beef (250g),0,2024,7,15
+TandT,7.99,9.99,Shirakiku Cooked Sukiyaki Beef (250g),0,2024,7,16
+TandT,7.99,9.99,Shirakiku Cooked Sukiyaki Beef (250g),0,2024,7,17
+TandT,7.99,9.99,Shirakiku Cooked Sukiyaki Beef (250g),0,2024,7,18
+TandT,7.99,9.99,Shirakiku Cooked Sukiyaki Beef (250g),0,2024,7,19
+TandT,7.99,9.99,Shirakiku Cooked Sukiyaki Beef (250g),0,2024,7,19
+TandT,7.99,9.99,Shirakiku Cooked Sukiyaki Beef (250g),0,2024,7,20
+TandT,7.99,9.99,Shirakiku Cooked Sukiyaki Beef (250g),0,2024,7,22
+TandT,7.99,9.99,Shirakiku Cooked Sukiyaki Beef (250g),0,2024,7,23
+TandT,7.99,9.99,Shirakiku Cooked Sukiyaki Beef (250g),0,2024,7,24
+TandT,7.99,9.99,Shirakiku Cooked Sukiyaki Beef (250g),0,2024,7,25
+TandT,7.99,9.99,Shirakiku Cooked Sukiyaki Beef (250g),0,2024,7,26
+TandT,7.99,9.99,Shirakiku Cooked Sukiyaki Beef (250g),0,2024,7,28
+TandT,7.99,9.99,Shirakiku Cooked Sukiyaki Beef (250g),0,2024,7,29
+TandT,7.99,9.99,Shirakiku Cooked Sukiyaki Beef (250g),0,2024,7,30
+TandT,7.99,9.99,Shirakiku Cooked Sukiyaki Beef (250g),0,2024,7,31
+TandT,7.99,9.99,Shirakiku Cooked Sukiyaki Beef (250g),0,2024,8,1
 Walmart,15.28,16.979999999999997,"Keg Steakhouse & Bar The Keg Steakhouse bar Prime Rib Beef Burgers, 6 x 170 g, 1.02 kg",1.5,2024,6,15
 Walmart,15.28,16.979999999999997,"Keg Steakhouse & Bar The Keg Steakhouse bar Prime Rib Beef Burgers, 6 x 170 g, 1.02 kg",1.5,2024,6,17
 Walmart,15.28,16.979999999999997,"Keg Steakhouse & Bar The Keg Steakhouse bar Prime Rib Beef Burgers, 6 x 170 g, 1.02 kg",1.5,2024,6,18
@@ -59,6 +83,7 @@ Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S SWEET & HOT BEEF JERKY 
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S SWEET & HOT BEEF JERKY 80G, JL S&H BEEF JERKY 80G",6.21,2024,7,19
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S SWEET & HOT BEEF JERKY 80G, JL S&H BEEF JERKY 80G",6.21,2024,7,20
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S SWEET & HOT BEEF JERKY 80G, JL S&H BEEF JERKY 80G",6.21,2024,7,21
+Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S SWEET & HOT BEEF JERKY 80G, JL S&H BEEF JERKY 80G",0,2024,7,22
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S SWEET & HOT BEEF JERKY 80G, JL S&H BEEF JERKY 80G",6.21,2024,8,30
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S SWEET & HOT BEEF JERKY 80G, JL S&H BEEF JERKY 80G",6.21,2024,8,31
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S SWEET & HOT BEEF JERKY 80G, JL S&H BEEF JERKY 80G",6.21,2024,9,1
@@ -92,6 +117,7 @@ Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S PEPPERED BEEF JERKY 80G
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S PEPPERED BEEF JERKY 80G, JACK LINK'S PEPPERED BEEF JERKY 80G",6.21,2024,7,19
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S PEPPERED BEEF JERKY 80G, JACK LINK'S PEPPERED BEEF JERKY 80G",6.21,2024,7,20
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S PEPPERED BEEF JERKY 80G, JACK LINK'S PEPPERED BEEF JERKY 80G",6.21,2024,7,21
+Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S PEPPERED BEEF JERKY 80G, JACK LINK'S PEPPERED BEEF JERKY 80G",0,2024,7,22
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S PEPPERED BEEF JERKY 80G, JACK LINK'S PEPPERED BEEF JERKY 80G",6.21,2024,9,22
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S PEPPERED BEEF JERKY 80G, JACK LINK'S PEPPERED BEEF JERKY 80G",6.21,2024,9,25
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S SMOKED HICKORY BEEF JERKY 80G, JL SMK HIC BEEF JERKY 80G",6.21,2024,6,27
@@ -159,6 +185,17 @@ Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S JALAPENO BEEF JERKY 80G
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S JALAPENO BEEF JERKY 80G, JL JAL BEEF JERKY 80G",6.21,2024,9,22
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S JALAPENO BEEF JERKY 80G, JL JAL BEEF JERKY 80G",6.21,2024,9,25
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S TERIYAKI BEEF STEAK NUGGETS 81G, JL TERIYAKI NUGGETS 81G",6.14,2024,6,25
+Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S TERIYAKI BEEF STEAK NUGGETS 81G, JL TERIYAKI NUGGETS 81G",0,2024,6,27
+Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S TERIYAKI BEEF STEAK NUGGETS 81G, JL TERIYAKI NUGGETS 81G",0,2024,6,28
+Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S TERIYAKI BEEF STEAK NUGGETS 81G, JL TERIYAKI NUGGETS 81G",0,2024,6,29
+Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S TERIYAKI BEEF STEAK NUGGETS 81G, JL TERIYAKI NUGGETS 81G",0,2024,6,30
+Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S TERIYAKI BEEF STEAK NUGGETS 81G, JL TERIYAKI NUGGETS 81G",0,2024,7,1
+Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S TERIYAKI BEEF STEAK NUGGETS 81G, JL TERIYAKI NUGGETS 81G",0,2024,7,2
+Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S TERIYAKI BEEF STEAK NUGGETS 81G, JL TERIYAKI NUGGETS 81G",0,2024,7,3
+Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S TERIYAKI BEEF STEAK NUGGETS 81G, JL TERIYAKI NUGGETS 81G",0,2024,7,4
+Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S TERIYAKI BEEF STEAK NUGGETS 81G, JL TERIYAKI NUGGETS 81G",0,2024,7,5
+Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S TERIYAKI BEEF STEAK NUGGETS 81G, JL TERIYAKI NUGGETS 81G",0,2024,7,6
+Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S TERIYAKI BEEF STEAK NUGGETS 81G, JL TERIYAKI NUGGETS 81G",0,2024,7,7
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S TERIYAKI BEEF STEAK NUGGETS 81G, JL TERIYAKI NUGGETS 81G",6.14,2024,7,9
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S TERIYAKI BEEF STEAK NUGGETS 81G, JL TERIYAKI NUGGETS 81G",6.14,2024,7,13
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S TERIYAKI BEEF STEAK NUGGETS 81G, JL TERIYAKI NUGGETS 81G",6.14,2024,7,14
@@ -196,10 +233,12 @@ Walmart,2.9699999999999998,3.4699999999999998,"Jack Link’s Cold Crafted® Beef
 Walmart,2.9699999999999998,3.4699999999999998,"Jack Link’s Cold Crafted® Beef Stick & Pepper Jack Cheese Combo, 42 g",7.07,2024,7,30
 Walmart,2.9699999999999998,3.4699999999999998,"Jack Link’s Cold Crafted® Beef Stick & Pepper Jack Cheese Combo, 42 g",7.07,2024,7,31
 Walmart,2.9699999999999998,3.4699999999999998,"Jack Link’s Cold Crafted® Beef Stick & Pepper Jack Cheese Combo, 42 g",7.07,2024,8,1
+Walmart,2.9699999999999998,4.970000000000001,"Hereford Corned Beef HALAL, 340g.  HALAL certified.",0,2024,6,25
 Walmart,3.77,4.970000000000001,"Hereford Corned Beef HALAL, 340g.  HALAL certified.",1.11,2024,9,6
 Walmart,3.77,4.970000000000001,"Hereford Corned Beef HALAL, 340g.  HALAL certified.",1.11,2024,9,7
 Walmart,3.77,4.970000000000001,"Hereford Corned Beef HALAL, 340g.  HALAL certified.",1.11,2024,9,8
 Walmart,3.77,4.970000000000001,"Hereford Corned Beef HALAL, 340g.  HALAL certified.",1.11,2024,9,11
+Walmart,2.9699999999999998,4.970000000000001,"Hereford Corned Beef Chunky, 340g",0,2024,6,25
 Walmart,7.98,8.98,"POGO® All Beef corn dogs 8-pack, 600 grams, 600 g",1.33,2024,8,8
 Walmart,7.98,8.98,"POGO® All Beef corn dogs 8-pack, 600 grams, 600 g",1.33,2024,8,9
 Walmart,7.98,8.98,"POGO® All Beef corn dogs 8-pack, 600 grams, 600 g",1.33,2024,8,10
@@ -225,6 +264,1317 @@ Walmart,7.98,8.98,"POGO® All Beef corn dogs 8-pack, 600 grams, 600 g",1.33,2024
 Walmart,7.98,8.98,"POGO® All Beef corn dogs 8-pack, 600 grams, 600 g",1.33,2024,9,1
 Walmart,7.98,8.98,"POGO® All Beef corn dogs 8-pack, 600 grams, 600 g",1.33,2024,9,2
 Walmart,7.98,8.98,"POGO® All Beef corn dogs 8-pack, 600 grams, 600 g",1.33,2024,9,3
+Walmart,7.99,9.18,For ddlers Age 3 Years and Up Snowflake Beef,0,2024,7,26
+Walmart,7.99,9.18,For ddlers Age 3 Years and Up Snowflake Beef,0,2024,7,27
+Walmart,7.99,9.18,For ddlers Age 3 Years and Up Snowflake Beef,0,2024,7,28
+Walmart,6.92,7.6899999999999995,"Go Bio Beef Bouillon, 66G",0,2024,8,27
+Walmart,6.92,7.6899999999999995,"Go Bio Beef Bouillon, 66G",0,2024,8,28
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,8,30
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,8,31
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,9,1
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,9,3
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,9,5
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,9,6
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,9,7
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,9,8
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,9,10
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,9,11
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,9,12
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,10,11
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,10,12
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,10,13
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,10,14
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,10,15
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,10,16
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,10,17
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,10,18
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,10,19
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,10,20
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,10,21
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,10,22
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,10,23
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,10,24
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,11,8
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,11,9
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,11,10
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,11,11
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,11,12
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,11,13
+TandT,6.970000000000001,9.89,Long Phung Beef Tendon Meat Balls (390g),0,2024,11,14
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,8,30
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,8,31
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,9,1
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,9,3
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,9,4
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,9,5
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,9,6
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,9,7
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,9,8
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,9,10
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,9,11
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,9,12
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,10,11
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,10,12
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,10,13
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,10,14
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,10,15
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,10,16
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,10,17
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,10,18
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,10,19
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,10,20
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,10,21
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,10,22
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,10,23
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,10,24
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,11,8
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,11,9
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,11,10
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,11,11
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,11,12
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,11,14
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,11,15
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,11,16
+TandT,6.970000000000001,9.89,Long Phung Beef Meatballs (390g),0,2024,11,17
+TandT,15.88,21.99,Soo Street Style Beef-Spicy (300g),0,2024,6,20
+TandT,15.88,21.99,Soo Street Style Beef-Spicy (300g),0,2024,6,21
+TandT,15.88,21.99,Soo Street Style Beef-Spicy (300g),0,2024,6,22
+TandT,15.88,21.99,Soo Street Style Beef-Spicy (300g),0,2024,6,23
+TandT,15.88,21.99,Soo Street Style Beef-Spicy (300g),0,2024,6,24
+TandT,15.88,21.99,Soo Street Style Beef-Spicy (300g),0,2024,6,25
+TandT,15.88,21.59,Soo Street Style Beef-Spicy (300g),0,2024,6,27
+TandT,15.88,21.99,Soo Street Style Beef-Spicy (300g),0,2024,6,28
+TandT,15.88,21.99,Soo Street Style Beef-Spicy (300g),0,2024,6,29
+TandT,15.88,21.99,Soo Street Style Beef-Spicy (300g),0,2024,6,30
+TandT,15.88,21.99,Soo Street Style Beef-Spicy (300g),0,2024,7,1
+TandT,15.88,21.59,Soo Street Style Beef-Spicy (300g),0,2024,7,2
+TandT,15.88,21.59,Soo Street Style Beef-Spicy (300g),0,2024,7,3
+TandT,15.88,21.99,Soo Street Style Beef-Spicy (300g),0,2024,7,4
+TandT,15.870000000000001,21.99,Soo Street Style Beef-Spicy (300g),0,2024,8,30
+TandT,15.870000000000001,21.99,Soo Street Style Beef-Spicy (300g),0,2024,8,31
+TandT,15.870000000000001,21.99,Soo Street Style Beef-Spicy (300g),0,2024,9,1
+TandT,15.870000000000001,21.99,Soo Street Style Beef-Spicy (300g),0,2024,9,2
+TandT,15.870000000000001,21.99,Soo Street Style Beef-Spicy (300g),0,2024,9,2
+TandT,15.870000000000001,21.99,Soo Street Style Beef-Spicy (300g),0,2024,9,3
+TandT,15.870000000000001,21.99,Soo Street Style Beef-Spicy (300g),0,2024,9,4
+TandT,15.870000000000001,21.99,Soo Street Style Beef-Spicy (300g),0,2024,9,5
+TandT,15.870000000000001,21.99,Soo Street Style Beef-Spicy (300g),0,2024,9,6
+TandT,15.870000000000001,21.99,Soo Street Style Beef-Spicy (300g),0,2024,9,7
+TandT,15.870000000000001,21.99,Soo Street Style Beef-Spicy (300g),0,2024,9,8
+TandT,15.870000000000001,21.99,Soo Street Style Beef-Spicy (300g),0,2024,9,10
+TandT,15.870000000000001,21.99,Soo Street Style Beef-Spicy (300g),0,2024,9,11
+TandT,15.870000000000001,21.99,Soo Street Style Beef-Spicy (300g),0,2024,11,8
+TandT,15.870000000000001,21.99,Soo Street Style Beef-Spicy (300g),0,2024,11,9
+TandT,15.870000000000001,21.99,Soo Street Style Beef-Spicy (300g),0,2024,11,10
+TandT,15.870000000000001,21.99,Soo Street Style Beef-Spicy (300g),0,2024,11,12
+TandT,15.870000000000001,21.99,Soo Street Style Beef-Spicy (300g),0,2024,11,13
+TandT,15.870000000000001,21.99,Soo Street Style Beef-Spicy (300g),0,2024,11,14
+TandT,15.870000000000001,21.99,Soo Street Style Beef-Spicy (300g),0,2024,11,15
+TandT,15.870000000000001,21.99,Soo Street Style Beef-Spicy (300g),0,2024,11,16
+TandT,15.870000000000001,21.99,Soo Street Style Beef-Spicy (300g),0,2024,11,17
+TandT,4.67,6.26,Ding Ho Beef Tendon Balls (318g),0,2024,8,23
+TandT,4.67,6.26,Ding Ho Beef Tendon Balls (318g),0,2024,8,24
+TandT,4.67,6.26,Ding Ho Beef Tendon Balls (318g),0,2024,8,25
+TandT,4.67,6.26,Ding Ho Beef Tendon Balls (318g),0,2024,8,26
+TandT,4.67,6.26,Ding Ho Beef Tendon Balls (318g),0,2024,8,28
+TandT,4.659999999999999,6.26,Ding Ho Beef Tendon Balls (318g),0,2024,9,20
+TandT,4.659999999999999,6.26,Ding Ho Beef Tendon Balls (318g),0,2024,9,21
+TandT,4.659999999999999,6.26,Ding Ho Beef Tendon Balls (318g),0,2024,9,22
+TandT,4.659999999999999,6.26,Ding Ho Beef Tendon Balls (318g),0,2024,9,23
+TandT,4.659999999999999,6.26,Ding Ho Beef Tendon Balls (318g),0,2024,9,24
+TandT,4.659999999999999,6.26,Ding Ho Beef Tendon Balls (318g),0,2024,9,25
+TandT,4.67,6.26,Ding Ho Beef Tendon Balls (318g),0,2024,10,18
+TandT,4.67,6.26,Ding Ho Beef Tendon Balls (318g),0,2024,10,19
+TandT,4.67,6.26,Ding Ho Beef Tendon Balls (318g),0,2024,10,20
+TandT,4.67,6.26,Ding Ho Beef Tendon Balls (318g),0,2024,10,21
+TandT,4.67,6.26,Ding Ho Beef Tendon Balls (318g),0,2024,10,22
+TandT,4.67,6.26,Ding Ho Beef Tendon Balls (318g),0,2024,10,23
+TandT,4.67,6.26,Ding Ho Beef Tendon Balls (318g),0,2024,10,24
+TandT,4.67,6.26,Ding Ho Beef Tendon Balls (318g),0,2024,11,15
+TandT,4.67,6.26,Ding Ho Beef Tendon Balls (318g),0,2024,11,16
+TandT,4.67,6.26,Ding Ho Beef Tendon Balls (318g),0,2024,11,17
+TandT,4.67,6.26,Ding Ho Beef Tendon Balls (318g),0,2024,11,18
+TandT,4.67,6.26,Ding Ho Beef Tendon Balls (318g),0,2024,11,19
+TandT,4.67,6.26,Ding Ho Beef Tendon Balls (318g),0,2024,11,19
+TandT,6.970000000000001,7.98,Beef Shank (3lbs),0,2024,8,3
+TandT,6.970000000000001,7.98,Beef Shank (3lbs),0,2024,8,7
+TandT,6.970000000000001,7.98,Beef Shank (3lbs),0,2024,8,8
+TandT,6.970000000000001,7.35,Beef Shank (3lbs),0,2024,8,30
+TandT,6.970000000000001,7.98,Beef Shank (3lbs),0,2024,8,31
+TandT,6.970000000000001,8.99,Beef Shank (3lbs),0,2024,9,1
+TandT,6.970000000000001,7.98,Beef Shank (3lbs),0,2024,9,2
+TandT,6.970000000000001,7.98,Beef Shank (3lbs),0,2024,9,3
+TandT,6.970000000000001,7.98,Beef Shank (3lbs),0,2024,9,4
+TandT,6.970000000000001,7.98,Beef Shank (3lbs),0,2024,9,5
+TandT,6.970000000000001,7.98,Beef Shank (3lbs),0,2024,10,4
+TandT,6.970000000000001,7.98,Beef Shank (3lbs),0,2024,10,5
+TandT,6.970000000000001,7.98,Beef Shank (3lbs),0,2024,10,6
+TandT,6.970000000000001,7.99,Beef Shank (3lbs),0,2024,10,7
+TandT,6.970000000000001,7.99,Beef Shank (3lbs),0,2024,10,8
+TandT,6.970000000000001,7.99,Beef Shank (3lbs),0,2024,10,9
+TandT,6.970000000000001,7.98,Beef Shank (3lbs),0,2024,10,10
+TandT,6.970000000000001,7.98,Beef Shank (3lbs),0,2024,11,8
+TandT,6.970000000000001,7.98,Beef Shank (3lbs),0,2024,11,9
+TandT,6.970000000000001,7.98,Beef Shank (3lbs),0,2024,11,10
+TandT,6.970000000000001,7.98,Beef Shank (3lbs),0,2024,11,11
+TandT,6.970000000000001,7.98,Beef Shank (3lbs),0,2024,11,12
+TandT,6.970000000000001,7.98,Beef Shank (3lbs),0,2024,11,13
+TandT,6.970000000000001,7.98,Beef Shank (3lbs),0,2024,11,14
+TandT,10.97,14.97,Beef Rib Eye Thin Rolls (~1.5lbs),0,2024,9,27
+TandT,10.97,14.97,Beef Rib Eye Thin Rolls (~1.5lbs),0,2024,9,28
+TandT,10.97,14.97,Beef Rib Eye Thin Rolls (~1.5lbs),0,2024,9,29
+TandT,10.97,14.97,Beef Rib Eye Thin Rolls (~1.5lbs),0,2024,9,30
+TandT,10.97,14.97,Beef Rib Eye Thin Rolls (~1.5lbs),0,2024,10,1
+TandT,10.97,14.97,Beef Rib Eye Thin Rolls (~1.5lbs),0,2024,10,2
+TandT,10.97,14.97,Beef Rib Eye Thin Rolls (~1.5lbs),0,2024,10,3
+TandT,11.97,14.97,Beef Rib Eye Thin Rolls (~1.5lbs),0,2024,11,8
+TandT,11.97,14.97,Beef Rib Eye Thin Rolls (~1.5lbs),0,2024,11,9
+TandT,11.97,14.97,Beef Rib Eye Thin Rolls (~1.5lbs),0,2024,11,10
+TandT,11.97,14.97,Beef Rib Eye Thin Rolls (~1.5lbs),0,2024,11,11
+TandT,11.97,14.97,Beef Rib Eye Thin Rolls (~1.5lbs),0,2024,11,12
+TandT,11.97,14.97,Beef Rib Eye Thin Rolls (~1.5lbs),0,2024,11,13
+TandT,11.97,14.97,Beef Rib Eye Thin Rolls (~1.5lbs),0,2024,11,14
+TandT,7.7700000000000005,8.98,Beef Shank Digital Muscle (2lbs),0,2024,6,28
+TandT,7.7700000000000005,8.98,Beef Shank Digital Muscle (2lbs),0,2024,6,29
+TandT,7.7700000000000005,8.98,Beef Shank Digital Muscle (2lbs),0,2024,6,30
+TandT,7.7700000000000005,8.98,Beef Shank Digital Muscle (2lbs),0,2024,7,1
+TandT,7.970000000000001,8.98,Beef Shank Digital Muscle (2lbs),0,2024,11,1
+TandT,7.970000000000001,8.98,Beef Shank Digital Muscle (2lbs),0,2024,11,2
+TandT,7.970000000000001,8.98,Beef Shank Digital Muscle (2lbs),0,2024,11,3
+TandT,13.97,15.97,Angus Beef Short Rib (4lbs),0,2024,8,16
+TandT,13.97,15.97,Angus Beef Short Rib (4lbs),0,2024,8,17
+TandT,13.97,15.97,Angus Beef Short Rib (4lbs),0,2024,8,18
+TandT,13.97,15.97,Angus Beef Short Rib (4lbs),0,2024,8,19
+TandT,13.97,15.97,Angus Beef Short Rib (4lbs),0,2024,8,20
+TandT,13.97,15.97,Angus Beef Short Rib (4lbs),0,2024,8,21
+TandT,13.97,15.97,Angus Beef Short Rib (4lbs),0,2024,8,22
+TandT,13.97,14.7,Angus Beef Short Rib (4lbs),0,2024,8,30
+TandT,13.97,15.97,Angus Beef Short Rib (4lbs),0,2024,8,31
+TandT,13.97,15.98,Angus Beef Short Rib (4lbs),0,2024,9,1
+TandT,13.97,14.7,Angus Beef Short Rib (4lbs),0,2024,9,9
+TandT,13.97,14.7,Angus Beef Short Rib (4lbs),0,2024,9,12
+TandT,12.97,13.97,Angus Beef Short Rib (4lbs),0,2024,9,20
+TandT,12.97,13.97,Angus Beef Short Rib (4lbs),0,2024,9,21
+TandT,12.97,13.97,Angus Beef Short Rib (4lbs),0,2024,9,22
+TandT,12.97,13.97,Angus Beef Short Rib (4lbs),0,2024,9,23
+TandT,12.97,13.97,Angus Beef Short Rib (4lbs),0,2024,9,24
+TandT,12.97,13.97,Angus Beef Short Rib (4lbs),0,2024,9,25
+TandT,12.97,13.97,Angus Beef Short Rib (4lbs),0,2024,9,26
+TandT,12.97,13.97,Angus Beef Short Rib (4lbs),0,2024,10,4
+TandT,12.97,13.99,Angus Beef Short Rib (4lbs),0,2024,10,5
+TandT,12.97,13.97,Angus Beef Short Rib (4lbs),0,2024,10,6
+TandT,12.97,13.99,Angus Beef Short Rib (4lbs),0,2024,10,7
+TandT,12.97,13.99,Angus Beef Short Rib (4lbs),0,2024,10,8
+TandT,12.97,13.99,Angus Beef Short Rib (4lbs),0,2024,10,9
+TandT,12.97,13.97,Angus Beef Short Rib (4lbs),0,2024,10,10
+TandT,12.97,13.97,Angus Beef Short Rib (4lbs),0,2024,11,1
+TandT,12.97,13.97,Angus Beef Short Rib (4lbs),0,2024,11,2
+TandT,12.97,13.97,Angus Beef Short Rib (4lbs),0,2024,11,3
+TandT,12.97,13.97,Angus Beef Short Rib (4lbs),0,2024,11,4
+TandT,12.97,13.97,Angus Beef Short Rib (4lbs),0,2024,11,5
+TandT,12.97,13.97,Angus Beef Short Rib (4lbs),0,2024,11,6
+TandT,12.97,13.97,Angus Beef Short Rib (4lbs),0,2024,11,7
+TandT,16.97,21,Beef Chuck Flat Slices (2lbs),0,2024,8,8
+TandT,16.97,20,Beef Chuck Flat Slices (2lbs),0,2024,8,9
+TandT,16.97,20,Beef Chuck Flat Slices (2lbs),0,2024,8,10
+TandT,16.97,21,Beef Chuck Flat Slices (2lbs),0,2024,8,11
+TandT,16.97,21,Beef Chuck Flat Slices (2lbs),0,2024,8,12
+TandT,16.97,21,Beef Chuck Flat Slices (2lbs),0,2024,8,13
+TandT,16.97,21,Beef Chuck Flat Slices (2lbs),0,2024,8,14
+TandT,16.97,20,Beef Chuck Flat Slices (2lbs),0,2024,8,15
+TandT,16.97,21,Beef Chuck Flat Slices (2lbs),0,2024,9,6
+TandT,16.97,21,Beef Chuck Flat Slices (2lbs),0,2024,9,7
+TandT,16.97,21,Beef Chuck Flat Slices (2lbs),0,2024,9,8
+TandT,16.97,20,Beef Chuck Flat Slices (2lbs),0,2024,9,9
+TandT,16.97,21,Beef Chuck Flat Slices (2lbs),0,2024,9,10
+TandT,16.97,21,Beef Chuck Flat Slices (2lbs),0,2024,9,11
+TandT,16.97,20,Beef Chuck Flat Slices (2lbs),0,2024,9,12
+TandT,9.98,11.97,Angus Beef Chuck Roll (2lbs),0,2024,6,15
+TandT,9.98,11.97,Angus Beef Chuck Roll (2lbs),0,2024,6,16
+TandT,9.98,11.97,Angus Beef Chuck Roll (2lbs),0,2024,6,19
+TandT,9.98,11.97,Angus Beef Chuck Roll (2lbs),0,2024,6,20
+TandT,9.97,11.97,Angus Beef Chuck Roll (2lbs),0,2024,7,19
+TandT,9.97,11.97,Angus Beef Chuck Roll (2lbs),0,2024,7,20
+TandT,9.97,11.97,Angus Beef Chuck Roll (2lbs),0,2024,7,22
+TandT,8.97,11.97,Angus Beef Chuck Roll (2lbs),0,2024,8,16
+TandT,8.97,11.97,Angus Beef Chuck Roll (2lbs),0,2024,8,17
+TandT,8.97,11.97,Angus Beef Chuck Roll (2lbs),0,2024,8,18
+TandT,8.97,11.97,Angus Beef Chuck Roll (2lbs),0,2024,8,19
+TandT,8.97,11.97,Angus Beef Chuck Roll (2lbs),0,2024,8,20
+TandT,8.97,11.97,Angus Beef Chuck Roll (2lbs),0,2024,8,21
+TandT,8.97,11.97,Angus Beef Chuck Roll (2lbs),0,2024,8,22
+TandT,9.97,11.97,Angus Beef Chuck Roll (2lbs),0,2024,9,6
+TandT,9.97,11.97,Angus Beef Chuck Roll (2lbs),0,2024,9,7
+TandT,9.97,11.97,Angus Beef Chuck Roll (2lbs),0,2024,9,8
+TandT,9.97,10.98,Angus Beef Chuck Roll (2lbs),0,2024,9,9
+TandT,9.97,11.97,Angus Beef Chuck Roll (2lbs),0,2024,9,10
+TandT,9.97,11.97,Angus Beef Chuck Roll (2lbs),0,2024,9,11
+TandT,9.97,10.98,Angus Beef Chuck Roll (2lbs),0,2024,9,12
+TandT,9.97,11.97,Angus Beef Chuck Roll (2lbs),0,2024,10,11
+TandT,9.97,11.97,Angus Beef Chuck Roll (2lbs),0,2024,10,12
+TandT,9.97,10.99,Angus Beef Chuck Roll (2lbs),0,2024,10,13
+TandT,9.97,11.97,Angus Beef Chuck Roll (2lbs),0,2024,10,14
+TandT,9.97,11.97,Angus Beef Chuck Roll (2lbs),0,2024,10,15
+TandT,9.97,11.97,Angus Beef Chuck Roll (2lbs),0,2024,10,16
+TandT,9.97,11.97,Angus Beef Chuck Roll (2lbs),0,2024,10,17
+TandT,7.970000000000001,8.98,Beef Flank Plate (2.5lbs),0,2024,10,25
+TandT,7.970000000000001,8.98,Beef Flank Plate (2.5lbs),0,2024,10,26
+TandT,7.970000000000001,8.98,Beef Flank Plate (2.5lbs),0,2024,10,27
+TandT,7.970000000000001,8.98,Beef Flank Plate (2.5lbs),0,2024,10,28
+TandT,7.970000000000001,8.98,Beef Flank Plate (2.5lbs),0,2024,10,29
+TandT,7.970000000000001,8.98,Beef Flank Plate (2.5lbs),0,2024,10,30
+TandT,7.970000000000001,8.98,Beef Flank Plate (2.5lbs),0,2024,10,31
+TandT,7.970000000000001,8.98,Beef Flank Plate (2.5lbs),0,2024,11,1
+TandT,7.970000000000001,8.98,Beef Flank Plate (2.5lbs),0,2024,11,2
+TandT,7.970000000000001,8.98,Beef Flank Plate (2.5lbs),0,2024,11,3
+TandT,7.970000000000001,8.98,Beef Flank Plate (2.5lbs),0,2024,11,4
+TandT,7.970000000000001,8.98,Beef Flank Plate (2.5lbs),0,2024,11,5
+TandT,7.970000000000001,8.98,Beef Flank Plate (2.5lbs),0,2024,11,6
+TandT,7.970000000000001,8.98,Beef Flank Plate (2.5lbs),0,2024,11,7
+TandT,11.97,15.99,Black Angus Beef Slice (300g),0,2024,6,20
+TandT,11.97,15.99,Black Angus Beef Slice (300g),0,2024,6,21
+TandT,11.97,15.99,Black Angus Beef Slice (300g),0,2024,6,22
+TandT,11.97,15.99,Black Angus Beef Slice (300g),0,2024,6,23
+TandT,11.97,15.99,Black Angus Beef Slice (300g),0,2024,6,24
+TandT,11.97,15.99,Black Angus Beef Slice (300g),0,2024,6,25
+TandT,11.97,13.99,Black Angus Beef Slice (300g),0,2024,6,27
+TandT,10.97,15.99,Black Angus Beef Slice (300g),0,2024,7,26
+TandT,10.97,13.99,Black Angus Beef Slice (300g),0,2024,7,28
+TandT,10.99,13.99,Black Angus Beef Slice (300g),0,2024,8,6
+TandT,10.99,15.99,Black Angus Beef Slice (300g),0,2024,8,7
+TandT,10.99,15.99,Black Angus Beef Slice (300g),0,2024,8,8
+TandT,10.99,13.99,Black Angus Beef Slice (300g),0,2024,8,9
+TandT,10.99,13.99,Black Angus Beef Slice (300g),0,2024,8,10
+TandT,10.99,15.99,Black Angus Beef Slice (300g),0,2024,8,11
+TandT,10.99,15.99,Black Angus Beef Slice (300g),0,2024,8,12
+TandT,10.99,15.99,Black Angus Beef Slice (300g),0,2024,8,13
+TandT,10.99,15.99,Black Angus Beef Slice (300g),0,2024,8,14
+TandT,10.99,13.99,Black Angus Beef Slice (300g),0,2024,8,15
+TandT,11.97,15.99,Black Angus Beef Slice (300g),0,2024,9,20
+TandT,11.97,15.99,Black Angus Beef Slice (300g),0,2024,9,21
+TandT,11.97,13.99,Black Angus Beef Slice (300g),0,2024,9,22
+TandT,11.97,15.99,Black Angus Beef Slice (300g),0,2024,9,23
+TandT,11.97,15.99,Black Angus Beef Slice (300g),0,2024,9,24
+TandT,11.97,13.99,Black Angus Beef Slice (300g),0,2024,9,25
+TandT,11.97,15.99,Black Angus Beef Slice (300g),0,2024,9,26
+TandT,23.979999999999997,24.99,Angus Beef Striploin Steak (2lbs),0,2024,6,21
+TandT,23.979999999999997,24.99,Angus Beef Striploin Steak (2lbs),0,2024,6,22
+TandT,23.979999999999997,24.99,Angus Beef Striploin Steak (2lbs),0,2024,6,23
+TandT,23.979999999999997,24.99,Angus Beef Striploin Steak (2lbs),0,2024,6,24
+TandT,23.979999999999997,24.99,Angus Beef Striploin Steak (2lbs),0,2024,6,25
+TandT,23.979999999999997,25.99,Angus Beef Striploin Steak (2lbs),0,2024,6,27
+TandT,23.97,24.99,Angus Beef Striploin Steak (2lbs),0,2024,7,26
+TandT,23.97,25.99,Angus Beef Striploin Steak (2lbs),0,2024,7,28
+TandT,23.97,24.99,Angus Beef Striploin Steak (2lbs),0,2024,7,29
+TandT,15.97,25.99,Angus Beef Striploin Steak (2lbs),0,2024,9,27
+TandT,15.97,25.99,Angus Beef Striploin Steak (2lbs),0,2024,9,28
+TandT,15.97,25.99,Angus Beef Striploin Steak (2lbs),0,2024,9,29
+TandT,15.97,24.99,Angus Beef Striploin Steak (2lbs),0,2024,9,30
+TandT,15.97,24.99,Angus Beef Striploin Steak (2lbs),0,2024,10,1
+TandT,15.97,25.99,Angus Beef Striploin Steak (2lbs),0,2024,10,2
+TandT,15.97,25.99,Angus Beef Striploin Steak (2lbs),0,2024,10,3
+TandT,19.97,25.99,Angus Beef Striploin Steak (2lbs),0,2024,11,8
+TandT,19.97,25.99,Angus Beef Striploin Steak (2lbs),0,2024,11,9
+TandT,19.97,25.99,Angus Beef Striploin Steak (2lbs),0,2024,11,10
+TandT,12.370000000000001,13.97,Fresh Beef Oxtail (3lbs),0,2024,7,19
+TandT,12.370000000000001,13.97,Fresh Beef Oxtail (3lbs),0,2024,7,20
+TandT,12.370000000000001,13.97,Fresh Beef Oxtail (3lbs),0,2024,7,22
+TandT,11.97,13.97,Fresh Beef Oxtail (3lbs),0,2024,8,16
+TandT,11.97,13.97,Fresh Beef Oxtail (3lbs),0,2024,8,17
+TandT,11.97,13.97,Fresh Beef Oxtail (3lbs),0,2024,8,18
+TandT,11.97,13.97,Fresh Beef Oxtail (3lbs),0,2024,8,19
+TandT,11.97,13.97,Fresh Beef Oxtail (3lbs),0,2024,8,20
+TandT,11.97,13.97,Fresh Beef Oxtail (3lbs),0,2024,8,21
+TandT,11.97,13.97,Fresh Beef Oxtail (3lbs),0,2024,8,22
+TandT,11.97,12.97,Fresh Beef Oxtail (3lbs),0,2024,8,30
+TandT,11.97,13.97,Fresh Beef Oxtail (3lbs),0,2024,8,31
+TandT,11.97,14.99,Fresh Beef Oxtail (3lbs),0,2024,9,1
+TandT,11.97,13.97,Fresh Beef Oxtail (3lbs),0,2024,9,2
+TandT,11.97,13.97,Fresh Beef Oxtail (3lbs),0,2024,9,3
+TandT,11.97,13.97,Fresh Beef Oxtail (3lbs),0,2024,9,4
+TandT,11.97,13.97,Fresh Beef Oxtail (3lbs),0,2024,9,5
+TandT,11.97,12.97,Fresh Beef Oxtail (3lbs),0,2024,9,13
+TandT,11.97,12.97,Fresh Beef Oxtail (3lbs),0,2024,9,14
+TandT,11.97,13.97,Fresh Beef Oxtail (3lbs),0,2024,9,15
+TandT,11.97,12.97,Fresh Beef Oxtail (3lbs),0,2024,9,16
+TandT,11.97,13.97,Fresh Beef Oxtail (3lbs),0,2024,9,17
+TandT,11.97,13.97,Fresh Beef Oxtail (3lbs),0,2024,9,18
+TandT,11.97,12.97,Fresh Beef Oxtail (3lbs),0,2024,9,19
+TandT,11.97,13.97,Fresh Beef Oxtail (3lbs),0,2024,10,4
+TandT,11.97,13.97,Fresh Beef Oxtail (3lbs),0,2024,10,5
+TandT,11.97,13.97,Fresh Beef Oxtail (3lbs),0,2024,10,6
+TandT,11.97,13.99,Fresh Beef Oxtail (3lbs),0,2024,10,7
+TandT,11.97,13.97,Fresh Beef Oxtail (3lbs),0,2024,10,18
+TandT,11.97,13.97,Fresh Beef Oxtail (3lbs),0,2024,10,19
+TandT,11.97,13.97,Fresh Beef Oxtail (3lbs),0,2024,10,20
+TandT,11.97,13.97,Fresh Beef Oxtail (3lbs),0,2024,10,21
+TandT,11.97,13.97,Fresh Beef Oxtail (3lbs),0,2024,10,22
+TandT,11.97,13.97,Fresh Beef Oxtail (3lbs),0,2024,10,23
+TandT,11.97,12.97,Fresh Beef Oxtail (3lbs),0,2024,10,24
+TandT,11.97,12.97,Fresh Beef Oxtail (3lbs),0,2024,11,1
+TandT,11.97,12.97,Fresh Beef Oxtail (3lbs),0,2024,11,2
+TandT,11.97,12.97,Fresh Beef Oxtail (3lbs),0,2024,11,3
+TandT,11.97,12.97,Fresh Beef Oxtail (3lbs),0,2024,11,4
+TandT,11.97,12.97,Fresh Beef Oxtail (3lbs),0,2024,11,5
+TandT,11.97,12.97,Fresh Beef Oxtail (3lbs),0,2024,11,6
+TandT,11.97,12.97,Fresh Beef Oxtail (3lbs),0,2024,11,7
+TandT,8.58,9.98,Angus Beef Eye Of Round Steak (2lbs),0,2024,6,14
+TandT,8.58,11.97,Angus Beef Eye Of Round Steak (2lbs),0,2024,6,15
+TandT,8.58,11.97,Angus Beef Eye Of Round Steak (2lbs),0,2024,6,16
+TandT,8.58,11.97,Angus Beef Eye Of Round Steak (2lbs),0,2024,6,19
+TandT,8.58,11.97,Angus Beef Eye Of Round Steak (2lbs),0,2024,6,20
+TandT,8.58,11.97,Angus Beef Eye Of Round Steak (2lbs),0,2024,6,21
+TandT,8.58,11.97,Angus Beef Eye Of Round Steak (2lbs),0,2024,6,22
+TandT,8.58,11.97,Angus Beef Eye Of Round Steak (2lbs),0,2024,6,23
+TandT,8.58,11.97,Angus Beef Eye Of Round Steak (2lbs),0,2024,6,24
+TandT,8.58,11.97,Angus Beef Eye Of Round Steak (2lbs),0,2024,6,25
+TandT,8.58,9.98,Angus Beef Eye Of Round Steak (2lbs),0,2024,6,27
+TandT,8.57,11.97,Angus Beef Eye Of Round Steak (2lbs),0,2024,7,5
+TandT,8.57,11.97,Angus Beef Eye Of Round Steak (2lbs),0,2024,7,8
+TandT,8.97,11.97,Angus Beef Eye Of Round Steak (2lbs),0,2024,10,25
+TandT,8.97,11.97,Angus Beef Eye Of Round Steak (2lbs),0,2024,10,26
+TandT,8.97,11.97,Angus Beef Eye Of Round Steak (2lbs),0,2024,10,27
+TandT,8.97,9.98,Angus Beef Eye Of Round Steak (2lbs),0,2024,10,28
+TandT,8.97,9.98,Angus Beef Eye Of Round Steak (2lbs),0,2024,10,29
+TandT,8.97,9.98,Angus Beef Eye Of Round Steak (2lbs),0,2024,10,30
+TandT,8.97,9.98,Angus Beef Eye Of Round Steak (2lbs),0,2024,10,31
+TandT,8.97,9.98,Angus Beef Eye Of Round Steak (2lbs),0,2024,11,15
+TandT,8.97,9.98,Angus Beef Eye Of Round Steak (2lbs),0,2024,11,16
+TandT,8.97,9.98,Angus Beef Eye Of Round Steak (2lbs),0,2024,11,17
+TandT,8.97,9.98,Angus Beef Eye Of Round Steak (2lbs),0,2024,11,18
+TandT,8.97,9.98,Angus Beef Eye Of Round Steak (2lbs),0,2024,11,19
+TandT,8.97,9.98,Angus Beef Eye Of Round Steak (2lbs),0,2024,11,19
+TandT,8.97,9.98,Angus Beef Eye Of Round Steak (2lbs),0,2024,11,20
+TandT,11.97,13.97,Frozen Sliced Beef Ribeye (2.6lbs),0,2024,8,30
+TandT,11.97,13.97,Frozen Sliced Beef Ribeye (2.6lbs),0,2024,8,31
+TandT,11.97,13.99,Frozen Sliced Beef Ribeye (2.6lbs),0,2024,9,1
+TandT,11.97,13.97,Frozen Sliced Beef Ribeye (2.6lbs),0,2024,9,2
+TandT,11.97,13.97,Frozen Sliced Beef Ribeye (2.6lbs),0,2024,9,3
+TandT,11.97,13.97,Frozen Sliced Beef Ribeye (2.6lbs),0,2024,9,4
+TandT,11.97,13.97,Frozen Sliced Beef Ribeye (2.6lbs),0,2024,9,5
+TandT,11.97,13.97,Frozen Sliced Beef Ribeye (2.6lbs),0,2024,10,11
+TandT,11.97,13.97,Frozen Sliced Beef Ribeye (2.6lbs),0,2024,10,12
+TandT,11.97,13.99,Frozen Sliced Beef Ribeye (2.6lbs),0,2024,10,13
+TandT,11.97,13.97,Frozen Sliced Beef Ribeye (2.6lbs),0,2024,10,14
+TandT,11.97,13.97,Frozen Sliced Beef Ribeye (2.6lbs),0,2024,10,15
+TandT,11.97,13.97,Frozen Sliced Beef Ribeye (2.6lbs),0,2024,10,16
+TandT,11.97,13.99,Frozen Sliced Beef Ribeye (2.6lbs),0,2024,10,17
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,7,12
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,7,13
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,7,14
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,7,15
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,7,16
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,7,17
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,7,18
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,8,8
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,8,9
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,8,10
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,8,11
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,8,12
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,8,13
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,8,14
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,8,15
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,8,30
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,8,31
+TandT,6.970000000000001,8.99,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,9,1
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,9,2
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,9,3
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,9,4
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,9,5
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,9,6
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,9,7
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,9,8
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,9,9
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,9,10
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,9,11
+TandT,6.970000000000001,8.98,Frozen Beef Rib Finger Meat (4.5lbs),0,2024,9,12
+TandT,4.37,6.99,Beef Back Rib (3.5lbs),0,2024,7,19
+TandT,4.37,6.99,Beef Back Rib (3.5lbs),0,2024,7,20
+TandT,4.37,6.99,Beef Back Rib (3.5lbs),0,2024,7,22
+TandT,4.57,4.99,Beef Back Rib (3.5lbs),0,2024,8,6
+TandT,4.57,6.99,Beef Back Rib (3.5lbs),0,2024,8,7
+TandT,4.57,6.99,Beef Back Rib (3.5lbs),0,2024,8,8
+TandT,12.97,16.01,Fresh Beef  New York Striploin (2lbs),0,2024,8,30
+TandT,12.97,17.01,Fresh Beef  New York Striploin (2lbs),0,2024,8,31
+TandT,12.97,16.99,Fresh Beef  New York Striploin (2lbs),0,2024,9,1
+TandT,12.97,17.01,Fresh Beef  New York Striploin (2lbs),0,2024,9,2
+TandT,12.97,17.01,Fresh Beef  New York Striploin (2lbs),0,2024,9,3
+TandT,12.97,17.01,Fresh Beef  New York Striploin (2lbs),0,2024,9,4
+TandT,12.97,17.01,Fresh Beef  New York Striploin (2lbs),0,2024,9,5
+TandT,11.97,17.01,Fresh Beef  New York Striploin (2lbs),0,2024,9,20
+TandT,11.97,17.01,Fresh Beef  New York Striploin (2lbs),0,2024,9,21
+TandT,11.97,16.01,Fresh Beef  New York Striploin (2lbs),0,2024,9,22
+TandT,11.97,17.01,Fresh Beef  New York Striploin (2lbs),0,2024,9,23
+TandT,11.97,17.01,Fresh Beef  New York Striploin (2lbs),0,2024,9,24
+TandT,11.97,16.01,Fresh Beef  New York Striploin (2lbs),0,2024,9,25
+TandT,11.97,17.01,Fresh Beef  New York Striploin (2lbs),0,2024,9,26
+TandT,11.97,17.01,Fresh Beef  New York Striploin (2lbs),0,2024,10,4
+TandT,11.97,17.01,Fresh Beef  New York Striploin (2lbs),0,2024,10,5
+TandT,11.97,17.01,Fresh Beef  New York Striploin (2lbs),0,2024,10,6
+TandT,11.97,15.99,Fresh Beef  New York Striploin (2lbs),0,2024,10,7
+TandT,11.97,15.99,Fresh Beef  New York Striploin (2lbs),0,2024,10,8
+TandT,11.97,15.99,Fresh Beef  New York Striploin (2lbs),0,2024,10,9
+TandT,11.97,17.01,Fresh Beef  New York Striploin (2lbs),0,2024,10,10
+TandT,11.97,17.01,Fresh Beef  New York Striploin (2lbs),0,2024,11,15
+TandT,11.97,16.01,Fresh Beef  New York Striploin (2lbs),0,2024,11,16
+TandT,11.97,16.01,Fresh Beef  New York Striploin (2lbs),0,2024,11,17
+TandT,11.97,16.01,Fresh Beef  New York Striploin (2lbs),0,2024,11,18
+TandT,11.97,16.01,Fresh Beef  New York Striploin (2lbs),0,2024,11,19
+TandT,11.97,16.01,Fresh Beef  New York Striploin (2lbs),0,2024,11,19
+TandT,11.97,16.01,Fresh Beef  New York Striploin (2lbs),0,2024,11,20
+TandT,11.99,14.99,Sunshine Ranch Sliced Beef Roll (300g),0,2024,8,6
+TandT,11.99,14.99,Sunshine Ranch Sliced Beef Roll (300g),0,2024,8,9
+TandT,11.99,14.99,Sunshine Ranch Sliced Beef Roll (300g),0,2024,8,10
+TandT,11.99,14.99,Sunshine Ranch Sliced Beef Roll (300g),0,2024,8,15
+TandT,14.97,17.01,RWA Beef Short Ribs (3lbs),0,2024,8,8
+TandT,14.97,15.88,RWA Beef Short Ribs (3lbs),0,2024,8,9
+TandT,14.97,15.88,RWA Beef Short Ribs (3lbs),0,2024,8,10
+TandT,14.97,17.01,RWA Beef Short Ribs (3lbs),0,2024,8,11
+TandT,14.97,17.01,RWA Beef Short Ribs (3lbs),0,2024,8,12
+TandT,14.97,17.01,RWA Beef Short Ribs (3lbs),0,2024,8,13
+TandT,14.97,17.01,RWA Beef Short Ribs (3lbs),0,2024,8,14
+TandT,14.97,15.88,RWA Beef Short Ribs (3lbs),0,2024,8,15
+TandT,13.97,17.01,RWA Beef Short Ribs (3lbs),0,2024,10,11
+TandT,13.97,17.01,RWA Beef Short Ribs (3lbs),0,2024,10,12
+TandT,13.97,17.01,RWA Beef Short Ribs (3lbs),0,2024,10,13
+TandT,13.97,17.01,RWA Beef Short Ribs (3lbs),0,2024,10,14
+TandT,14.97,15.69,RWA Beef Short Ribs (3lbs),0,2024,11,8
+TandT,14.97,15.69,RWA Beef Short Ribs (3lbs),0,2024,11,9
+TandT,14.97,15.69,RWA Beef Short Ribs (3lbs),0,2024,11,10
+TandT,14.97,15.69,RWA Beef Short Ribs (3lbs),0,2024,11,11
+TandT,14.97,15.69,RWA Beef Short Ribs (3lbs),0,2024,11,12
+TandT,14.97,15.69,RWA Beef Short Ribs (3lbs),0,2024,11,13
+TandT,14.97,15.69,RWA Beef Short Ribs (3lbs),0,2024,11,14
+TandT,15.98,20,Angus Beef Flank Steak (2lbs),0,2024,6,21
+TandT,15.98,20,Angus Beef Flank Steak (2lbs),0,2024,6,22
+TandT,15.98,20,Angus Beef Flank Steak (2lbs),0,2024,6,23
+TandT,15.98,20,Angus Beef Flank Steak (2lbs),0,2024,6,24
+TandT,15.98,20,Angus Beef Flank Steak (2lbs),0,2024,6,25
+TandT,15.98,18.01,Angus Beef Flank Steak (2lbs),0,2024,6,27
+TandT,16.97,20,Angus Beef Flank Steak (2lbs),0,2024,7,5
+TandT,16.97,20,Angus Beef Flank Steak (2lbs),0,2024,7,8
+TandT,15.97,20,Angus Beef Flank Steak (2lbs),0,2024,10,25
+TandT,15.97,20,Angus Beef Flank Steak (2lbs),0,2024,10,26
+TandT,15.97,20,Angus Beef Flank Steak (2lbs),0,2024,10,27
+TandT,15.97,18.01,Angus Beef Flank Steak (2lbs),0,2024,10,28
+TandT,15.97,18.01,Angus Beef Flank Steak (2lbs),0,2024,10,29
+TandT,15.97,18.01,Angus Beef Flank Steak (2lbs),0,2024,10,30
+TandT,15.97,18.01,Angus Beef Flank Steak (2lbs),0,2024,10,31
+TandT,9.97,10.98,Rwa Boneless Beef Chuck Eye Roll (2lbs),0,2024,10,18
+TandT,9.97,10.98,Rwa Boneless Beef Chuck Eye Roll (2lbs),0,2024,10,19
+TandT,9.97,10.98,Rwa Boneless Beef Chuck Eye Roll (2lbs),0,2024,10,20
+TandT,9.97,10.98,Rwa Boneless Beef Chuck Eye Roll (2lbs),0,2024,10,21
+TandT,9.97,10.98,Rwa Boneless Beef Chuck Eye Roll (2lbs),0,2024,10,22
+TandT,9.97,10.98,Rwa Boneless Beef Chuck Eye Roll (2lbs),0,2024,10,23
+TandT,9.97,10.98,Rwa Boneless Beef Chuck Eye Roll (2lbs),0,2024,10,24
+TandT,9.97,10.98,Rwa Boneless Beef Chuck Eye Roll (2lbs),0,2024,11,15
+TandT,9.97,10.98,Rwa Boneless Beef Chuck Eye Roll (2lbs),0,2024,11,16
+TandT,9.97,10.98,Rwa Boneless Beef Chuck Eye Roll (2lbs),0,2024,11,17
+TandT,9.97,10.98,Rwa Boneless Beef Chuck Eye Roll (2lbs),0,2024,11,18
+TandT,9.97,10.98,Rwa Boneless Beef Chuck Eye Roll (2lbs),0,2024,11,19
+TandT,9.97,10.98,Rwa Boneless Beef Chuck Eye Roll (2lbs),0,2024,11,19
+TandT,9.97,10.98,Rwa Boneless Beef Chuck Eye Roll (2lbs),0,2024,11,20
+TandT,18.979999999999997,20,Angus Beef Flank Meat (2lbs),0,2024,6,14
+TandT,18.979999999999997,24.99,Angus Beef Flank Meat (2lbs),0,2024,6,15
+TandT,18.979999999999997,24.99,Angus Beef Flank Meat (2lbs),0,2024,6,16
+TandT,18.979999999999997,24.99,Angus Beef Flank Meat (2lbs),0,2024,6,19
+TandT,18.979999999999997,24.99,Angus Beef Flank Meat (2lbs),0,2024,6,20
+TandT,18.979999999999997,24.99,Angus Beef Flank Meat (2lbs),0,2024,6,21
+TandT,18.979999999999997,24.99,Angus Beef Flank Meat (2lbs),0,2024,6,22
+TandT,18.979999999999997,24.99,Angus Beef Flank Meat (2lbs),0,2024,6,23
+TandT,18.979999999999997,24.99,Angus Beef Flank Meat (2lbs),0,2024,6,24
+TandT,18.979999999999997,24.99,Angus Beef Flank Meat (2lbs),0,2024,6,25
+TandT,18.979999999999997,20,Angus Beef Flank Meat (2lbs),0,2024,6,27
+TandT,18.97,22,Angus Beef Flank Meat (2lbs),0,2024,8,30
+TandT,18.97,24.99,Angus Beef Flank Meat (2lbs),0,2024,8,31
+TandT,18.97,24.99,Angus Beef Flank Meat (2lbs),0,2024,9,1
+TandT,18.97,24.99,Angus Beef Flank Meat (2lbs),0,2024,9,2
+TandT,18.97,24.99,Angus Beef Flank Meat (2lbs),0,2024,9,3
+TandT,18.97,24.99,Angus Beef Flank Meat (2lbs),0,2024,9,4
+TandT,18.97,24.99,Angus Beef Flank Meat (2lbs),0,2024,9,5
+TandT,15.97,24.99,Angus Beef Flank Meat (2lbs),0,2024,10,18
+TandT,15.97,24.99,Angus Beef Flank Meat (2lbs),0,2024,10,19
+TandT,15.97,24.99,Angus Beef Flank Meat (2lbs),0,2024,10,20
+TandT,15.97,24.99,Angus Beef Flank Meat (2lbs),0,2024,10,21
+TandT,15.97,24.99,Angus Beef Flank Meat (2lbs),0,2024,10,22
+TandT,15.97,24.99,Angus Beef Flank Meat (2lbs),0,2024,10,23
+TandT,15.97,23,Angus Beef Flank Meat (2lbs),0,2024,10,24
+TandT,15.97,23,Angus Beef Flank Meat (2lbs),0,2024,11,15
+TandT,15.97,23,Angus Beef Flank Meat (2lbs),0,2024,11,16
+TandT,15.97,23,Angus Beef Flank Meat (2lbs),0,2024,11,17
+TandT,15.97,23,Angus Beef Flank Meat (2lbs),0,2024,11,18
+TandT,15.97,23,Angus Beef Flank Meat (2lbs),0,2024,11,19
+TandT,15.97,23,Angus Beef Flank Meat (2lbs),0,2024,11,19
+TandT,15.97,23,Angus Beef Flank Meat (2lbs),0,2024,11,20
+TandT,6.88,9.67,Hohoho Beef Tendon Balls (370g),0,2024,6,11
+TandT,6.88,9.49,Hohoho Beef Tendon Balls (370g),0,2024,6,12
+TandT,6.88,9.67,Hohoho Beef Tendon Balls (370g),0,2024,7,5
+TandT,6.88,9.67,Hohoho Beef Tendon Balls (370g),0,2024,7,8
+TandT,6.88,9.67,Hohoho Beef Tendon Balls (370g),0,2024,7,9
+TandT,6.88,9.67,Hohoho Beef Tendon Balls (370g),0,2024,7,10
+TandT,6.87,9.67,Hohoho Beef Tendon Balls (370g),0,2024,8,6
+TandT,6.87,9.67,Hohoho Beef Tendon Balls (370g),0,2024,8,7
+TandT,6.87,9.67,Hohoho Beef Tendon Balls (370g),0,2024,8,8
+TandT,6.859999999999999,9.67,Hohoho Beef Tendon Balls (370g),0,2024,8,30
+TandT,6.859999999999999,9.67,Hohoho Beef Tendon Balls (370g),0,2024,8,31
+TandT,6.859999999999999,9.67,Hohoho Beef Tendon Balls (370g),0,2024,9,1
+TandT,6.859999999999999,9.67,Hohoho Beef Tendon Balls (370g),0,2024,9,2
+TandT,6.859999999999999,9.67,Hohoho Beef Tendon Balls (370g),0,2024,9,3
+TandT,6.859999999999999,9.67,Hohoho Beef Tendon Balls (370g),0,2024,9,4
+TandT,6.859999999999999,9.67,Hohoho Beef Tendon Balls (370g),0,2024,9,5
+TandT,6.87,9.67,Hohoho Beef Tendon Balls (370g),0,2024,9,27
+TandT,6.87,9.67,Hohoho Beef Tendon Balls (370g),0,2024,9,28
+TandT,6.87,9.67,Hohoho Beef Tendon Balls (370g),0,2024,9,29
+TandT,6.87,9.67,Hohoho Beef Tendon Balls (370g),0,2024,9,30
+TandT,6.87,9.67,Hohoho Beef Tendon Balls (370g),0,2024,10,1
+TandT,6.87,9.67,Hohoho Beef Tendon Balls (370g),0,2024,10,2
+TandT,6.87,9.67,Hohoho Beef Tendon Balls (370g),0,2024,10,3
+TandT,6.859999999999999,9.67,Hohoho Beef Tendon Balls (370g),0,2024,10,25
+TandT,6.859999999999999,9.67,Hohoho Beef Tendon Balls (370g),0,2024,10,26
+TandT,6.859999999999999,9.67,Hohoho Beef Tendon Balls (370g),0,2024,10,27
+TandT,6.859999999999999,9.67,Hohoho Beef Tendon Balls (370g),0,2024,10,28
+TandT,6.859999999999999,9.67,Hohoho Beef Tendon Balls (370g),0,2024,10,29
+TandT,6.859999999999999,9.67,Hohoho Beef Tendon Balls (370g),0,2024,10,30
+TandT,6.859999999999999,9.67,Hohoho Beef Tendon Balls (370g),0,2024,10,31
+TandT,6.88,9.67,Hohoho Black Pepper Beef Balls (370g),0,2024,6,11
+TandT,6.88,9.49,Hohoho Black Pepper Beef Balls (370g),0,2024,6,12
+TandT,6.88,9.49,Hohoho Black Pepper Beef Balls (370g),0,2024,6,13
+TandT,6.88,9.67,Hohoho Black Pepper Beef Balls (370g),0,2024,7,5
+TandT,6.88,9.67,Hohoho Black Pepper Beef Balls (370g),0,2024,7,8
+TandT,6.88,9.67,Hohoho Black Pepper Beef Balls (370g),0,2024,7,9
+TandT,6.88,9.67,Hohoho Black Pepper Beef Balls (370g),0,2024,7,10
+TandT,6.87,9.49,Hohoho Black Pepper Beef Balls (370g),0,2024,8,6
+TandT,6.87,8.79,Hohoho Black Pepper Beef Balls (370g),0,2024,8,7
+TandT,6.87,8.79,Hohoho Black Pepper Beef Balls (370g),0,2024,8,8
+TandT,6.859999999999999,8.79,Hohoho Black Pepper Beef Balls (370g),0,2024,8,30
+TandT,6.859999999999999,8.79,Hohoho Black Pepper Beef Balls (370g),0,2024,8,31
+TandT,6.859999999999999,8.79,Hohoho Black Pepper Beef Balls (370g),0,2024,9,1
+TandT,6.859999999999999,8.79,Hohoho Black Pepper Beef Balls (370g),0,2024,9,2
+TandT,6.859999999999999,8.79,Hohoho Black Pepper Beef Balls (370g),0,2024,9,3
+TandT,6.859999999999999,8.79,Hohoho Black Pepper Beef Balls (370g),0,2024,9,4
+TandT,6.859999999999999,8.79,Hohoho Black Pepper Beef Balls (370g),0,2024,9,5
+TandT,6.87,8.79,Hohoho Black Pepper Beef Balls (370g),0,2024,9,27
+TandT,6.87,8.79,Hohoho Black Pepper Beef Balls (370g),0,2024,9,28
+TandT,6.87,8.79,Hohoho Black Pepper Beef Balls (370g),0,2024,9,29
+TandT,6.87,8.79,Hohoho Black Pepper Beef Balls (370g),0,2024,9,30
+TandT,6.87,8.79,Hohoho Black Pepper Beef Balls (370g),0,2024,10,1
+TandT,6.87,8.79,Hohoho Black Pepper Beef Balls (370g),0,2024,10,2
+TandT,6.87,8.79,Hohoho Black Pepper Beef Balls (370g),0,2024,10,3
+TandT,6.859999999999999,8.79,Hohoho Black Pepper Beef Balls (370g),0,2024,10,25
+TandT,6.859999999999999,8.79,Hohoho Black Pepper Beef Balls (370g),0,2024,10,26
+TandT,6.859999999999999,8.79,Hohoho Black Pepper Beef Balls (370g),0,2024,10,27
+TandT,6.859999999999999,8.79,Hohoho Black Pepper Beef Balls (370g),0,2024,10,28
+TandT,6.859999999999999,8.79,Hohoho Black Pepper Beef Balls (370g),0,2024,10,29
+TandT,6.859999999999999,8.79,Hohoho Black Pepper Beef Balls (370g),0,2024,10,30
+TandT,6.859999999999999,8.79,Hohoho Black Pepper Beef Balls (370g),0,2024,10,31
+TandT,6.88,9.67,Hohoho Beef Balls (370g),0,2024,6,11
+TandT,6.88,9.49,Hohoho Beef Balls (370g),0,2024,6,12
+TandT,6.88,9.49,Hohoho Beef Balls (370g),0,2024,6,13
+TandT,6.88,9.67,Hohoho Beef Balls (370g),0,2024,7,5
+TandT,6.88,9.67,Hohoho Beef Balls (370g),0,2024,7,8
+TandT,6.88,9.67,Hohoho Beef Balls (370g),0,2024,7,9
+TandT,6.88,9.67,Hohoho Beef Balls (370g),0,2024,7,10
+TandT,6.87,8.79,Hohoho Beef Balls (370g),0,2024,8,6
+TandT,6.87,8.79,Hohoho Beef Balls (370g),0,2024,8,7
+TandT,6.87,8.79,Hohoho Beef Balls (370g),0,2024,8,8
+TandT,6.859999999999999,8.79,Hohoho Beef Balls (370g),0,2024,8,30
+TandT,6.859999999999999,8.79,Hohoho Beef Balls (370g),0,2024,8,31
+TandT,6.859999999999999,8.79,Hohoho Beef Balls (370g),0,2024,9,1
+TandT,6.859999999999999,8.79,Hohoho Beef Balls (370g),0,2024,9,2
+TandT,6.859999999999999,8.79,Hohoho Beef Balls (370g),0,2024,9,3
+TandT,6.859999999999999,8.79,Hohoho Beef Balls (370g),0,2024,9,4
+TandT,6.859999999999999,8.79,Hohoho Beef Balls (370g),0,2024,9,5
+TandT,6.87,8.79,Hohoho Beef Balls (370g),0,2024,9,27
+TandT,6.87,8.79,Hohoho Beef Balls (370g),0,2024,9,28
+TandT,6.87,8.79,Hohoho Beef Balls (370g),0,2024,9,29
+TandT,6.87,8.79,Hohoho Beef Balls (370g),0,2024,9,30
+TandT,6.87,8.79,Hohoho Beef Balls (370g),0,2024,10,1
+TandT,6.87,8.79,Hohoho Beef Balls (370g),0,2024,10,2
+TandT,6.87,8.79,Hohoho Beef Balls (370g),0,2024,10,3
+TandT,6.859999999999999,8.79,Hohoho Beef Balls (370g),0,2024,10,25
+TandT,6.859999999999999,8.79,Hohoho Beef Balls (370g),0,2024,10,26
+TandT,6.859999999999999,8.79,Hohoho Beef Balls (370g),0,2024,10,27
+TandT,6.859999999999999,8.79,Hohoho Beef Balls (370g),0,2024,10,28
+TandT,6.859999999999999,8.79,Hohoho Beef Balls (370g),0,2024,10,29
+TandT,6.859999999999999,8.79,Hohoho Beef Balls (370g),0,2024,10,30
+TandT,2.5,3.29,Wzw Beef Balls With Meat (10s),0,2024,9,13
+TandT,2.5,3.29,Wzw Beef Balls With Meat (10s),0,2024,9,14
+TandT,2.5,3.29,Wzw Beef Balls With Meat (10s),0,2024,9,15
+TandT,2.5,3.29,Wzw Beef Balls With Meat (10s),0,2024,9,16
+TandT,2.5,3.29,Wzw Beef Balls With Meat (10s),0,2024,9,17
+TandT,2.5,3.29,Wzw Beef Balls With Meat (10s),0,2024,9,18
+TandT,2.5,3.29,Wzw Beef Balls With Meat (10s),0,2024,9,19
+TandT,2.5,3.29,Wzw Beef Balls With Meat (10s),0,2024,9,20
+TandT,2.5,3.29,Wzw Beef Balls With Meat (10s),0,2024,9,21
+TandT,2.5,3.29,Wzw Beef Balls With Meat (10s),0,2024,9,22
+TandT,2.5,3.29,Wzw Beef Balls With Meat (10s),0,2024,9,23
+TandT,2.5,3.29,Wzw Beef Balls With Meat (10s),0,2024,9,24
+TandT,2.5,3.29,Wzw Beef Balls With Meat (10s),0,2024,9,25
+TandT,2.5,3.29,Wzw Beef Balls With Meat (10s),0,2024,9,26
+TandT,2.5,3.29,Wzw Beef Balls With Meat (10s),0,2024,10,25
+TandT,2.5,3.29,Wzw Beef Balls With Meat (10s),0,2024,10,26
+TandT,2.5,3.29,Wzw Beef Balls With Meat (10s),0,2024,10,27
+TandT,2.5,3.29,Wzw Beef Balls With Meat (10s),0,2024,10,28
+TandT,2.5,3.29,Wzw Beef Balls With Meat (10s),0,2024,10,29
+TandT,2.5,3.29,Wzw Beef Balls With Meat (10s),0,2024,10,30
+TandT,2.5,3.29,Wzw Beef Balls With Meat (10s),0,2024,10,31
+TandT,6.76,8.29,Ka Ka Beef Tendon Balls (365g),0,2024,8,16
+TandT,6.76,8.29,Ka Ka Beef Tendon Balls (365g),0,2024,8,17
+TandT,6.76,8.29,Ka Ka Beef Tendon Balls (365g),0,2024,8,18
+TandT,6.76,8.29,Ka Ka Beef Tendon Balls (365g),0,2024,8,19
+TandT,6.76,8.29,Ka Ka Beef Tendon Balls (365g),0,2024,9,13
+TandT,6.76,8.29,Ka Ka Beef Tendon Balls (365g),0,2024,9,14
+TandT,6.76,8.29,Ka Ka Beef Tendon Balls (365g),0,2024,9,15
+TandT,6.76,8.29,Ka Ka Beef Tendon Balls (365g),0,2024,9,16
+TandT,6.76,8.29,Ka Ka Beef Tendon Balls (365g),0,2024,9,17
+TandT,6.76,8.29,Ka Ka Beef Tendon Balls (365g),0,2024,9,18
+TandT,6.76,8.29,Ka Ka Beef Tendon Balls (365g),0,2024,10,11
+TandT,6.76,8.29,Ka Ka Beef Tendon Balls (365g),0,2024,10,12
+TandT,6.76,8.29,Ka Ka Beef Tendon Balls (365g),0,2024,10,13
+TandT,6.76,8.29,Ka Ka Beef Tendon Balls (365g),0,2024,10,14
+TandT,6.76,8.29,Ka Ka Beef Tendon Balls (365g),0,2024,10,15
+TandT,6.76,8.29,Ka Ka Beef Tendon Balls (365g),0,2024,10,16
+TandT,6.76,8.29,Ka Ka Beef Tendon Balls (365g),0,2024,10,17
+TandT,6.76,8.29,Ka Ka Beef Tendon Balls (365g),0,2024,11,8
+TandT,6.76,8.29,Ka Ka Beef Tendon Balls (365g),0,2024,11,9
+TandT,6.76,8.29,Ka Ka Beef Tendon Balls (365g),0,2024,11,10
+TandT,6.76,8.29,Ka Ka Beef Tendon Balls (365g),0,2024,11,11
+TandT,6.76,8.29,Ka Ka Beef Tendon Balls (365g),0,2024,11,12
+TandT,6.76,8.29,Ka Ka Beef Tendon Balls (365g),0,2024,11,13
+TandT,6.76,8.29,Ka Ka Beef Tendon Balls (365g),0,2024,11,14
+TandT,6.76,9.12,Ka Ka Black Pepper Beef Balls (365g),0,2024,8,16
+TandT,6.76,9.12,Ka Ka Black Pepper Beef Balls (365g),0,2024,8,17
+TandT,6.76,9.12,Ka Ka Black Pepper Beef Balls (365g),0,2024,8,18
+TandT,6.76,9.12,Ka Ka Black Pepper Beef Balls (365g),0,2024,8,19
+TandT,6.76,9.12,Ka Ka Black Pepper Beef Balls (365g),0,2024,8,20
+TandT,6.76,9.12,Ka Ka Black Pepper Beef Balls (365g),0,2024,8,21
+TandT,6.76,9.12,Ka Ka Black Pepper Beef Balls (365g),0,2024,8,22
+TandT,6.76,8.950000000000001,Ka Ka Black Pepper Beef Balls (365g),0,2024,9,13
+TandT,6.76,8.950000000000001,Ka Ka Black Pepper Beef Balls (365g),0,2024,9,14
+TandT,6.76,9.12,Ka Ka Black Pepper Beef Balls (365g),0,2024,9,15
+TandT,6.76,8.950000000000001,Ka Ka Black Pepper Beef Balls (365g),0,2024,9,16
+TandT,6.76,9.12,Ka Ka Black Pepper Beef Balls (365g),0,2024,9,17
+TandT,6.76,9.12,Ka Ka Black Pepper Beef Balls (365g),0,2024,9,18
+TandT,6.76,8.950000000000001,Ka Ka Black Pepper Beef Balls (365g),0,2024,9,19
+TandT,6.76,9.12,Ka Ka Black Pepper Beef Balls (365g),0,2024,10,11
+TandT,6.76,9.12,Ka Ka Black Pepper Beef Balls (365g),0,2024,10,12
+TandT,6.76,9.12,Ka Ka Black Pepper Beef Balls (365g),0,2024,10,13
+TandT,6.76,9.12,Ka Ka Black Pepper Beef Balls (365g),0,2024,10,14
+TandT,6.76,9.12,Ka Ka Black Pepper Beef Balls (365g),0,2024,10,15
+TandT,6.76,9.12,Ka Ka Black Pepper Beef Balls (365g),0,2024,10,16
+TandT,6.76,9.12,Ka Ka Black Pepper Beef Balls (365g),0,2024,10,17
+TandT,6.76,9.12,Ka Ka Black Pepper Beef Balls (365g),0,2024,11,8
+TandT,6.76,9.12,Ka Ka Black Pepper Beef Balls (365g),0,2024,11,9
+TandT,6.76,9.12,Ka Ka Black Pepper Beef Balls (365g),0,2024,11,10
+TandT,6.76,9.12,Ka Ka Black Pepper Beef Balls (365g),0,2024,11,11
+TandT,6.76,9.12,Ka Ka Black Pepper Beef Balls (365g),0,2024,11,12
+TandT,6.76,9.12,Ka Ka Black Pepper Beef Balls (365g),0,2024,11,13
+TandT,6.76,9.12,Ka Ka Black Pepper Beef Balls (365g),0,2024,11,14
+TandT,9.98,11.2,RWA Beef Eye of Round (2lbs),0,2024,6,11
+TandT,8.98,10.07,RWA Beef Eye of Round (2lbs),0,2024,6,12
+TandT,8.98,10.07,RWA Beef Eye of Round (2lbs),0,2024,6,13
+TandT,12.97,13.97,Beef Short Ribs (3.5lbs),0,2024,11,15
+TandT,12.97,13.97,Beef Short Ribs (3.5lbs),0,2024,11,16
+TandT,12.97,13.97,Beef Short Ribs (3.5lbs),0,2024,11,17
+TandT,12.97,13.97,Beef Short Ribs (3.5lbs),0,2024,11,18
+TandT,12.97,13.97,Beef Short Ribs (3.5lbs),0,2024,11,19
+TandT,12.97,13.97,Beef Short Ribs (3.5lbs),0,2024,11,19
+TandT,12.97,13.97,Beef Short Ribs (3.5lbs),0,2024,11,20
+TandT,10.97,11.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,8,8
+TandT,10.97,12.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,8,9
+TandT,10.97,12.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,8,10
+TandT,10.97,11.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,8,11
+TandT,10.97,11.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,8,12
+TandT,10.97,11.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,8,13
+TandT,10.97,11.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,8,14
+TandT,10.97,12.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,8,15
+TandT,9.97,11.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,9,20
+TandT,9.97,11.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,9,21
+TandT,9.97,12.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,9,22
+TandT,9.97,11.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,9,23
+TandT,9.97,11.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,9,24
+TandT,9.97,12.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,9,25
+TandT,9.97,11.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,9,26
+TandT,9.97,11.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,10,4
+TandT,9.97,11.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,10,5
+TandT,9.97,11.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,10,6
+TandT,9.97,11.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,10,7
+TandT,9.97,11.99,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,10,8
+TandT,9.97,11.99,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,10,9
+TandT,9.97,11.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,10,10
+TandT,9.97,11.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,10,25
+TandT,9.97,11.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,10,26
+TandT,9.97,11.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,10,27
+TandT,9.97,12.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,10,28
+TandT,9.97,12.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,10,29
+TandT,9.97,12.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,10,30
+TandT,9.97,12.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,10,31
+TandT,9.97,12.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,11,8
+TandT,9.97,12.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,11,9
+TandT,9.97,12.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,11,10
+TandT,9.97,12.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,11,11
+TandT,9.97,12.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,11,12
+TandT,9.97,12.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,11,13
+TandT,9.97,12.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,11,14
+TandT,9.97,12.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,11,15
+TandT,9.97,12.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,11,16
+TandT,9.97,12.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,11,17
+TandT,9.97,12.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,11,18
+TandT,9.97,12.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,11,19
+TandT,9.97,12.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,11,19
+TandT,9.97,12.97,Frozen Beef Brisket Rolls (~1.6lbs),0,2024,11,20
+TandT,11.99,13.99,T&T Sliced Beef Plate Rolls (340g),0,2024,8,6
+TandT,11.99,13.99,T&T Sliced Beef Plate Rolls (340g),0,2024,8,7
+TandT,11.99,13.99,T&T Sliced Beef Plate Rolls (340g),0,2024,8,8
+TandT,11.99,13.99,T&T Sliced Beef Plate Rolls (340g),0,2024,8,9
+TandT,11.99,13.99,T&T Sliced Beef Plate Rolls (340g),0,2024,8,10
+TandT,11.99,13.99,T&T Sliced Beef Plate Rolls (340g),0,2024,8,11
+TandT,11.99,13.99,T&T Sliced Beef Plate Rolls (340g),0,2024,8,12
+TandT,11.99,13.99,T&T Sliced Beef Plate Rolls (340g),0,2024,8,13
+TandT,11.99,13.99,T&T Sliced Beef Plate Rolls (340g),0,2024,8,14
+TandT,11.99,13.99,T&T Sliced Beef Plate Rolls (340g),0,2024,8,15
+TandT,11.99,15.39,T&T Sliced Beef Chuck Rolls (340g),0,2024,8,6
+TandT,11.99,15.39,T&T Sliced Beef Chuck Rolls (340g),0,2024,8,9
+TandT,11.99,15.39,T&T Sliced Beef Chuck Rolls (340g),0,2024,8,10
+TandT,11.99,15.39,T&T Sliced Beef Chuck Rolls (340g),0,2024,8,15
+TandT,11.97,13.99,Beef Tongue Sliced Roll (2lb),0,2024,8,23
+TandT,11.97,13.97,Beef Tongue Sliced Roll (2lb),0,2024,8,24
+TandT,11.97,13.97,Beef Tongue Sliced Roll (2lb),0,2024,8,25
+TandT,11.97,13.97,Beef Tongue Sliced Roll (2lb),0,2024,8,26
+TandT,11.97,14.99,Beef Tongue Sliced Roll (2lb),0,2024,8,27
+TandT,11.97,14.97,Beef Tongue Sliced Roll (2lb),0,2024,8,28
+TandT,11.97,14.97,Beef Tongue Sliced Roll (2lb),0,2024,8,29
+TandT,9.97,11.97,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,8,6
+TandT,9.97,13.97,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,8,7
+TandT,9.97,13.97,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,8,8
+TandT,8.97,13.97,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,8,16
+TandT,8.97,13.97,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,8,17
+TandT,8.97,13.97,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,8,18
+TandT,8.97,13.97,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,8,19
+TandT,8.97,13.97,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,8,20
+TandT,8.97,13.97,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,8,21
+TandT,8.97,13.97,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,8,22
+TandT,8.97,13.97,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,9,6
+TandT,8.97,13.97,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,9,7
+TandT,8.97,13.97,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,9,8
+TandT,8.97,11.97,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,9,9
+TandT,8.97,13.97,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,9,10
+TandT,8.97,13.97,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,9,11
+TandT,8.97,11.97,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,9,12
+TandT,8.97,10.98,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,10,18
+TandT,8.97,10.98,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,10,19
+TandT,8.97,10.98,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,10,20
+TandT,8.97,10.98,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,10,21
+TandT,8.97,10.98,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,10,22
+TandT,8.97,10.98,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,10,23
+TandT,8.97,11.97,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,10,24
+TandT,8.97,11.97,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,11,1
+TandT,8.97,11.97,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,11,2
+TandT,8.97,11.97,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,11,3
+TandT,8.97,11.97,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,11,4
+TandT,8.97,11.97,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,11,5
+TandT,8.97,11.97,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,11,6
+TandT,8.97,11.97,Frozen Beef Blade Chuck Roll (1.8lbs),0,2024,11,7
+TandT,10.97,14.97,Beef Rib Steak Boneless (~3lbs),0,2024,9,6
+TandT,10.97,14.97,Beef Rib Steak Boneless (~3lbs),0,2024,9,7
+TandT,10.97,14.97,Beef Rib Steak Boneless (~3lbs),0,2024,9,8
+TandT,10.97,13.97,Beef Rib Steak Boneless (~3lbs),0,2024,9,9
+TandT,10.97,14.97,Beef Rib Steak Boneless (~3lbs),0,2024,9,10
+TandT,10.97,14.97,Beef Rib Steak Boneless (~3lbs),0,2024,9,11
+TandT,10.97,13.97,Beef Rib Steak Boneless (~3lbs),0,2024,9,12
+TandT,10.97,13.97,Beef Rib Steak Boneless (~3lbs),0,2024,11,1
+TandT,10.97,13.97,Beef Rib Steak Boneless (~3lbs),0,2024,11,2
+TandT,10.97,13.97,Beef Rib Steak Boneless (~3lbs),0,2024,11,3
+TandT,10.97,13.97,Beef Rib Steak Boneless (~3lbs),0,2024,11,4
+TandT,10.97,13.97,Beef Rib Steak Boneless (~3lbs),0,2024,11,5
+TandT,10.97,13.97,Beef Rib Steak Boneless (~3lbs),0,2024,11,6
+TandT,10.97,13.97,Beef Rib Steak Boneless (~3lbs),0,2024,11,7
+TandT,6.78,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,6,20
+TandT,6.78,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,6,21
+TandT,6.78,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,6,22
+TandT,6.78,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,6,23
+TandT,6.78,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,6,24
+TandT,6.78,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,6,25
+TandT,6.78,8.950000000000001,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,6,27
+TandT,6.7700000000000005,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,7,19
+TandT,6.7700000000000005,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,7,20
+TandT,6.7700000000000005,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,7,22
+TandT,6.7700000000000005,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,7,23
+TandT,6.7700000000000005,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,7,24
+TandT,6.7700000000000005,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,7,25
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,8,16
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,8,17
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,8,18
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,8,19
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,8,20
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,8,21
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,8,22
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,9,13
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,9,14
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,9,15
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,9,16
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,9,17
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,9,18
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,9,19
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,10,11
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,10,12
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,10,13
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,10,14
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,10,15
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,10,16
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,10,17
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,11,8
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,11,9
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,11,10
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,11,11
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,11,12
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,11,13
+TandT,6.76,9.12,"Ka Ka Great Choice Combo-Beef Tendon, Cuttlefish, Fried Fish Balls (365g)",0,2024,11,14
+TandT,10.99,13.19,T&T Gourmet Stewed Beef (650g),0,2024,6,11
+TandT,10.99,13.19,T&T Gourmet Stewed Beef (650g),0,2024,6,11
+TandT,10.99,12.950000000000001,T&T Gourmet Stewed Beef (650g),0,2024,6,12
+TandT,10.99,12.950000000000001,T&T Gourmet Stewed Beef (650g),0,2024,6,13
+TandT,10.97,11.99,T&T Gourmet Stewed Beef (650g),0,2024,10,4
+TandT,10.97,11.99,T&T Gourmet Stewed Beef (650g),0,2024,10,5
+TandT,10.97,11.99,T&T Gourmet Stewed Beef (650g),0,2024,10,6
+TandT,10.97,11.99,T&T Gourmet Stewed Beef (650g),0,2024,10,7
+TandT,10.97,11.99,T&T Gourmet Stewed Beef (650g),0,2024,10,8
+TandT,10.97,11.99,T&T Gourmet Stewed Beef (650g),0,2024,10,9
+TandT,10.97,11.99,T&T Gourmet Stewed Beef (650g),0,2024,10,10
+TandT,10.97,11.99,T&T Gourmet Stewed Beef (650g),0,2024,10,11
+TandT,10.97,11.99,T&T Gourmet Stewed Beef (650g),0,2024,10,12
+TandT,10.97,11.99,T&T Gourmet Stewed Beef (650g),0,2024,10,13
+TandT,10.97,11.99,T&T Gourmet Stewed Beef (650g),0,2024,10,14
+TandT,10.97,11.99,T&T Gourmet Stewed Beef (650g),0,2024,10,15
+TandT,10.97,11.99,T&T Gourmet Stewed Beef (650g),0,2024,10,16
+TandT,10.97,11.99,T&T Gourmet Stewed Beef (650g),0,2024,10,17
+TandT,3.5,6.04,Nissin Roast Beef (100gx5),0,2024,7,19
+TandT,3.5,6.04,Nissin Roast Beef (100gx5),0,2024,7,20
+TandT,3.5,6.04,Nissin Roast Beef (100gx5),0,2024,7,22
+TandT,3.5,6.04,Nissin Roast Beef (100gx5),0,2024,7,23
+TandT,3.5,6.04,Nissin Roast Beef (100gx5),0,2024,7,24
+TandT,3.5,6.04,Nissin Roast Beef (100gx5),0,2024,7,25
+TandT,3.5,6.04,Nissin Roast Beef (100gx5),0,2024,7,26
+TandT,3.5,6.04,Nissin Roast Beef (100gx5),0,2024,7,28
+TandT,3.5,6.04,Nissin Roast Beef (100gx5),0,2024,7,29
+TandT,3.5,6.04,Nissin Roast Beef (100gx5),0,2024,7,30
+TandT,3.5,6.04,Nissin Roast Beef (100gx5),0,2024,7,31
+TandT,3.5,6.04,Nissin Roast Beef (100gx5),0,2024,8,1
+TandT,15.88,21.99,Soo Street Style Beeforiginal (300g),0,2024,6,20
+TandT,15.88,21.99,Soo Street Style Beeforiginal (300g),0,2024,6,21
+TandT,15.88,21.99,Soo Street Style Beeforiginal (300g),0,2024,6,22
+TandT,15.88,21.99,Soo Street Style Beeforiginal (300g),0,2024,6,23
+TandT,15.88,21.99,Soo Street Style Beeforiginal (300g),0,2024,6,24
+TandT,15.88,21.99,Soo Street Style Beeforiginal (300g),0,2024,6,25
+TandT,15.88,21.99,Soo Street Style Beeforiginal (300g),0,2024,6,27
+TandT,15.88,21.99,Soo Street Style Beeforiginal (300g),0,2024,6,28
+TandT,15.88,21.99,Soo Street Style Beeforiginal (300g),0,2024,6,29
+TandT,15.88,21.99,Soo Street Style Beeforiginal (300g),0,2024,6,30
+TandT,15.88,21.99,Soo Street Style Beeforiginal (300g),0,2024,7,1
+TandT,15.88,21.99,Soo Street Style Beeforiginal (300g),0,2024,7,2
+TandT,15.88,21.99,Soo Street Style Beeforiginal (300g),0,2024,7,3
+TandT,15.88,21.99,Soo Street Style Beeforiginal (300g),0,2024,7,4
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,8,30
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,8,31
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,9,1
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,9,2
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,9,2
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,9,3
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,9,4
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,9,5
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,9,6
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,9,7
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,9,8
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,9,9
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,9,10
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,9,11
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,9,12
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,11,8
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,11,9
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,11,10
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,11,12
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,11,13
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,11,14
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,11,15
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,11,16
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,11,17
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,11,18
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,11,19
+TandT,15.870000000000001,21.99,Soo Street Style Beeforiginal (300g),0,2024,11,20
+TandT,9.97,15.39,Soo Sweet Grilled Beef Jerky (170g),0,2024,9,27
+TandT,9.97,15.39,Soo Sweet Grilled Beef Jerky (170g),0,2024,9,28
+TandT,9.97,15.39,Soo Sweet Grilled Beef Jerky (170g),0,2024,9,29
+TandT,9.97,13.99,Soo Sweet Grilled Beef Jerky (170g),0,2024,9,30
+TandT,9.97,13.99,Soo Sweet Grilled Beef Jerky (170g),0,2024,10,1
+TandT,9.97,15.39,Soo Sweet Grilled Beef Jerky (170g),0,2024,10,2
+TandT,9.97,13.99,Soo Sweet Grilled Beef Jerky (170g),0,2024,10,4
+TandT,9.97,13.99,Soo Sweet Grilled Beef Jerky (170g),0,2024,10,5
+TandT,9.97,13.99,Soo Sweet Grilled Beef Jerky (170g),0,2024,10,6
+TandT,9.97,13.99,Soo Sweet Grilled Beef Jerky (170g),0,2024,10,7
+TandT,9.97,15.39,Soo Spicy Szechuan Style Beef Jerk (170g),0,2024,9,27
+TandT,9.97,15.39,Soo Spicy Szechuan Style Beef Jerk (170g),0,2024,9,28
+TandT,9.97,15.39,Soo Spicy Szechuan Style Beef Jerk (170g),0,2024,9,29
+TandT,9.97,13.99,Soo Spicy Szechuan Style Beef Jerk (170g),0,2024,9,30
+TandT,9.97,13.99,Soo Spicy Szechuan Style Beef Jerk (170g),0,2024,10,1
+TandT,9.97,15.39,Soo Spicy Szechuan Style Beef Jerk (170g),0,2024,10,2
+TandT,9.97,15.39,Soo Spicy Szechuan Style Beef Jerk (170g),0,2024,10,3
+TandT,9.97,13.99,Soo Spicy Szechuan Style Beef Jerk (170g),0,2024,10,4
+TandT,9.97,13.99,Soo Spicy Szechuan Style Beef Jerk (170g),0,2024,10,5
+TandT,9.97,13.99,Soo Spicy Szechuan Style Beef Jerk (170g),0,2024,10,6
+TandT,9.97,13.99,Soo Spicy Szechuan Style Beef Jerk (170g),0,2024,10,7
+TandT,9.97,13.99,Soo Spicy Szechuan Style Beef Jerk (170g),0,2024,10,8
+TandT,9.97,13.99,Soo Spicy Szechuan Style Beef Jerk (170g),0,2024,10,9
+TandT,9.97,15.39,Soo Satay Beef Jerky (170g),0,2024,9,27
+TandT,9.97,15.39,Soo Satay Beef Jerky (170g),0,2024,9,28
+TandT,9.97,15.39,Soo Satay Beef Jerky (170g),0,2024,9,29
+TandT,9.97,13.99,Soo Satay Beef Jerky (170g),0,2024,9,30
+TandT,9.97,13.99,Soo Satay Beef Jerky (170g),0,2024,10,1
+TandT,9.97,15.39,Soo Satay Beef Jerky (170g),0,2024,10,2
+TandT,9.97,15.39,Soo Satay Beef Jerky (170g),0,2024,10,3
+TandT,9.97,13.99,Soo Satay Beef Jerky (170g),0,2024,10,4
+TandT,9.97,13.99,Soo Satay Beef Jerky (170g),0,2024,10,5
+TandT,9.97,13.99,Soo Satay Beef Jerky (170g),0,2024,10,6
+TandT,9.97,13.99,Soo Satay Beef Jerky (170g),0,2024,10,7
+TandT,9.97,13.99,Soo Satay Beef Jerky (170g),0,2024,10,8
+TandT,9.97,13.99,Soo Satay Beef Jerky (170g),0,2024,10,9
+TandT,9.97,15.39,Soo Hot Fruit Flavored Beef Jerky (170g),0,2024,9,27
+TandT,9.97,15.39,Soo Hot Fruit Flavored Beef Jerky (170g),0,2024,9,28
+TandT,9.97,15.39,Soo Hot Fruit Flavored Beef Jerky (170g),0,2024,9,29
+TandT,9.97,15.39,Soo Hot Fruit Flavored Beef Jerky (170g),0,2024,9,30
+TandT,9.97,15.39,Soo Hot Fruit Flavored Beef Jerky (170g),0,2024,10,1
+TandT,9.97,15.39,Soo Hot Fruit Flavored Beef Jerky (170g),0,2024,10,2
+TandT,9.97,15.39,Soo Hot Fruit Flavored Beef Jerky (170g),0,2024,10,3
+TandT,9.97,15.39,Soo Hot Fruit Flavored Beef Jerky (170g),0,2024,10,4
+TandT,9.97,15.39,Soo Hot Fruit Flavored Beef Jerky (170g),0,2024,10,5
+TandT,9.97,15.39,Soo Hot Five Spices Beef Jerky (170g),0,2024,9,27
+TandT,9.97,15.39,Soo Hot Five Spices Beef Jerky (170g),0,2024,9,28
+TandT,9.97,15.39,Soo Hot Five Spices Beef Jerky (170g),0,2024,9,29
+TandT,9.97,13.99,Soo Hot Five Spices Beef Jerky (170g),0,2024,9,30
+TandT,9.97,13.99,Soo Hot Five Spices Beef Jerky (170g),0,2024,10,1
+TandT,9.97,15.39,Soo Hot Five Spices Beef Jerky (170g),0,2024,10,2
+TandT,9.97,15.39,Soo Hot Five Spices Beef Jerky (170g),0,2024,10,3
+TandT,9.97,13.99,Soo Hot Five Spices Beef Jerky (170g),0,2024,10,4
+TandT,9.97,13.99,Soo Hot Five Spices Beef Jerky (170g),0,2024,10,5
+TandT,9.97,13.99,Soo Hot Five Spices Beef Jerky (170g),0,2024,10,6
+TandT,9.97,13.99,Soo Hot Five Spices Beef Jerky (170g),0,2024,10,7
+TandT,9.97,13.99,Soo Hot Five Spices Beef Jerky (170g),0,2024,10,8
+TandT,9.97,13.99,Soo Hot Five Spices Beef Jerky (170g),0,2024,10,9
+TandT,9.97,15.39,Soo Fruit Flavored Beef Jerky (170g),0,2024,9,27
+TandT,9.97,15.39,Soo Fruit Flavored Beef Jerky (170g),0,2024,9,28
+TandT,9.97,15.39,Soo Fruit Flavored Beef Jerky (170g),0,2024,9,29
+TandT,9.97,13.99,Soo Fruit Flavored Beef Jerky (170g),0,2024,9,30
+TandT,9.97,13.99,Soo Fruit Flavored Beef Jerky (170g),0,2024,10,1
+TandT,9.97,15.39,Soo Fruit Flavored Beef Jerky (170g),0,2024,10,2
+TandT,9.97,15.39,Soo Fruit Flavored Beef Jerky (170g),0,2024,10,3
+TandT,9.97,13.99,Soo Fruit Flavored Beef Jerky (170g),0,2024,10,4
+TandT,9.97,13.99,Soo Fruit Flavored Beef Jerky (170g),0,2024,10,5
+TandT,9.97,13.99,Soo Fruit Flavored Beef Jerky (170g),0,2024,10,6
+TandT,9.97,13.99,Soo Fruit Flavored Beef Jerky (170g),0,2024,10,7
+TandT,9.97,13.99,Soo Fruit Flavored Beef Jerky (170g),0,2024,10,8
+TandT,9.97,13.99,Soo Fruit Flavored Beef Jerky (170g),0,2024,10,9
+TandT,9.97,13.99,Soo Fruit Flavored Beef Jerky (170g),0,2024,10,10
+TandT,9.97,15.39,Soo Five Spices Beef Jerky (170g),0,2024,9,27
+TandT,9.97,15.39,Soo Five Spices Beef Jerky (170g),0,2024,9,28
+TandT,9.97,15.39,Soo Five Spices Beef Jerky (170g),0,2024,9,29
+TandT,9.97,13.99,Soo Five Spices Beef Jerky (170g),0,2024,9,30
+TandT,9.97,13.99,Soo Five Spices Beef Jerky (170g),0,2024,10,1
+TandT,9.97,15.39,Soo Five Spices Beef Jerky (170g),0,2024,10,2
+TandT,9.97,15.39,Soo Five Spices Beef Jerky (170g),0,2024,10,3
+TandT,9.97,13.99,Soo Five Spices Beef Jerky (170g),0,2024,10,4
+TandT,9.97,13.99,Soo Five Spices Beef Jerky (170g),0,2024,10,5
+TandT,9.97,13.99,Soo Five Spices Beef Jerky (170g),0,2024,10,6
+TandT,9.97,13.99,Soo Five Spices Beef Jerky (170g),0,2024,10,7
+TandT,9.97,13.99,Soo Five Spices Beef Jerky (170g),0,2024,10,8
+TandT,9.97,13.99,Soo Five Spices Beef Jerky (170g),0,2024,10,9
+TandT,9.97,13.99,Soo Five Spices Beef Jerky (170g),0,2024,10,10
+TandT,9.97,15.39,Soo Spicy Grilled Beef Jerky (170g),0,2024,9,27
+TandT,9.97,15.39,Soo Spicy Grilled Beef Jerky (170g),0,2024,9,28
+TandT,9.97,15.39,Soo Spicy Grilled Beef Jerky (170g),0,2024,9,29
+TandT,9.97,15.39,Soo Spicy Grilled Beef Jerky (170g),0,2024,9,30
+TandT,9.97,15.39,Soo Spicy Grilled Beef Jerky (170g),0,2024,10,1
+TandT,9.97,15.39,Soo Spicy Grilled Beef Jerky (170g),0,2024,10,2
+TandT,9.97,15.39,Soo Spicy Grilled Beef Jerky (170g),0,2024,10,3
+TandT,9.97,15.39,Soo Spicy Grilled Beef Jerky (170g),0,2024,10,4
+TandT,9.97,15.39,Soo Spicy Grilled Beef Jerky (170g),0,2024,10,5
+TandT,9.97,15.39,Soo Spicy Grilled Beef Jerky (170g),0,2024,10,6
+TandT,9.97,15.39,Soo Spicy Grilled Beef Jerky (170g),0,2024,10,7
+TandT,9.97,15.39,Soo Spicy Grilled Beef Jerky (170g),0,2024,10,8
+TandT,9.97,15.39,Soo Spicy Grilled Beef Jerky (170g),0,2024,10,9
+TandT,9.97,15.39,Soo Spicy Grilled Beef Jerky (170g),0,2024,10,10
+TandT,9.97,15.39,Soo Extra Spicy Five Spices Beef Jerky (170g),0,2024,9,27
+TandT,9.97,15.39,Soo Extra Spicy Five Spices Beef Jerky (170g),0,2024,9,28
+TandT,9.97,15.39,Soo Extra Spicy Five Spices Beef Jerky (170g),0,2024,9,29
+TandT,9.97,13.99,Soo Extra Spicy Five Spices Beef Jerky (170g),0,2024,9,30
+TandT,9.97,13.99,Soo Extra Spicy Five Spices Beef Jerky (170g),0,2024,10,1
+TandT,9.97,15.39,Soo Extra Spicy Five Spices Beef Jerky (170g),0,2024,10,2
+TandT,9.97,15.39,Soo Extra Spicy Five Spices Beef Jerky (170g),0,2024,10,3
+TandT,9.97,13.99,Soo Extra Spicy Five Spices Beef Jerky (170g),0,2024,10,4
+TandT,9.97,13.99,Soo Extra Spicy Five Spices Beef Jerky (170g),0,2024,10,5
+TandT,9.97,13.99,Soo Extra Spicy Five Spices Beef Jerky (170g),0,2024,10,6
+TandT,9.97,13.99,Soo Extra Spicy Five Spices Beef Jerky (170g),0,2024,10,7
+TandT,9.97,13.99,Soo Extra Spicy Five Spices Beef Jerky (170g),0,2024,10,8
+TandT,9.97,13.99,Soo Extra Spicy Five Spices Beef Jerky (170g),0,2024,10,9
+TandT,9.97,13.99,Soo Extra Spicy Five Spices Beef Jerky (170g),0,2024,10,10
+TandT,15.88,21.99,Soo Extra Hot Beef Jerky (300g),0,2024,6,11
+TandT,15.88,21.59,Soo Extra Hot Beef Jerky (300g),0,2024,6,12
+TandT,15.88,21.59,Soo Extra Hot Beef Jerky (300g),0,2024,6,13
+TandT,15.88,21.59,Soo Extra Hot Beef Jerky (300g),0,2024,6,14
+TandT,15.88,21.59,Soo Extra Hot Beef Jerky (300g),0,2024,6,14
+TandT,15.88,21.99,Soo Extra Hot Beef Jerky (300g),0,2024,6,15
+TandT,15.88,21.99,Soo Extra Hot Beef Jerky (300g),0,2024,6,16
+TandT,15.88,21.99,Soo Extra Hot Beef Jerky (300g),0,2024,6,19
+TandT,15.88,21.99,Soo Extra Hot Beef Jerky (300g),0,2024,6,20
+TandT,19.99,21.99,Soo Extra Hot Beef Jerky (300g),0,2024,8,8
+TandT,19.99,21.99,Soo Extra Hot Beef Jerky (300g),0,2024,8,9
+TandT,19.99,21.99,Soo Extra Hot Beef Jerky (300g),0,2024,8,10
+TandT,19.99,21.99,Soo Extra Hot Beef Jerky (300g),0,2024,8,11
+TandT,19.99,21.99,Soo Extra Hot Beef Jerky (300g),0,2024,8,12
+TandT,19.99,21.99,Soo Extra Hot Beef Jerky (300g),0,2024,8,13
+TandT,19.99,21.99,Soo Extra Hot Beef Jerky (300g),0,2024,8,14
+TandT,19.99,21.99,Soo Extra Hot Beef Jerky (300g),0,2024,8,15
+TandT,15.870000000000001,19.99,Soo Extra Hot Beef Jerky (300g),0,2024,8,16
+TandT,15.870000000000001,19.99,Soo Extra Hot Beef Jerky (300g),0,2024,8,17
+TandT,15.870000000000001,19.99,Soo Extra Hot Beef Jerky (300g),0,2024,8,18
+TandT,15.870000000000001,19.99,Soo Extra Hot Beef Jerky (300g),0,2024,8,19
+TandT,15.870000000000001,19.99,Soo Extra Hot Beef Jerky (300g),0,2024,8,20
+TandT,15.870000000000001,19.99,Soo Extra Hot Beef Jerky (300g),0,2024,8,21
+TandT,15.870000000000001,19.99,Soo Extra Hot Beef Jerky (300g),0,2024,8,22
+TandT,15.870000000000001,19.99,Soo Extra Hot Beef Jerky (300g),0,2024,8,23
+TandT,15.870000000000001,19.99,Soo Extra Hot Beef Jerky (300g),0,2024,8,24
+TandT,15.870000000000001,19.99,Soo Extra Hot Beef Jerky (300g),0,2024,8,25
+TandT,15.870000000000001,19.99,Soo Extra Hot Beef Jerky (300g),0,2024,8,26
+TandT,15.870000000000001,21.99,Soo Extra Hot Beef Jerky (300g),0,2024,8,27
+TandT,15.870000000000001,21.99,Soo Extra Hot Beef Jerky (300g),0,2024,8,28
+TandT,15.870000000000001,21.99,Soo Extra Hot Beef Jerky (300g),0,2024,8,29
+TandT,15.88,21.99,Soo Hot Fruit Beef Jerky (300g),0,2024,6,11
+TandT,15.88,21.59,Soo Hot Fruit Beef Jerky (300g),0,2024,6,12
+TandT,15.88,21.59,Soo Hot Fruit Beef Jerky (300g),0,2024,6,13
+TandT,15.88,21.59,Soo Hot Fruit Beef Jerky (300g),0,2024,6,14
+TandT,15.88,21.99,Soo Hot Fruit Beef Jerky (300g),0,2024,6,15
+TandT,15.88,21.99,Soo Hot Fruit Beef Jerky (300g),0,2024,6,16
+TandT,15.88,21.99,Soo Hot Fruit Beef Jerky (300g),0,2024,6,19
+TandT,15.88,21.99,Soo Hot Fruit Beef Jerky (300g),0,2024,6,20
+TandT,19.99,21.99,Soo Hot Fruit Beef Jerky (300g),0,2024,8,8
+TandT,19.99,21.99,Soo Hot Fruit Beef Jerky (300g),0,2024,8,9
+TandT,19.99,21.99,Soo Hot Fruit Beef Jerky (300g),0,2024,8,10
+TandT,19.99,21.99,Soo Hot Fruit Beef Jerky (300g),0,2024,8,11
+TandT,19.99,21.99,Soo Hot Fruit Beef Jerky (300g),0,2024,8,12
+TandT,19.99,21.99,Soo Hot Fruit Beef Jerky (300g),0,2024,8,13
+TandT,19.99,21.99,Soo Hot Fruit Beef Jerky (300g),0,2024,8,14
+TandT,19.99,21.99,Soo Hot Fruit Beef Jerky (300g),0,2024,8,15
+TandT,15.870000000000001,19.99,Soo Hot Fruit Beef Jerky (300g),0,2024,8,16
+TandT,15.870000000000001,19.99,Soo Hot Fruit Beef Jerky (300g),0,2024,8,17
+TandT,15.870000000000001,19.99,Soo Hot Fruit Beef Jerky (300g),0,2024,8,18
+TandT,15.870000000000001,19.99,Soo Hot Fruit Beef Jerky (300g),0,2024,8,19
+TandT,15.870000000000001,19.99,Soo Hot Fruit Beef Jerky (300g),0,2024,8,20
+TandT,15.870000000000001,19.99,Soo Hot Fruit Beef Jerky (300g),0,2024,8,21
+TandT,15.870000000000001,19.99,Soo Hot Fruit Beef Jerky (300g),0,2024,8,22
+TandT,15.870000000000001,19.99,Soo Hot Fruit Beef Jerky (300g),0,2024,8,23
+TandT,15.870000000000001,19.99,Soo Hot Fruit Beef Jerky (300g),0,2024,8,24
+TandT,15.870000000000001,19.99,Soo Hot Fruit Beef Jerky (300g),0,2024,8,25
+TandT,15.870000000000001,19.99,Soo Hot Fruit Beef Jerky (300g),0,2024,8,26
+TandT,15.870000000000001,21.99,Soo Hot Fruit Beef Jerky (300g),0,2024,8,27
+TandT,15.870000000000001,21.99,Soo Hot Fruit Beef Jerky (300g),0,2024,8,28
+TandT,15.870000000000001,21.99,Soo Hot Fruit Beef Jerky (300g),0,2024,8,29
+TandT,15.88,21.99,Soo Fruit Beef Jerky (300g),0,2024,6,11
+TandT,15.88,21.59,Soo Fruit Beef Jerky (300g),0,2024,6,12
+TandT,15.88,21.59,Soo Fruit Beef Jerky (300g),0,2024,6,13
+TandT,15.88,21.59,Soo Fruit Beef Jerky (300g),0,2024,6,14
+TandT,15.88,21.99,Soo Fruit Beef Jerky (300g),0,2024,6,15
+TandT,15.88,21.99,Soo Fruit Beef Jerky (300g),0,2024,6,16
+TandT,15.88,21.99,Soo Fruit Beef Jerky (300g),0,2024,6,19
+TandT,15.88,21.99,Soo Fruit Beef Jerky (300g),0,2024,6,20
+TandT,19.99,21.99,Soo Fruit Beef Jerky (300g),0,2024,8,8
+TandT,19.99,21.99,Soo Fruit Beef Jerky (300g),0,2024,8,9
+TandT,19.99,21.99,Soo Fruit Beef Jerky (300g),0,2024,8,10
+TandT,19.99,21.99,Soo Fruit Beef Jerky (300g),0,2024,8,11
+TandT,19.99,21.99,Soo Fruit Beef Jerky (300g),0,2024,8,12
+TandT,19.99,21.99,Soo Fruit Beef Jerky (300g),0,2024,8,13
+TandT,19.99,21.99,Soo Fruit Beef Jerky (300g),0,2024,8,14
+TandT,19.99,21.99,Soo Fruit Beef Jerky (300g),0,2024,8,15
+TandT,15.870000000000001,19.99,Soo Fruit Beef Jerky (300g),0,2024,8,16
+TandT,15.870000000000001,19.99,Soo Fruit Beef Jerky (300g),0,2024,8,17
+TandT,15.870000000000001,19.99,Soo Fruit Beef Jerky (300g),0,2024,8,18
+TandT,15.870000000000001,19.99,Soo Fruit Beef Jerky (300g),0,2024,8,19
+TandT,15.870000000000001,19.99,Soo Fruit Beef Jerky (300g),0,2024,8,20
+TandT,15.870000000000001,19.99,Soo Fruit Beef Jerky (300g),0,2024,8,21
+TandT,15.870000000000001,19.99,Soo Fruit Beef Jerky (300g),0,2024,8,22
+TandT,15.870000000000001,19.99,Soo Fruit Beef Jerky (300g),0,2024,8,23
+TandT,15.870000000000001,19.99,Soo Fruit Beef Jerky (300g),0,2024,8,24
+TandT,15.870000000000001,19.99,Soo Fruit Beef Jerky (300g),0,2024,8,25
+TandT,15.870000000000001,19.99,Soo Fruit Beef Jerky (300g),0,2024,8,26
+TandT,15.870000000000001,21.99,Soo Fruit Beef Jerky (300g),0,2024,8,27
+TandT,15.870000000000001,21.99,Soo Fruit Beef Jerky (300g),0,2024,8,28
+TandT,15.870000000000001,21.99,Soo Fruit Beef Jerky (300g),0,2024,8,29
+TandT,15.88,21.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,6,11
+TandT,15.88,21.59,Soo Hot Five Spices Beef Jerky (300g),0,2024,6,12
+TandT,15.88,21.59,Soo Hot Five Spices Beef Jerky (300g),0,2024,6,13
+TandT,15.88,21.59,Soo Hot Five Spices Beef Jerky (300g),0,2024,6,14
+TandT,15.88,21.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,6,15
+TandT,15.88,21.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,6,16
+TandT,15.88,21.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,6,19
+TandT,15.88,21.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,6,20
+TandT,19.99,21.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,8,8
+TandT,19.99,21.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,8,9
+TandT,19.99,21.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,8,10
+TandT,19.99,21.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,8,11
+TandT,19.99,21.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,8,12
+TandT,19.99,21.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,8,13
+TandT,19.99,21.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,8,14
+TandT,19.99,21.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,8,15
+TandT,15.870000000000001,19.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,8,16
+TandT,15.870000000000001,19.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,8,17
+TandT,15.870000000000001,19.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,8,18
+TandT,15.870000000000001,19.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,8,19
+TandT,15.870000000000001,19.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,8,20
+TandT,15.870000000000001,19.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,8,21
+TandT,15.870000000000001,19.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,8,22
+TandT,15.870000000000001,19.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,8,23
+TandT,15.870000000000001,19.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,8,24
+TandT,15.870000000000001,19.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,8,25
+TandT,15.870000000000001,19.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,8,26
+TandT,15.870000000000001,21.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,8,27
+TandT,15.870000000000001,21.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,8,28
+TandT,15.870000000000001,21.99,Soo Hot Five Spices Beef Jerky (300g),0,2024,8,29
+TandT,15.88,21.99,Soo Five Spices Beef Jerky (300g),0,2024,6,11
+TandT,15.88,21.59,Soo Five Spices Beef Jerky (300g),0,2024,6,12
+TandT,15.88,21.59,Soo Five Spices Beef Jerky (300g),0,2024,6,13
+TandT,15.88,21.59,Soo Five Spices Beef Jerky (300g),0,2024,6,14
+TandT,15.88,21.99,Soo Five Spices Beef Jerky (300g),0,2024,6,15
+TandT,15.88,21.99,Soo Five Spices Beef Jerky (300g),0,2024,6,16
+TandT,15.88,21.99,Soo Five Spices Beef Jerky (300g),0,2024,6,19
+TandT,15.88,21.99,Soo Five Spices Beef Jerky (300g),0,2024,6,20
+TandT,19.99,21.99,Soo Five Spices Beef Jerky (300g),0,2024,8,8
+TandT,19.99,21.99,Soo Five Spices Beef Jerky (300g),0,2024,8,9
+TandT,19.99,21.99,Soo Five Spices Beef Jerky (300g),0,2024,8,10
+TandT,19.99,21.99,Soo Five Spices Beef Jerky (300g),0,2024,8,11
+TandT,19.99,21.99,Soo Five Spices Beef Jerky (300g),0,2024,8,12
+TandT,19.99,21.99,Soo Five Spices Beef Jerky (300g),0,2024,8,13
+TandT,19.99,21.99,Soo Five Spices Beef Jerky (300g),0,2024,8,14
+TandT,19.99,21.99,Soo Five Spices Beef Jerky (300g),0,2024,8,15
+TandT,15.870000000000001,21.99,Soo Five Spices Beef Jerky (300g),0,2024,8,16
+TandT,15.870000000000001,21.99,Soo Five Spices Beef Jerky (300g),0,2024,8,17
+TandT,15.870000000000001,21.99,Soo Five Spices Beef Jerky (300g),0,2024,8,18
+TandT,15.870000000000001,21.99,Soo Five Spices Beef Jerky (300g),0,2024,8,19
+TandT,15.870000000000001,21.99,Soo Five Spices Beef Jerky (300g),0,2024,8,20
+TandT,15.870000000000001,21.99,Soo Five Spices Beef Jerky (300g),0,2024,8,21
+TandT,15.870000000000001,21.99,Soo Five Spices Beef Jerky (300g),0,2024,8,22
+TandT,15.870000000000001,19.99,Soo Five Spices Beef Jerky (300g),0,2024,8,23
+TandT,15.870000000000001,21.99,Soo Five Spices Beef Jerky (300g),0,2024,8,24
+TandT,15.870000000000001,21.99,Soo Five Spices Beef Jerky (300g),0,2024,8,25
+TandT,15.870000000000001,19.99,Soo Five Spices Beef Jerky (300g),0,2024,8,26
+TandT,15.870000000000001,21.99,Soo Five Spices Beef Jerky (300g),0,2024,8,27
+TandT,15.870000000000001,21.99,Soo Five Spices Beef Jerky (300g),0,2024,8,28
+TandT,15.870000000000001,21.99,Soo Five Spices Beef Jerky (300g),0,2024,8,29
+TandT,4.98,6.59,Hereford Corned Beef (340g),0,2024,7,5
+TandT,4.98,6.59,Hereford Corned Beef (340g),0,2024,7,8
+TandT,4.98,6.59,Hereford Corned Beef (340g),0,2024,7,10
+TandT,4.98,6.59,Hereford Corned Beef (340g),0,2024,7,12
+TandT,4.98,6.59,Hereford Corned Beef (340g),0,2024,7,13
+TandT,4.98,6.59,Hereford Corned Beef (340g),0,2024,7,14
+TandT,4.98,6.59,Hereford Corned Beef (340g),0,2024,7,15
+TandT,4.98,6.59,Hereford Corned Beef (340g),0,2024,7,16
+TandT,4.98,6.59,Hereford Corned Beef (340g),0,2024,7,17
+TandT,4.98,6.59,Hereford Corned Beef (340g),0,2024,7,18
+TandT,4.7700000000000005,8.79,Hereford Corned Beef (340g),0,2024,9,13
+TandT,4.7700000000000005,8.79,Hereford Corned Beef (340g),0,2024,9,14
+TandT,4.7700000000000005,5.99,Hereford Corned Beef (340g),0,2024,9,15
+TandT,4.7700000000000005,8.79,Hereford Corned Beef (340g),0,2024,9,16
+TandT,4.7700000000000005,5.99,Hereford Corned Beef (340g),0,2024,9,17
+TandT,4.7700000000000005,5.99,Hereford Corned Beef (340g),0,2024,9,18
+TandT,4.7700000000000005,8.79,Hereford Corned Beef (340g),0,2024,9,19
+TandT,4.7700000000000005,5.99,Hereford Corned Beef (340g),0,2024,9,20
+TandT,4.7700000000000005,5.99,Hereford Corned Beef (340g),0,2024,9,21
+TandT,4.7700000000000005,8.79,Hereford Corned Beef (340g),0,2024,9,22
+TandT,4.7700000000000005,5.99,Hereford Corned Beef (340g),0,2024,9,23
+TandT,4.7700000000000005,5.99,Hereford Corned Beef (340g),0,2024,9,24
+TandT,4.7700000000000005,8.79,Hereford Corned Beef (340g),0,2024,9,25
+TandT,4.7700000000000005,5.99,Hereford Corned Beef (340g),0,2024,9,26
+TandT,4.7700000000000005,5.99,Hereford Corned Beef (340g),0,2024,10,25
+TandT,4.7700000000000005,5.99,Hereford Corned Beef (340g),0,2024,10,26
+TandT,4.7700000000000005,5.99,Hereford Corned Beef (340g),0,2024,10,27
+TandT,4.7700000000000005,8.79,Hereford Corned Beef (340g),0,2024,10,28
+TandT,4.7700000000000005,8.79,Hereford Corned Beef (340g),0,2024,10,29
+TandT,4.7700000000000005,8.79,Hereford Corned Beef (340g),0,2024,10,31
+TandT,4.7700000000000005,8.79,Hereford Corned Beef (340g),0,2024,11,1
+TandT,4.7700000000000005,8.79,Hereford Corned Beef (340g),0,2024,11,2
+TandT,4.7700000000000005,8.79,Hereford Corned Beef (340g),0,2024,11,3
+TandT,4.7700000000000005,8.79,Hereford Corned Beef (340g),0,2024,11,4
+TandT,4.7700000000000005,8.79,Hereford Corned Beef (340g),0,2024,11,5
+TandT,4.7700000000000005,8.79,Hereford Corned Beef (340g),0,2024,11,6
+TandT,5.46,7.6899999999999995,TC Foods Black Pepper Beef Filling In Crispy Pastry Crust (454g),0,2024,8,30
+TandT,5.46,7.6899999999999995,TC Foods Black Pepper Beef Filling In Crispy Pastry Crust (454g),0,2024,8,31
+TandT,5.46,7.6899999999999995,TC Foods Black Pepper Beef Filling In Crispy Pastry Crust (454g),0,2024,9,1
+TandT,5.46,7.6899999999999995,TC Foods Black Pepper Beef Filling In Crispy Pastry Crust (454g),0,2024,9,2
+TandT,5.46,7.6899999999999995,TC Foods Black Pepper Beef Filling In Crispy Pastry Crust (454g),0,2024,9,3
+TandT,5.46,7.6899999999999995,TC Foods Black Pepper Beef Filling In Crispy Pastry Crust (454g),0,2024,9,4
+TandT,5.46,7.6899999999999995,TC Foods Black Pepper Beef Filling In Crispy Pastry Crust (454g),0,2024,9,5
+TandT,5.46,7.6899999999999995,TC Foods Black Pepper Beef Filling In Crispy Pastry Crust (454g),0,2024,9,6
+TandT,5.46,7.6899999999999995,TC Foods Black Pepper Beef Filling In Crispy Pastry Crust (454g),0,2024,9,7
+TandT,5.46,7.6899999999999995,TC Foods Black Pepper Beef Filling In Crispy Pastry Crust (454g),0,2024,9,8
+TandT,5.46,7.6899999999999995,TC Foods Black Pepper Beef Filling In Crispy Pastry Crust (454g),0,2024,9,9
+TandT,5.46,7.6899999999999995,TC Foods Black Pepper Beef Filling In Crispy Pastry Crust (454g),0,2024,9,11
+TandT,5.46,7.6899999999999995,TC Foods Black Pepper Beef Filling In Crispy Pastry Crust (454g),0,2024,9,12
+TandT,5.46,7.6899999999999995,TC Foods Spicy Beef Filling in Crispy Pastry Crust (454g),0,2024,8,30
+TandT,5.46,7.6899999999999995,TC Foods Spicy Beef Filling in Crispy Pastry Crust (454g),0,2024,8,31
+TandT,5.46,7.6899999999999995,TC Foods Spicy Beef Filling in Crispy Pastry Crust (454g),0,2024,9,1
+TandT,5.46,7.6899999999999995,TC Foods Spicy Beef Filling in Crispy Pastry Crust (454g),0,2024,9,2
+TandT,5.46,7.6899999999999995,TC Foods Spicy Beef Filling in Crispy Pastry Crust (454g),0,2024,9,3
+TandT,5.46,7.6899999999999995,TC Foods Spicy Beef Filling in Crispy Pastry Crust (454g),0,2024,9,4
+TandT,5.46,7.6899999999999995,TC Foods Spicy Beef Filling in Crispy Pastry Crust (454g),0,2024,9,5
+TandT,5.46,7.6899999999999995,TC Foods Spicy Beef Filling in Crispy Pastry Crust (454g),0,2024,9,6
+TandT,5.46,7.6899999999999995,TC Foods Spicy Beef Filling in Crispy Pastry Crust (454g),0,2024,9,7
+TandT,5.46,7.6899999999999995,TC Foods Spicy Beef Filling in Crispy Pastry Crust (454g),0,2024,9,8
+TandT,5.46,7.6899999999999995,TC Foods Spicy Beef Filling in Crispy Pastry Crust (454g),0,2024,9,9
+TandT,5.46,7.6899999999999995,TC Foods Spicy Beef Filling in Crispy Pastry Crust (454g),0,2024,9,11
+TandT,5.46,7.6899999999999995,TC Foods Spicy Beef Filling in Crispy Pastry Crust (454g),0,2024,9,12
+TandT,9.97,13.19,T&T Frozen Janpanese Style Pork & Beef & Vegetable Gyoza Value Pack (1200g),0,2024,8,8
+TandT,9.97,13.19,T&T Frozen Janpanese Style Pork & Beef & Vegetable Gyoza Value Pack (1200g),0,2024,8,9
+TandT,9.97,13.19,T&T Frozen Janpanese Style Pork & Beef & Vegetable Gyoza Value Pack (1200g),0,2024,8,10
+TandT,9.97,13.19,T&T Frozen Janpanese Style Pork & Beef & Vegetable Gyoza Value Pack (1200g),0,2024,8,11
+TandT,9.97,13.19,T&T Frozen Janpanese Style Pork & Beef & Vegetable Gyoza Value Pack (1200g),0,2024,8,12
+TandT,9.97,13.19,T&T Frozen Janpanese Style Pork & Beef & Vegetable Gyoza Value Pack (1200g),0,2024,8,13
+TandT,9.97,13.19,T&T Frozen Janpanese Style Pork & Beef & Vegetable Gyoza Value Pack (1200g),0,2024,8,14
+TandT,9.97,13.19,T&T Frozen Janpanese Style Pork & Beef & Vegetable Gyoza Value Pack (1200g),0,2024,8,15
+TandT,9.97,11.99,T&T Frozen Janpanese Style Pork & Beef & Vegetable Gyoza Value Pack (1200g),0,2024,10,4
+TandT,9.97,11.99,T&T Frozen Janpanese Style Pork & Beef & Vegetable Gyoza Value Pack (1200g),0,2024,10,5
+TandT,9.97,11.99,T&T Frozen Janpanese Style Pork & Beef & Vegetable Gyoza Value Pack (1200g),0,2024,10,6
+TandT,9.97,11.99,T&T Frozen Janpanese Style Pork & Beef & Vegetable Gyoza Value Pack (1200g),0,2024,10,7
+TandT,9.97,11.99,T&T Frozen Janpanese Style Pork & Beef & Vegetable Gyoza Value Pack (1200g),0,2024,10,8
+TandT,9.97,11.99,T&T Frozen Janpanese Style Pork & Beef & Vegetable Gyoza Value Pack (1200g),0,2024,10,9
+TandT,9.97,11.99,T&T Frozen Janpanese Style Pork & Beef & Vegetable Gyoza Value Pack (1200g),0,2024,10,10
+TandT,9.97,11.99,T&T Frozen Janpanese Style Pork & Beef & Vegetable Gyoza Value Pack (1200g),0,2024,10,11
+TandT,9.97,11.99,T&T Frozen Janpanese Style Pork & Beef & Vegetable Gyoza Value Pack (1200g),0,2024,10,12
+TandT,9.97,11.99,T&T Frozen Janpanese Style Pork & Beef & Vegetable Gyoza Value Pack (1200g),0,2024,10,13
+TandT,9.97,11.99,T&T Frozen Janpanese Style Pork & Beef & Vegetable Gyoza Value Pack (1200g),0,2024,10,15
+TandT,6.46,9.89,Beef Pork&Daikon Radish Dumpling (454g),0,2024,8,16
+TandT,6.46,9.89,Beef Pork&Daikon Radish Dumpling (454g),0,2024,8,17
+TandT,6.46,9.89,Beef Pork&Daikon Radish Dumpling (454g),0,2024,8,18
+TandT,6.46,9.89,Beef Pork&Daikon Radish Dumpling (454g),0,2024,8,19
+TandT,6.46,9.89,Beef Pork&Daikon Radish Dumpling (454g),0,2024,8,20
+TandT,6.46,9.89,Beef Pork&Daikon Radish Dumpling (454g),0,2024,8,21
+TandT,6.46,8.99,Beef Pork&Daikon Radish Dumpling (454g),0,2024,8,23
+TandT,6.46,9.89,Beef Pork&Daikon Radish Dumpling (454g),0,2024,8,24
+TandT,6.46,9.89,Beef Pork&Daikon Radish Dumpling (454g),0,2024,8,25
+TandT,6.46,8.99,Beef Pork&Daikon Radish Dumpling (454g),0,2024,8,26
+TandT,6.46,9.89,Beef Pork&Daikon Radish Dumpling (454g),0,2024,8,27
+TandT,6.46,9.89,Beef Pork&Daikon Radish Dumpling (454g),0,2024,8,28
+TandT,6.46,9.89,Beef Pork&Daikon Radish Dumpling (454g),0,2024,8,29
+TandT,6.46,8.99,Beef Pork&Daikon Radish Dumpling (454g),0,2024,9,20
+TandT,6.46,8.99,Beef Pork&Daikon Radish Dumpling (454g),0,2024,9,21
+TandT,6.46,8.99,Beef Pork&Daikon Radish Dumpling (454g),0,2024,9,22
+TandT,6.46,8.99,Beef Pork&Daikon Radish Dumpling (454g),0,2024,9,23
+TandT,6.46,8.99,Beef Pork&Daikon Radish Dumpling (454g),0,2024,9,24
+TandT,6.46,8.99,Beef Pork&Daikon Radish Dumpling (454g),0,2024,9,25
+TandT,6.46,8.99,Beef Pork&Daikon Radish Dumpling (454g),0,2024,9,26
+TandT,6.470000000000001,8.99,Beef Pork&Daikon Radish Dumpling (454g),0,2024,11,7
+TandT,6.470000000000001,8.99,Beef Pork&Daikon Radish Dumpling (454g),0,2024,11,8
+TandT,6.470000000000001,8.99,Beef Pork&Daikon Radish Dumpling (454g),0,2024,11,9
+TandT,6.470000000000001,8.99,Beef Pork&Daikon Radish Dumpling (454g),0,2024,11,10
+TandT,6.470000000000001,8.99,Beef Pork&Daikon Radish Dumpling (454g),0,2024,11,11
+TandT,6.470000000000001,8.99,Beef Pork&Daikon Radish Dumpling (454g),0,2024,11,12
+TandT,6.470000000000001,8.99,Beef Pork&Daikon Radish Dumpling (454g),0,2024,11,13
+TandT,6.470000000000001,8.99,Beef Pork&Daikon Radish Dumpling (454g),0,2024,11,14
 Walmart,8.97,11.97,"Al Safa Halal Uncooked Beef Burgers, 800 g",1.12,2024,6,20
 Walmart,8.97,11.97,"Al Safa Halal Uncooked Beef Burgers, 800 g",1.12,2024,6,20
 Walmart,8.97,11.97,"Al Safa Halal Uncooked Beef Burgers, 800 g",1.12,2024,6,21
@@ -250,6 +1600,36 @@ Walmart,8.97,11.97,"Al Safa Halal Uncooked Beef Burgers, 800 g",1.12,2024,7,2
 Walmart,8.97,11.97,"Al Safa Halal Uncooked Beef Burgers, 800 g",1.12,2024,7,2
 Walmart,8.97,11.97,"Al Safa Halal Uncooked Beef Burgers, 800 g",1.12,2024,7,3
 Walmart,8.97,11.97,"Al Safa Halal Uncooked Beef Burgers, 800 g",1.12,2024,7,3
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,7,4
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,7,5
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,7,6
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,7,7
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,7,8
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,7,9
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,7,13
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,7,14
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,7,15
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,7,16
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,7,17
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,7,18
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,7,19
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,7,20
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,7,21
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,7,22
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,7,25
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,7,26
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,7,27
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,7,28
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,7,29
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,9,5
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,9,9
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,9,10
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,9,14
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,9,16
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,9,19
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,9,20
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,9,21
+Walmart,5.7700000000000005,6.98,"Asian Inspirations Ginger Beef, 400 g",0,2024,9,22
 Walmart,13.98,15.98,"Our Finest Frozen Sirloin Beef Burgers, 8x142g, 1.13KG",1,2024,6,10
 Walmart,13.98,15.98,"Our Finest Frozen Sirloin Beef Burgers, 8x142g, 1.13KG",1,2024,6,12
 Walmart,13.98,15.98,"Our Finest Frozen Sirloin Beef Burgers, 8x142g, 1.13KG",1,2024,6,12
@@ -303,6 +1683,29 @@ Walmart,5.7700000000000005,6.48,"Schneiders Original Beef Pies, 400 g",1.44,2024
 Walmart,5.7700000000000005,6.48,"Schneiders Original Beef Pies, 400 g",1.44,2024,8,27
 Walmart,5.7700000000000005,6.48,"Schneiders Original Beef Pies, 400 g",1.44,2024,8,28
 Walmart,5.7700000000000005,6.48,"Schneiders Original Beef Pies, 400 g",1.44,2024,8,30
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Braised Beef (6)5x106 G, Kang Shi Fu Braised Beef",0,2024,6,20
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Braised Beef (6)5x106 G, Kang Shi Fu Braised Beef",0,2024,6,21
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Braised Beef (6)5x106 G, Kang Shi Fu Braised Beef",0,2024,6,22
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Braised Beef (6)5x106 G, Kang Shi Fu Braised Beef",0,2024,6,23
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Braised Beef (6)5x106 G, Kang Shi Fu Braised Beef",0,2024,6,24
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Braised Beef (6)5x106 G, Kang Shi Fu Braised Beef",0,2024,6,26
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Braised Beef (6)5x106 G, Kang Shi Fu Braised Beef",0,2024,6,27
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Braised Beef (6)5x106 G, Kang Shi Fu Braised Beef",0,2024,6,28
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Braised Beef (6)5x106 G, Kang Shi Fu Braised Beef",0,2024,6,29
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Braised Beef (6)5x106 G, Kang Shi Fu Braised Beef",0,2024,6,30
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Braised Beef (6)5x106 G, Kang Shi Fu Braised Beef",0,2024,7,1
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Braised Beef (6)5x106 G, Kang Shi Fu Braised Beef",0,2024,7,3
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Braised Beef (6)5x106 G, Kang Shi Fu Braised Beef",0,2024,7,4
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Braised Beef (6)5x106 G, Kang Shi Fu Braised Beef",0,2024,7,5
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Braised Beef (6)5x106 G, Kang Shi Fu Braised Beef",0,2024,7,6
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Braised Beef (6)5x106 G, Kang Shi Fu Braised Beef",0,2024,7,7
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Braised Beef (6)5x106 G, Kang Shi Fu Braised Beef",0,2024,7,8
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Braised Beef (6)5x106 G, Kang Shi Fu Braised Beef",0,2024,7,9
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Braised Beef (6)5x106 G, Kang Shi Fu Braised Beef",0,2024,7,13
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Braised Beef (6)5x106 G, Kang Shi Fu Braised Beef",0,2024,7,14
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Braised Beef (6)5x106 G, Kang Shi Fu Braised Beef",0,2024,7,15
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Braised Beef (6)5x106 G, Kang Shi Fu Braised Beef",0,2024,7,16
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Braised Beef (6)5x106 G, Kang Shi Fu Braised Beef",0,2024,7,17
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S ORIGINAL BEEF JERKY 80G, JL ORIGINAL BEEF JERKY 80G",6.21,2024,6,27
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S ORIGINAL BEEF JERKY 80G, JL ORIGINAL BEEF JERKY 80G",6.21,2024,6,28
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S ORIGINAL BEEF JERKY 80G, JL ORIGINAL BEEF JERKY 80G",6.21,2024,6,29
@@ -325,6 +1728,7 @@ Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S ORIGINAL BEEF JERKY 80G
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S ORIGINAL BEEF JERKY 80G, JL ORIGINAL BEEF JERKY 80G",6.21,2024,7,19
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S ORIGINAL BEEF JERKY 80G, JL ORIGINAL BEEF JERKY 80G",6.21,2024,7,20
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S ORIGINAL BEEF JERKY 80G, JL ORIGINAL BEEF JERKY 80G",6.21,2024,7,21
+Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S ORIGINAL BEEF JERKY 80G, JL ORIGINAL BEEF JERKY 80G",0,2024,7,22
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S ORIGINAL BEEF JERKY 80G, JL ORIGINAL BEEF JERKY 80G",6.21,2024,8,30
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S ORIGINAL BEEF JERKY 80G, JL ORIGINAL BEEF JERKY 80G",6.21,2024,8,31
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S ORIGINAL BEEF JERKY 80G, JL ORIGINAL BEEF JERKY 80G",6.21,2024,9,1
@@ -376,6 +1780,7 @@ Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S TERIYAKI BEEF JERKY 80G
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S TERIYAKI BEEF JERKY 80G, JL TERIYAKI BEEF JERKY 80G",6.21,2024,7,19
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S TERIYAKI BEEF JERKY 80G, JL TERIYAKI BEEF JERKY 80G",6.21,2024,7,20
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S TERIYAKI BEEF JERKY 80G, JL TERIYAKI BEEF JERKY 80G",6.21,2024,7,21
+Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S TERIYAKI BEEF JERKY 80G, JL TERIYAKI BEEF JERKY 80G",0,2024,7,22
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S TERIYAKI BEEF JERKY 80G, JL TERIYAKI BEEF JERKY 80G",6.21,2024,8,30
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S TERIYAKI BEEF JERKY 80G, JL TERIYAKI BEEF JERKY 80G",6.21,2024,8,31
 Walmart,4.970000000000001,5.970000000000001,"JACK LINK'S TERIYAKI BEEF JERKY 80G, JL TERIYAKI BEEF JERKY 80G",6.21,2024,9,1
@@ -455,6 +1860,30 @@ Walmart,7.88,10.97,"Mandarin Teriyaki Beef Meatballs, 460 g",1.71,2024,10,20
 Walmart,7.88,10.97,"Mandarin Teriyaki Beef Meatballs, 460 g",1.71,2024,10,21
 Walmart,7.88,10.97,"Mandarin Teriyaki Beef Meatballs, 460 g",1.71,2024,10,22
 Walmart,7.88,10.97,"Mandarin Teriyaki Beef Meatballs, 460 g",1.71,2024,10,23
+Walmart,10.97,12.97,"Gold Label Home Style Meals Beef Taco Filling Mix, 800 g",0,2024,7,4
+Walmart,10.97,12.97,"Gold Label Home Style Meals Beef Taco Filling Mix, 800 g",0,2024,7,5
+Walmart,10.97,12.97,"Gold Label Home Style Meals Beef Taco Filling Mix, 800 g",0,2024,7,6
+Walmart,10.97,12.97,"Gold Label Home Style Meals Beef Taco Filling Mix, 800 g",0,2024,7,7
+Walmart,10.97,12.97,"Gold Label Home Style Meals Beef Taco Filling Mix, 800 g",0,2024,7,8
+Walmart,10.97,12.97,"Gold Label Home Style Meals Beef Taco Filling Mix, 800 g",0,2024,7,10
+Walmart,10.97,12.97,"Gold Label Home Style Meals Beef Taco Filling Mix, 800 g",0,2024,7,12
+Walmart,10.97,12.97,"Gold Label Home Style Meals Beef Taco Filling Mix, 800 g",0,2024,7,13
+Walmart,10.97,12.97,"Gold Label Home Style Meals Beef Taco Filling Mix, 800 g",0,2024,7,14
+Walmart,10.97,12.97,"Gold Label Home Style Meals Beef Taco Filling Mix, 800 g",0,2024,7,15
+Walmart,10.97,12.97,"Gold Label Home Style Meals Beef Taco Filling Mix, 800 g",0,2024,7,16
+Walmart,10.97,12.97,"Gold Label Home Style Meals Beef Taco Filling Mix, 800 g",0,2024,7,17
+Walmart,10.97,12.97,"Gold Label Home Style Meals Beef Taco Filling Mix, 800 g",0,2024,7,18
+Walmart,10.97,12.97,"Gold Label Home Style Meals Beef Taco Filling Mix, 800 g",0,2024,7,19
+Walmart,10.97,12.97,"Gold Label Home Style Meals Beef Taco Filling Mix, 800 g",0,2024,7,20
+Walmart,10.97,12.97,"Gold Label Home Style Meals Beef Taco Filling Mix, 800 g",0,2024,7,21
+Walmart,10.97,12.97,"Gold Label Home Style Meals Beef Taco Filling Mix, 800 g",0,2024,7,22
+Walmart,10.97,12.97,"Gold Label Home Style Meals Beef Taco Filling Mix, 800 g",0,2024,7,25
+Walmart,10.97,12.97,"Gold Label Home Style Meals Beef Taco Filling Mix, 800 g",0,2024,7,26
+Walmart,10.97,12.97,"Gold Label Home Style Meals Beef Taco Filling Mix, 800 g",0,2024,7,27
+Walmart,10.97,12.97,"Gold Label Home Style Meals Beef Taco Filling Mix, 800 g",0,2024,7,28
+Walmart,10.97,12.97,"Gold Label Home Style Meals Beef Taco Filling Mix, 800 g",0,2024,7,29
+Walmart,10.97,12.97,"Gold Label Home Style Meals Beef Taco Filling Mix, 800 g",0,2024,7,30
+Walmart,10.97,12.97,"Gold Label Home Style Meals Beef Taco Filling Mix, 800 g",0,2024,7,31
 Walmart,8.97,10.97,"Schneiders Pepperettes Sausage Sticks Beef, 300 g",2.99,2024,6,20
 Walmart,8.97,10.97,"Schneiders Pepperettes Sausage Sticks Beef, 300 g",2.99,2024,6,21
 Walmart,8.97,10.97,"Schneiders Pepperettes Sausage Sticks Beef, 300 g",2.99,2024,6,21
@@ -565,6 +1994,70 @@ Walmart,5.970000000000001,6.970000000000001,"Maple Leaf Natural Selections Shave
 Walmart,5.970000000000001,6.970000000000001,"Maple Leaf Natural Selections Shaved Roast Beef Deli Meat, 150 g",3.98,2024,9,15
 Walmart,5.970000000000001,6.970000000000001,"Maple Leaf Natural Selections Shaved Roast Beef Deli Meat, 150 g",3.98,2024,9,17
 Walmart,5.970000000000001,6.970000000000001,"Maple Leaf Natural Selections Shaved Roast Beef Deli Meat, 150 g",3.98,2024,9,18
+Walmart,7.84,10.97,"Great Value Frozen Beef Burgers, 8x113g, 904g",0,2024,6,13
+Walmart,7.84,10.97,"Great Value Frozen Beef Burgers, 8x113g, 904g",0,2024,6,14
+Walmart,7.84,10.97,"Great Value Frozen Beef Burgers, 8x113g, 904g",0,2024,6,15
+Walmart,7.84,10.97,"Great Value Frozen Beef Burgers, 8x113g, 904g",0,2024,6,15
+Walmart,7.84,10.97,"Great Value Frozen Beef Burgers, 8x113g, 904g",0,2024,6,16
+Walmart,7.84,10.97,"Great Value Frozen Beef Burgers, 8x113g, 904g",0,2024,6,17
+Walmart,7.84,10.97,"Great Value Frozen Beef Burgers, 8x113g, 904g",0,2024,6,18
+Walmart,7.84,10.97,"Great Value Frozen Beef Burgers, 8x113g, 904g",0,2024,6,19
+Walmart,7.78,10.97,"Great Value Frozen Beef Burgers, 8x113g, 904g",0,2024,6,27
+Walmart,7.78,10.97,"Great Value Frozen Beef Burgers, 8x113g, 904g",0,2024,6,28
+Walmart,7.78,10.97,"Great Value Frozen Beef Burgers, 8x113g, 904g",0,2024,6,29
+Walmart,7.78,10.97,"Great Value Frozen Beef Burgers, 8x113g, 904g",0,2024,6,30
+Walmart,7.78,10.97,"Great Value Frozen Beef Burgers, 8x113g, 904g",0,2024,7,1
+Walmart,7.78,10.97,"Great Value Frozen Beef Burgers, 8x113g, 904g",0,2024,7,2
+Walmart,7.78,10.97,"Great Value Frozen Beef Burgers, 8x113g, 904g",0,2024,7,3
+Walmart,7.72,10.97,"Great Value Frozen Beef Burgers, 8x113g, 904g",0,2024,8,2
+Walmart,7.72,10.97,"Great Value Frozen Beef Burgers, 8x113g, 904g",0,2024,8,3
+Walmart,7.72,10.97,"Great Value Frozen Beef Burgers, 8x113g, 904g",0,2024,8,4
+Walmart,7.72,10.97,"Great Value Frozen Beef Burgers, 8x113g, 904g",0,2024,8,5
+Walmart,7.72,10.97,"Great Value Frozen Beef Burgers, 8x113g, 904g",0,2024,8,6
+Walmart,7.72,10.97,"Great Value Frozen Beef Burgers, 8x113g, 904g",0,2024,8,7
+Walmart,7.68,10.97,"Great Value Frozen Beef Burgers, 8x113g, 904g",0,2024,8,30
+Walmart,7.68,10.97,"Great Value Frozen Beef Burgers, 8x113g, 904g",0,2024,9,1
+Walmart,7.68,10.97,"Great Value Frozen Beef Burgers, 8x113g, 904g",0,2024,9,2
+Walmart,7.68,10.97,"Great Value Frozen Beef Burgers, 8x113g, 904g",0,2024,9,3
+Walmart,1.57,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,6,20
+Walmart,1.57,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,6,20
+Walmart,1.57,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,6,21
+Walmart,1.57,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,6,22
+Walmart,1.57,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,6,23
+Walmart,1.57,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,6,24
+Walmart,1.57,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,6,26
+Walmart,1.57,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,6,27
+Walmart,1.57,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,6,28
+Walmart,1.57,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,6,29
+Walmart,1.57,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,6,30
+Walmart,1.57,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,7,1
+Walmart,1.57,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,7,2
+Walmart,1.57,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,7,3
+Walmart,1.47,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,8,22
+Walmart,1.47,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,8,23
+Walmart,1.47,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,8,24
+Walmart,1.47,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,8,25
+Walmart,1.47,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,8,26
+Walmart,1.47,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,8,27
+Walmart,1.47,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,8,28
+Walmart,1.47,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,8,30
+Walmart,1.47,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,9,1
+Walmart,1.47,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,9,2
+Walmart,1.47,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,9,3
+Walmart,1.44,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,10,17
+Walmart,1.44,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,10,18
+Walmart,1.44,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,10,19
+Walmart,1.44,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,10,20
+Walmart,1.44,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,10,21
+Walmart,1.44,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,10,22
+Walmart,1.44,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,10,23
+Walmart,1.44,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,10,24
+Walmart,1.44,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,10,25
+Walmart,1.44,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,10,26
+Walmart,1.44,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,10,27
+Walmart,1.44,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,10,28
+Walmart,1.44,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,10,29
+Walmart,1.44,2.2800000000000002,"Michelina's Macaroni And Beef, 255 g",0,2024,10,30
 Walmart,7.470000000000001,8.97,"Patty King International Jamaican Style Patties - Mild Beef, Beef Patties - Mild 9x130g",7.47,2024,7,18
 Walmart,7.470000000000001,8.97,"Patty King International Jamaican Style Patties - Mild Beef, Beef Patties - Mild 9x130g",7.47,2024,7,19
 Walmart,7.470000000000001,8.97,"Patty King International Jamaican Style Patties - Mild Beef, Beef Patties - Mild 9x130g",7.47,2024,7,20
@@ -747,6 +2240,106 @@ Walmart,12.98,15.98,"Our Finest Sirloin & Prime Rib Beef Burgers, 8 x 142 g",1.1
 Walmart,12.98,15.98,"Our Finest Sirloin & Prime Rib Beef Burgers, 8 x 142 g",1.15,2024,8,19
 Walmart,12.98,15.98,"Our Finest Sirloin & Prime Rib Beef Burgers, 8 x 142 g",1.15,2024,8,20
 Walmart,12.98,15.98,"Our Finest Sirloin & Prime Rib Beef Burgers, 8 x 142 g",1.15,2024,8,21
+Walmart,7.84,10.97,"Great Value Frozen Cheese Beef Burgers, 8x113g, 904g",0,2024,6,13
+Walmart,7.84,10.97,"Great Value Frozen Cheese Beef Burgers, 8x113g, 904g",0,2024,6,14
+Walmart,7.84,10.97,"Great Value Frozen Cheese Beef Burgers, 8x113g, 904g",0,2024,6,15
+Walmart,7.84,10.97,"Great Value Frozen Cheese Beef Burgers, 8x113g, 904g",0,2024,6,16
+Walmart,7.84,10.97,"Great Value Frozen Cheese Beef Burgers, 8x113g, 904g",0,2024,6,17
+Walmart,7.84,10.97,"Great Value Frozen Cheese Beef Burgers, 8x113g, 904g",0,2024,6,18
+Walmart,7.78,10.97,"Great Value Frozen Cheese Beef Burgers, 8x113g, 904g",0,2024,6,27
+Walmart,7.78,10.97,"Great Value Frozen Cheese Beef Burgers, 8x113g, 904g",0,2024,6,28
+Walmart,7.78,10.97,"Great Value Frozen Cheese Beef Burgers, 8x113g, 904g",0,2024,6,29
+Walmart,7.78,10.97,"Great Value Frozen Cheese Beef Burgers, 8x113g, 904g",0,2024,6,30
+Walmart,7.78,10.97,"Great Value Frozen Cheese Beef Burgers, 8x113g, 904g",0,2024,7,1
+Walmart,7.78,10.97,"Great Value Frozen Cheese Beef Burgers, 8x113g, 904g",0,2024,7,2
+Walmart,7.78,10.97,"Great Value Frozen Cheese Beef Burgers, 8x113g, 904g",0,2024,7,3
+Walmart,7.72,10.97,"Great Value Frozen Cheese Beef Burgers, 8x113g, 904g",0,2024,8,2
+Walmart,7.72,10.97,"Great Value Frozen Cheese Beef Burgers, 8x113g, 904g",0,2024,8,3
+Walmart,7.72,10.97,"Great Value Frozen Cheese Beef Burgers, 8x113g, 904g",0,2024,8,4
+Walmart,7.72,10.97,"Great Value Frozen Cheese Beef Burgers, 8x113g, 904g",0,2024,8,5
+Walmart,7.72,10.97,"Great Value Frozen Cheese Beef Burgers, 8x113g, 904g",0,2024,8,6
+Walmart,7.72,10.97,"Great Value Frozen Cheese Beef Burgers, 8x113g, 904g",0,2024,8,7
+Walmart,7.68,10.97,"Great Value Frozen Cheese Beef Burgers, 8x113g, 904g",0,2024,8,30
+Walmart,7.68,10.97,"Great Value Frozen Cheese Beef Burgers, 8x113g, 904g",0,2024,9,1
+Walmart,7.68,10.97,"Great Value Frozen Cheese Beef Burgers, 8x113g, 904g",0,2024,9,2
+Walmart,7.68,10.97,"Great Value Frozen Cheese Beef Burgers, 8x113g, 904g",0,2024,9,3
+Walmart,19.979999999999997,23.979999999999997,"Great Value Frozen Beef Value Pack Burgers, 20x113g, 2.27KG",0,2024,7,12
+Walmart,19.979999999999997,23.979999999999997,"Great Value Frozen Beef Value Pack Burgers, 20x113g, 2.27KG",0,2024,7,13
+Walmart,19.979999999999997,23.979999999999997,"Great Value Frozen Beef Value Pack Burgers, 20x113g, 2.27KG",0,2024,7,14
+Walmart,19.979999999999997,23.979999999999997,"Great Value Frozen Beef Value Pack Burgers, 20x113g, 2.27KG",0,2024,7,15
+Walmart,19.979999999999997,23.979999999999997,"Great Value Frozen Beef Value Pack Burgers, 20x113g, 2.27KG",0,2024,7,16
+Walmart,19.979999999999997,23.979999999999997,"Great Value Frozen Beef Value Pack Burgers, 20x113g, 2.27KG",0,2024,7,17
+Walmart,19.979999999999997,23.979999999999997,"Great Value Frozen Beef Value Pack Burgers, 20x113g, 2.27KG",0,2024,8,22
+Walmart,19.979999999999997,23.979999999999997,"Great Value Frozen Beef Value Pack Burgers, 20x113g, 2.27KG",0,2024,8,23
+Walmart,19.979999999999997,23.979999999999997,"Great Value Frozen Beef Value Pack Burgers, 20x113g, 2.27KG",0,2024,8,24
+Walmart,19.979999999999997,23.979999999999997,"Great Value Frozen Beef Value Pack Burgers, 20x113g, 2.27KG",0,2024,8,25
+Walmart,19.979999999999997,23.979999999999997,"Great Value Frozen Beef Value Pack Burgers, 20x113g, 2.27KG",0,2024,8,26
+Walmart,19.979999999999997,23.979999999999997,"Great Value Frozen Beef Value Pack Burgers, 20x113g, 2.27KG",0,2024,8,27
+Walmart,19.979999999999997,23.979999999999997,"Great Value Frozen Beef Value Pack Burgers, 20x113g, 2.27KG",0,2024,8,28
+Walmart,3.77,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,6,10
+Walmart,3.77,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,6,11
+Walmart,3.77,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,6,12
+Walmart,3.77,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,6,12
+Walmart,3.77,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,6,13
+Walmart,3.77,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,6,14
+Walmart,3.77,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,6,15
+Walmart,3.77,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,6,16
+Walmart,3.77,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,6,17
+Walmart,3.77,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,6,18
+Walmart,3.77,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,6,19
+Walmart,3.77,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,6,20
+Walmart,3.77,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,6,20
+Walmart,3.77,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,6,21
+Walmart,3.77,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,6,22
+Walmart,3.77,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,6,23
+Walmart,3.77,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,6,24
+Walmart,3.77,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,6,25
+Walmart,3.77,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,6,26
+Walmart,3.9699999999999998,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,8,30
+Walmart,3.9699999999999998,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,9,1
+Walmart,3.9699999999999998,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,9,2
+Walmart,3.9699999999999998,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,9,3
+Walmart,3.9699999999999998,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,9,5
+Walmart,3.9699999999999998,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,9,6
+Walmart,3.9699999999999998,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,9,7
+Walmart,3.9699999999999998,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,9,8
+Walmart,3.9699999999999998,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,9,9
+Walmart,3.9699999999999998,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,9,10
+Walmart,3.9699999999999998,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,9,11
+Walmart,3.9699999999999998,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,9,12
+Walmart,3.9699999999999998,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,9,13
+Walmart,3.9699999999999998,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,9,14
+Walmart,3.9699999999999998,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,9,15
+Walmart,3.9699999999999998,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,9,16
+Walmart,3.9699999999999998,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,9,17
+Walmart,3.9699999999999998,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,9,18
+Walmart,3.9699999999999998,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,9,19
+Walmart,3.9699999999999998,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,9,20
+Walmart,3.9699999999999998,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,9,21
+Walmart,3.9699999999999998,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,9,22
+Walmart,3.9699999999999998,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,9,23
+Walmart,3.9699999999999998,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,9,24
+Walmart,3.9699999999999998,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,9,25
+Walmart,3.57,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,10,31
+Walmart,3.57,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,11,1
+Walmart,3.57,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,11,2
+Walmart,3.57,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,11,3
+Walmart,3.57,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,11,4
+Walmart,3.57,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,11,5
+Walmart,3.57,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,11,6
+Walmart,3.57,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,11,7
+Walmart,3.57,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,11,8
+Walmart,3.57,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,11,9
+Walmart,3.57,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,11,10
+Walmart,3.57,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,11,11
+Walmart,3.57,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,11,12
+Walmart,3.57,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,11,14
+Walmart,3.57,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,11,15
+Walmart,3.57,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,11,16
+Walmart,3.57,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,11,17
+Walmart,3.57,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,11,18
+Walmart,3.57,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,11,19
+Walmart,3.57,5.28,"Hungry-Man® Grilled Beef Steakette, 425 g",0,2024,11,20
 Walmart,13.98,15.98,"Our Finest Frozen Cheddar & Bacon Stuffed Beef Burgers, 6x170g, 1.02KG",1.37,2024,6,10
 Walmart,13.98,15.98,"Our Finest Frozen Cheddar & Bacon Stuffed Beef Burgers, 6x170g, 1.02KG",1.37,2024,6,11
 Walmart,13.98,15.98,"Our Finest Frozen Cheddar & Bacon Stuffed Beef Burgers, 6x170g, 1.02KG",1.37,2024,6,12
@@ -779,6 +2372,54 @@ Walmart,12.98,15.98,"Our Finest Frozen Cheddar & Bacon Stuffed Beef Burgers, 6x1
 Walmart,12.98,15.98,"Our Finest Frozen Cheddar & Bacon Stuffed Beef Burgers, 6x170g, 1.02KG",1.27,2024,8,19
 Walmart,12.98,15.98,"Our Finest Frozen Cheddar & Bacon Stuffed Beef Burgers, 6x170g, 1.02KG",1.27,2024,8,20
 Walmart,12.98,15.98,"Our Finest Frozen Cheddar & Bacon Stuffed Beef Burgers, 6x170g, 1.02KG",1.27,2024,8,21
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,8,9
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,8,10
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,8,11
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,8,12
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,8,13
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,8,14
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,8,15
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,8,16
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,8,17
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,8,18
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,8,19
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,8,20
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,8,21
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,8,22
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,8,23
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,8,24
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,8,25
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,8,26
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,8,27
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,8,28
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,8,30
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,10,17
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,10,18
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,10,19
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,10,20
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,10,21
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,10,22
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,10,23
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,10,24
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,10,25
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,10,26
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,10,27
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,10,28
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,10,29
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,10,30
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,10,31
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,11,1
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,11,2
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,11,3
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,11,4
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,11,5
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,11,6
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,11,7
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,11,8
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,11,9
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,11,10
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,11,11
+Walmart,6.970000000000001,7.970000000000001,"GR SLW RSTD BEEF, GR Slw Rstd Beef",0,2024,11,12
 Walmart,13.98,15.98,"Our Finest Lean Angus Beef Burgers, 8 x 128 g",1.37,2024,6,10
 Walmart,13.98,15.98,"Our Finest Lean Angus Beef Burgers, 8 x 128 g",1.37,2024,6,12
 Walmart,13.98,15.98,"Our Finest Lean Angus Beef Burgers, 8 x 128 g",1.37,2024,6,12
@@ -810,6 +2451,19 @@ Walmart,12.98,15.98,"Our Finest Lean Angus Beef Burgers, 8 x 128 g",1.27,2024,8,
 Walmart,12.98,15.98,"Our Finest Lean Angus Beef Burgers, 8 x 128 g",1.27,2024,8,19
 Walmart,12.98,15.98,"Our Finest Lean Angus Beef Burgers, 8 x 128 g",1.27,2024,8,20
 Walmart,12.98,15.98,"Our Finest Lean Angus Beef Burgers, 8 x 128 g",1.27,2024,8,21
+Walmart,19.979999999999997,24.97,"Great Value Frozen Fully Cooked Beef Burgers, 20x113g, 2.26KG",0,2024,7,12
+Walmart,19.979999999999997,24.97,"Great Value Frozen Fully Cooked Beef Burgers, 20x113g, 2.26KG",0,2024,7,13
+Walmart,19.979999999999997,24.97,"Great Value Frozen Fully Cooked Beef Burgers, 20x113g, 2.26KG",0,2024,7,14
+Walmart,19.979999999999997,24.97,"Great Value Frozen Fully Cooked Beef Burgers, 20x113g, 2.26KG",0,2024,7,15
+Walmart,19.979999999999997,24.97,"Great Value Frozen Fully Cooked Beef Burgers, 20x113g, 2.26KG",0,2024,7,16
+Walmart,19.979999999999997,24.97,"Great Value Frozen Fully Cooked Beef Burgers, 20x113g, 2.26KG",0,2024,7,17
+Walmart,19.979999999999997,24.97,"Great Value Frozen Fully Cooked Beef Burgers, 20x113g, 2.26KG",0,2024,8,22
+Walmart,19.979999999999997,24.97,"Great Value Frozen Fully Cooked Beef Burgers, 20x113g, 2.26KG",0,2024,8,23
+Walmart,19.979999999999997,24.97,"Great Value Frozen Fully Cooked Beef Burgers, 20x113g, 2.26KG",0,2024,8,24
+Walmart,19.979999999999997,24.97,"Great Value Frozen Fully Cooked Beef Burgers, 20x113g, 2.26KG",0,2024,8,25
+Walmart,19.979999999999997,24.97,"Great Value Frozen Fully Cooked Beef Burgers, 20x113g, 2.26KG",0,2024,8,26
+Walmart,19.979999999999997,24.97,"Great Value Frozen Fully Cooked Beef Burgers, 20x113g, 2.26KG",0,2024,8,27
+Walmart,19.979999999999997,24.97,"Great Value Frozen Fully Cooked Beef Burgers, 20x113g, 2.26KG",0,2024,8,28
 Walmart,4.970000000000001,6.57,"Gardein® Ultimate Beefless Ground, 390 g",1.27,2024,7,4
 Walmart,4.970000000000001,6.57,"Gardein® Ultimate Beefless Ground, 390 g",1.27,2024,7,5
 Walmart,4.970000000000001,6.57,"Gardein® Ultimate Beefless Ground, 390 g",1.27,2024,7,6
@@ -870,6 +2524,47 @@ Walmart,12.47,14.48,"Our Finest Frozen Sirloin Beef Meatballs Appetizers, 60 Pie
 Walmart,12.47,14.48,"Our Finest Frozen Sirloin Beef Meatballs Appetizers, 60 Pieces, 907g",1.37,2024,10,13
 Walmart,12.47,14.48,"Our Finest Frozen Sirloin Beef Meatballs Appetizers, 60 Pieces, 907g",1.37,2024,10,14
 Walmart,12.47,14.48,"Our Finest Frozen Sirloin Beef Meatballs Appetizers, 60 Pieces, 907g",1.37,2024,10,15
+Walmart,7.78,10.97,"Great Value Fully Cooked Beef Burgers, 6 burgers, 678 g",0,2024,6,27
+Walmart,7.78,10.97,"Great Value Fully Cooked Beef Burgers, 6 burgers, 678 g",0,2024,6,28
+Walmart,7.78,10.97,"Great Value Fully Cooked Beef Burgers, 6 burgers, 678 g",0,2024,6,29
+Walmart,7.78,10.97,"Great Value Fully Cooked Beef Burgers, 6 burgers, 678 g",0,2024,6,30
+Walmart,7.78,10.97,"Great Value Fully Cooked Beef Burgers, 6 burgers, 678 g",0,2024,7,1
+Walmart,7.78,10.97,"Great Value Fully Cooked Beef Burgers, 6 burgers, 678 g",0,2024,7,2
+Walmart,7.78,10.97,"Great Value Fully Cooked Beef Burgers, 6 burgers, 678 g",0,2024,7,3
+Walmart,7.72,10.97,"Great Value Fully Cooked Beef Burgers, 6 burgers, 678 g",0,2024,8,2
+Walmart,7.72,10.97,"Great Value Fully Cooked Beef Burgers, 6 burgers, 678 g",0,2024,8,3
+Walmart,7.72,10.97,"Great Value Fully Cooked Beef Burgers, 6 burgers, 678 g",0,2024,8,4
+Walmart,7.72,10.97,"Great Value Fully Cooked Beef Burgers, 6 burgers, 678 g",0,2024,8,5
+Walmart,7.72,10.97,"Great Value Fully Cooked Beef Burgers, 6 burgers, 678 g",0,2024,8,6
+Walmart,7.72,10.97,"Great Value Fully Cooked Beef Burgers, 6 burgers, 678 g",0,2024,8,7
+Walmart,7.68,10.97,"Great Value Fully Cooked Beef Burgers, 6 burgers, 678 g",0,2024,8,30
+Walmart,7.68,10.97,"Great Value Fully Cooked Beef Burgers, 6 burgers, 678 g",0,2024,9,1
+Walmart,7.68,10.97,"Great Value Fully Cooked Beef Burgers, 6 burgers, 678 g",0,2024,9,2
+Walmart,7.68,10.97,"Great Value Fully Cooked Beef Burgers, 6 burgers, 678 g",0,2024,9,3
+Walmart,8.94,10,"Great Value Italian Style Beef Meatballs, 1.2 kg",0,2024,7,4
+Walmart,8.94,10,"Great Value Italian Style Beef Meatballs, 1.2 kg",0,2024,7,5
+Walmart,8.94,10,"Great Value Italian Style Beef Meatballs, 1.2 kg",0,2024,7,6
+Walmart,8.94,10,"Great Value Italian Style Beef Meatballs, 1.2 kg",0,2024,7,7
+Walmart,8.94,10,"Great Value Italian Style Beef Meatballs, 1.2 kg",0,2024,7,8
+Walmart,8.94,10,"Great Value Italian Style Beef Meatballs, 1.2 kg",0,2024,7,9
+Walmart,8.88,10,"Great Value Italian Style Beef Meatballs, 1.2 kg",0,2024,8,8
+Walmart,8.88,10,"Great Value Italian Style Beef Meatballs, 1.2 kg",0,2024,8,9
+Walmart,8.88,10,"Great Value Italian Style Beef Meatballs, 1.2 kg",0,2024,8,10
+Walmart,8.88,10,"Great Value Italian Style Beef Meatballs, 1.2 kg",0,2024,8,11
+Walmart,8.88,10,"Great Value Italian Style Beef Meatballs, 1.2 kg",0,2024,8,12
+Walmart,8.88,10,"Great Value Italian Style Beef Meatballs, 1.2 kg",0,2024,8,13
+Walmart,8.88,10,"Great Value Italian Style Beef Meatballs, 1.2 kg",0,2024,8,14
+Walmart,8.84,10,"Great Value Italian Style Beef Meatballs, 1.2 kg",0,2024,9,27
+Walmart,8.84,10,"Great Value Italian Style Beef Meatballs, 1.2 kg",0,2024,9,28
+Walmart,8.84,10,"Great Value Italian Style Beef Meatballs, 1.2 kg",0,2024,9,29
+Walmart,8.82,10,"Great Value Italian Style Beef Meatballs, 1.2 kg",0,2024,10,19
+Walmart,8.82,10,"Great Value Italian Style Beef Meatballs, 1.2 kg",0,2024,10,20
+Walmart,8.82,10,"Great Value Italian Style Beef Meatballs, 1.2 kg",0,2024,10,21
+Walmart,8.82,10,"Great Value Italian Style Beef Meatballs, 1.2 kg",0,2024,10,22
+Walmart,8.82,10,"Great Value Italian Style Beef Meatballs, 1.2 kg",0,2024,10,23
+Walmart,8.82,10,"Great Value Italian Style Beef Meatballs, 1.2 kg",0,2024,11,10
+Walmart,8.82,10,"Great Value Italian Style Beef Meatballs, 1.2 kg",0,2024,11,11
+Walmart,8.82,10,"Great Value Italian Style Beef Meatballs, 1.2 kg",0,2024,11,12
 Walmart,4.970000000000001,6.48,"Healthy Choice® Gourmet Steamers Healthy Choice Power Bowls Korean-Inspired Beef Bowl, 269g",1.85,2024,7,4
 Walmart,4.970000000000001,6.48,"Healthy Choice® Gourmet Steamers Healthy Choice Power Bowls Korean-Inspired Beef Bowl, 269g",1.85,2024,7,5
 Walmart,4.970000000000001,6.48,"Healthy Choice® Gourmet Steamers Healthy Choice Power Bowls Korean-Inspired Beef Bowl, 269g",1.85,2024,7,6
@@ -921,6 +2616,96 @@ Walmart,4.92,6.48,"Healthy Choice® Gourmet Steamers Healthy Choice Power Bowls 
 Walmart,4.92,6.48,"Healthy Choice® Gourmet Steamers Healthy Choice Power Bowls Korean-Inspired Beef Bowl, 269g",1.83,2024,10,21
 Walmart,4.92,6.48,"Healthy Choice® Gourmet Steamers Healthy Choice Power Bowls Korean-Inspired Beef Bowl, 269g",1.83,2024,10,22
 Walmart,4.92,6.48,"Healthy Choice® Gourmet Steamers Healthy Choice Power Bowls Korean-Inspired Beef Bowl, 269g",1.83,2024,10,23
+Walmart,9.94,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,6,27
+Walmart,9.94,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,6,28
+Walmart,9.94,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,6,29
+Walmart,9.94,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,6,30
+Walmart,9.94,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,7,1
+Walmart,9.94,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,7,3
+Walmart,9.94,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,7,4
+Walmart,9.94,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,7,5
+Walmart,9.94,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,7,6
+Walmart,9.94,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,7,7
+Walmart,9.94,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,7,8
+Walmart,9.94,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,7,9
+Walmart,9.94,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,7,12
+Walmart,9.94,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,7,13
+Walmart,9.94,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,7,14
+Walmart,9.94,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,7,15
+Walmart,9.94,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,7,16
+Walmart,9.94,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,7,17
+Walmart,9.94,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,7,18
+Walmart,9.94,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,7,19
+Walmart,9.94,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,7,20
+Walmart,9.94,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,7,21
+Walmart,9.94,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,7,22
+Walmart,5.7700000000000005,6.98,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,8,8
+Walmart,5.7700000000000005,6.98,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,8,9
+Walmart,5.7700000000000005,6.98,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,8,10
+Walmart,5.7700000000000005,6.98,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,8,11
+Walmart,5.7700000000000005,6.98,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,8,12
+Walmart,5.7700000000000005,6.98,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,8,13
+Walmart,5.7700000000000005,6.98,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,8,14
+Walmart,5.7700000000000005,6.98,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,8,15
+Walmart,5.7700000000000005,6.98,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,8,16
+Walmart,5.7700000000000005,6.98,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,8,17
+Walmart,5.7700000000000005,6.98,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,8,18
+Walmart,5.7700000000000005,6.98,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,8,19
+Walmart,5.7700000000000005,6.98,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,8,20
+Walmart,5.7700000000000005,6.98,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,8,21
+Walmart,5.7700000000000005,6.98,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,8,22
+Walmart,5.7700000000000005,6.98,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,8,23
+Walmart,5.7700000000000005,6.98,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,8,24
+Walmart,5.7700000000000005,6.98,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,8,25
+Walmart,5.7700000000000005,6.98,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,8,26
+Walmart,5.7700000000000005,6.98,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,8,27
+Walmart,5.7700000000000005,6.98,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,8,28
+Walmart,5.7700000000000005,6.98,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,8,30
+Walmart,9.77,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,11,7
+Walmart,9.77,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,11,8
+Walmart,9.77,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,11,9
+Walmart,9.77,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,11,10
+Walmart,9.77,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,11,11
+Walmart,9.77,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,11,12
+Walmart,9.77,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,11,14
+Walmart,9.77,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,11,15
+Walmart,9.77,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,11,16
+Walmart,9.77,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,11,17
+Walmart,9.77,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,11,18
+Walmart,9.77,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,11,19
+Walmart,9.77,11.97,"PF Changs Beef & Broccoli, Beef & Broccoli",0,2024,11,20
+Walmart,9.94,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,6,27
+Walmart,9.94,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,6,28
+Walmart,9.94,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,6,29
+Walmart,9.94,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,6,30
+Walmart,9.94,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,7,1
+Walmart,9.94,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,7,2
+Walmart,9.94,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,7,4
+Walmart,9.94,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,7,5
+Walmart,9.94,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,7,6
+Walmart,9.94,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,7,7
+Walmart,9.94,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,7,8
+Walmart,9.94,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,7,9
+Walmart,9.94,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,7,14
+Walmart,9.94,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,7,16
+Walmart,9.94,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,7,17
+Walmart,9.94,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,7,18
+Walmart,9.94,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,7,19
+Walmart,9.94,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,7,20
+Walmart,9.94,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,7,22
+Walmart,9.77,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,11,7
+Walmart,9.77,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,11,8
+Walmart,9.77,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,11,9
+Walmart,9.77,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,11,10
+Walmart,9.77,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,11,11
+Walmart,9.77,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,11,12
+Walmart,9.77,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,11,14
+Walmart,9.77,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,11,15
+Walmart,9.77,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,11,16
+Walmart,9.77,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,11,17
+Walmart,9.77,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,11,18
+Walmart,9.77,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,11,19
+Walmart,9.77,11.97,"PFC SK MNGLN STYLE BEEF 4/624G, PFC SK MNGLN STYLE BEEF 4/624G",0,2024,11,20
 Walmart,3.27,4.470000000000001,"BASSILI'S BEST - SAUSAGE AND BEEF RIGATONI, BASSILI'S BEST - SAUSAGE AND BEEF RIGATONI-300G",1.09,2024,10,24
 Walmart,3.27,4.470000000000001,"BASSILI'S BEST - SAUSAGE AND BEEF RIGATONI, BASSILI'S BEST - SAUSAGE AND BEEF RIGATONI-300G",1.09,2024,10,25
 Walmart,3.27,4.470000000000001,"BASSILI'S BEST - SAUSAGE AND BEEF RIGATONI, BASSILI'S BEST - SAUSAGE AND BEEF RIGATONI-300G",1.09,2024,10,26
@@ -934,6 +2719,93 @@ Walmart,3.27,4.470000000000001,"BASSILI'S BEST - SAUSAGE AND BEEF RIGATONI, BASS
 Walmart,3.27,4.470000000000001,"BASSILI'S BEST - SAUSAGE AND BEEF RIGATONI, BASSILI'S BEST - SAUSAGE AND BEEF RIGATONI-300G",1.09,2024,11,4
 Walmart,3.27,4.470000000000001,"BASSILI'S BEST - SAUSAGE AND BEEF RIGATONI, BASSILI'S BEST - SAUSAGE AND BEEF RIGATONI-300G",1.09,2024,11,5
 Walmart,3.27,4.470000000000001,"BASSILI'S BEST - SAUSAGE AND BEEF RIGATONI, BASSILI'S BEST - SAUSAGE AND BEEF RIGATONI-300G",1.09,2024,11,6
+Walmart,6.470000000000001,7.67,"McCain Pockets® Beef Taco, 6 x 90g",0,2024,11,14
+Walmart,6.470000000000001,7.67,"McCain Pockets® Beef Taco, 6 x 90g",0,2024,11,15
+Walmart,6.470000000000001,7.67,"McCain Pockets® Beef Taco, 6 x 90g",0,2024,11,16
+Walmart,6.470000000000001,7.67,"McCain Pockets® Beef Taco, 6 x 90g",0,2024,11,17
+Walmart,6.470000000000001,7.67,"McCain Pockets® Beef Taco, 6 x 90g",0,2024,11,18
+Walmart,6.470000000000001,7.67,"McCain Pockets® Beef Taco, 6 x 90g",0,2024,11,19
+Walmart,6.470000000000001,7.67,"McCain Pockets® Beef Taco, 6 x 90g",0,2024,11,20
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Pickled Veg Beef (6)5x117 G, Kang Shi Fu Veg Beef",0,2024,6,20
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Pickled Veg Beef (6)5x117 G, Kang Shi Fu Veg Beef",0,2024,6,21
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Pickled Veg Beef (6)5x117 G, Kang Shi Fu Veg Beef",0,2024,6,22
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Pickled Veg Beef (6)5x117 G, Kang Shi Fu Veg Beef",0,2024,6,23
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Pickled Veg Beef (6)5x117 G, Kang Shi Fu Veg Beef",0,2024,6,24
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Pickled Veg Beef (6)5x117 G, Kang Shi Fu Veg Beef",0,2024,6,26
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Pickled Veg Beef (6)5x117 G, Kang Shi Fu Veg Beef",0,2024,6,27
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Pickled Veg Beef (6)5x117 G, Kang Shi Fu Veg Beef",0,2024,6,28
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Pickled Veg Beef (6)5x117 G, Kang Shi Fu Veg Beef",0,2024,6,29
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Pickled Veg Beef (6)5x117 G, Kang Shi Fu Veg Beef",0,2024,6,30
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Pickled Veg Beef (6)5x117 G, Kang Shi Fu Veg Beef",0,2024,7,1
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Pickled Veg Beef (6)5x117 G, Kang Shi Fu Veg Beef",0,2024,7,3
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Pickled Veg Beef (6)5x117 G, Kang Shi Fu Veg Beef",0,2024,7,4
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Pickled Veg Beef (6)5x117 G, Kang Shi Fu Veg Beef",0,2024,7,5
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Pickled Veg Beef (6)5x117 G, Kang Shi Fu Veg Beef",0,2024,7,6
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Pickled Veg Beef (6)5x117 G, Kang Shi Fu Veg Beef",0,2024,7,7
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Pickled Veg Beef (6)5x117 G, Kang Shi Fu Veg Beef",0,2024,7,8
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Pickled Veg Beef (6)5x117 G, Kang Shi Fu Veg Beef",0,2024,7,9
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Pickled Veg Beef (6)5x117 G, Kang Shi Fu Veg Beef",0,2024,7,12
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Pickled Veg Beef (6)5x117 G, Kang Shi Fu Veg Beef",0,2024,7,13
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Pickled Veg Beef (6)5x117 G, Kang Shi Fu Veg Beef",0,2024,7,14
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Pickled Veg Beef (6)5x117 G, Kang Shi Fu Veg Beef",0,2024,7,15
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Pickled Veg Beef (6)5x117 G, Kang Shi Fu Veg Beef",0,2024,7,16
+Walmart,3.98,4.7700000000000005,"Kang Shi Fu Packet Pickled Veg Beef (6)5x117 G, Kang Shi Fu Veg Beef",0,2024,7,17
+Walmart,4.68,5.2700000000000005,"Siwin Japanese Style Pork & Beef Dumpling, 500 g",0,2024,8,30
+Walmart,4.68,5.2700000000000005,"Siwin Japanese Style Pork & Beef Dumpling, 500 g",0,2024,8,30
+Walmart,4.68,5.2700000000000005,"Siwin Japanese Style Pork & Beef Dumpling, 500 g",0,2024,9,1
+Walmart,4.68,5.2700000000000005,"Siwin Japanese Style Pork & Beef Dumpling, 500 g",0,2024,9,1
+Walmart,4.68,5.2700000000000005,"Siwin Japanese Style Pork & Beef Dumpling, 500 g",0,2024,9,2
+Walmart,4.68,5.2700000000000005,"Siwin Japanese Style Pork & Beef Dumpling, 500 g",0,2024,9,3
+Walmart,4.68,5.2700000000000005,"Siwin Japanese Style Pork & Beef Dumpling, 500 g",0,2024,9,3
+Walmart,4.68,5.2700000000000005,"Siwin Japanese Style Pork & Beef Dumpling, 500 g",0,2024,9,5
+Walmart,4.68,5.2700000000000005,"Siwin Japanese Style Pork & Beef Dumpling, 500 g",0,2024,9,9
+Walmart,4.68,5.2700000000000005,"Siwin Japanese Style Pork & Beef Dumpling, 500 g",0,2024,9,9
+Walmart,4.68,5.2700000000000005,"Siwin Japanese Style Pork & Beef Dumpling, 500 g",0,2024,9,10
+Walmart,4.68,5.2700000000000005,"Siwin Japanese Style Pork & Beef Dumpling, 500 g",0,2024,9,10
+Walmart,4.68,5.2700000000000005,"Siwin Japanese Style Pork & Beef Dumpling, 500 g",0,2024,9,14
+Walmart,4.68,5.2700000000000005,"Siwin Japanese Style Pork & Beef Dumpling, 500 g",0,2024,9,14
+Walmart,4.68,5.2700000000000005,"Siwin Japanese Style Pork & Beef Dumpling, 500 g",0,2024,9,16
+Walmart,4.68,5.2700000000000005,"Siwin Japanese Style Pork & Beef Dumpling, 500 g",0,2024,9,16
+Walmart,13.56,20.12,"Lean Ground Beef, Your Fresh Market, 1 Tray, 1.25 - 1.55 kg",0,2024,6,20
+Walmart,13.56,20.12,"Lean Ground Beef, Your Fresh Market, 1 Tray, 1.25 - 1.55 kg",0,2024,6,21
+Walmart,13.56,20.12,"Lean Ground Beef, Your Fresh Market, 1 Tray, 1.25 - 1.55 kg",0,2024,6,22
+Walmart,13.56,20.12,"Lean Ground Beef, Your Fresh Market, 1 Tray, 1.25 - 1.55 kg",0,2024,6,23
+Walmart,13.56,20.12,"Lean Ground Beef, Your Fresh Market, 1 Tray, 1.25 - 1.55 kg",0,2024,10,1
+Walmart,13.56,20.12,"Lean Ground Beef, Your Fresh Market, 1 Tray, 1.25 - 1.55 kg",0,2024,10,2
+Walmart,13.56,20.12,"Lean Ground Beef, Your Fresh Market, 1 Tray, 1.25 - 1.55 kg",0,2024,10,3
+Walmart,13.56,20.12,"Lean Ground Beef, Your Fresh Market, 1 Tray, 1.25 - 1.55 kg",0,2024,10,4
+Walmart,13.56,20.12,"Lean Ground Beef, Your Fresh Market, 1 Tray, 1.25 - 1.55 kg",0,2024,10,5
+Walmart,13.56,20.12,"Lean Ground Beef, Your Fresh Market, 1 Tray, 1.25 - 1.55 kg",0,2024,10,6
+Walmart,13.56,20.12,"Lean Ground Beef, Your Fresh Market, 1 Tray, 1.25 - 1.55 kg",0,2024,10,7
+Walmart,13.56,20.12,"Lean Ground Beef, Your Fresh Market, 1 Tray, 1.25 - 1.55 kg",0,2024,10,8
+Walmart,13.56,20.12,"Lean Ground Beef, Your Fresh Market, 1 Tray, 1.25 - 1.55 kg",0,2024,10,9
+Walmart,13.56,20.12,"Lean Ground Beef, Your Fresh Market, 1 Tray, 1.25 - 1.55 kg",0,2024,10,29
+Walmart,13.56,20.12,"Lean Ground Beef, Your Fresh Market, 1 Tray, 1.25 - 1.55 kg",0,2024,10,30
+Walmart,13.56,20.12,"Lean Ground Beef, Your Fresh Market, 1 Tray, 1.25 - 1.55 kg",0,2024,10,31
+Walmart,13.56,20.12,"Lean Ground Beef, Your Fresh Market, 1 Tray, 1.25 - 1.55 kg",0,2024,11,1
+Walmart,13.56,20.12,"Lean Ground Beef, Your Fresh Market, 1 Tray, 1.25 - 1.55 kg",0,2024,11,2
+Walmart,13.56,20.12,"Lean Ground Beef, Your Fresh Market, 1 Tray, 1.25 - 1.55 kg",0,2024,11,3
+Walmart,13.56,20.12,"Lean Ground Beef, Your Fresh Market, 1 Tray, 1.25 - 1.55 kg",0,2024,11,4
+Walmart,13.56,20.12,"Lean Ground Beef, Your Fresh Market, 1 Tray, 1.25 - 1.55 kg",0,2024,11,5
+Walmart,13.56,20.12,"Lean Ground Beef, Your Fresh Market, 1 Tray, 1.25 - 1.55 kg",0,2024,11,6
+Walmart,10,12.97,"Marcangelo Bacon Wrapped Beef Medallions, 2 medallions, 340 g",0,2024,6,10
+Walmart,10,12.97,"Marcangelo Bacon Wrapped Beef Medallions, 2 medallions, 340 g",0,2024,6,12
+Walmart,10,12.97,"Marcangelo Bacon Wrapped Beef Medallions, 2 medallions, 340 g",0,2024,6,12
+Walmart,10,12.97,"Marcangelo Bacon Wrapped Beef Medallions, 2 medallions, 340 g",0,2024,6,13
+Walmart,10,12.97,"Marcangelo Bacon Wrapped Beef Medallions, 2 medallions, 340 g",0,2024,6,14
+Walmart,10,12.97,"Marcangelo Bacon Wrapped Beef Medallions, 2 medallions, 340 g",0,2024,6,15
+Walmart,10,12.97,"Marcangelo Bacon Wrapped Beef Medallions, 2 medallions, 340 g",0,2024,6,16
+Walmart,10,12.97,"Marcangelo Bacon Wrapped Beef Medallions, 2 medallions, 340 g",0,2024,6,17
+Walmart,10,12.97,"Marcangelo Bacon Wrapped Beef Medallions, 2 medallions, 340 g",0,2024,6,18
+Walmart,10,12.97,"Marcangelo Bacon Wrapped Beef Medallions, 2 medallions, 340 g",0,2024,6,19
+Walmart,10,12.97,"Marcangelo Bacon Wrapped Beef Medallions, 2 medallions, 340 g",0,2024,6,20
+Walmart,10,12.97,"Marcangelo Bacon Wrapped Beef Medallions, 2 medallions, 340 g",0,2024,6,20
+Walmart,10,12.97,"Marcangelo Bacon Wrapped Beef Medallions, 2 medallions, 340 g",0,2024,6,21
+Walmart,10,12.97,"Marcangelo Bacon Wrapped Beef Medallions, 2 medallions, 340 g",0,2024,6,22
+Walmart,10,12.97,"Marcangelo Bacon Wrapped Beef Medallions, 2 medallions, 340 g",0,2024,6,23
+Walmart,10,12.97,"Marcangelo Bacon Wrapped Beef Medallions, 2 medallions, 340 g",0,2024,6,24
+Walmart,10,12.97,"Marcangelo Bacon Wrapped Beef Medallions, 2 medallions, 340 g",0,2024,6,25
+Walmart,10,12.97,"Marcangelo Bacon Wrapped Beef Medallions, 2 medallions, 340 g",0,2024,6,26
 Walmart,10.47,12.97,"Marcangelo Bacon Wrapped Beef Medallions, 2 medallions, 340 g",3.08,2024,10,31
 Walmart,10.47,12.97,"Marcangelo Bacon Wrapped Beef Medallions, 2 medallions, 340 g",3.08,2024,11,1
 Walmart,10.47,12.97,"Marcangelo Bacon Wrapped Beef Medallions, 2 medallions, 340 g",3.08,2024,11,2
@@ -954,6 +2826,13 @@ Walmart,10.47,12.97,"Marcangelo Bacon Wrapped Beef Medallions, 2 medallions, 340
 Walmart,10.47,12.97,"Marcangelo Bacon Wrapped Beef Medallions, 2 medallions, 340 g",3.08,2024,11,18
 Walmart,10.47,12.97,"Marcangelo Bacon Wrapped Beef Medallions, 2 medallions, 340 g",3.08,2024,11,19
 Walmart,10.47,12.97,"Marcangelo Bacon Wrapped Beef Medallions, 2 medallions, 340 g",3.08,2024,11,20
+Walmart,3.4699999999999998,8.97,"Schneiders Juicy Jumbos All Beef Hot Dogs, 375 g",0,2024,6,27
+Walmart,3.4699999999999998,8.97,"Schneiders Juicy Jumbos All Beef Hot Dogs, 375 g",0,2024,6,28
+Walmart,3.4699999999999998,8.97,"Schneiders Juicy Jumbos All Beef Hot Dogs, 375 g",0,2024,6,29
+Walmart,3.4699999999999998,8.97,"Schneiders Juicy Jumbos All Beef Hot Dogs, 375 g",0,2024,6,30
+Walmart,3.4699999999999998,8.97,"Schneiders Juicy Jumbos All Beef Hot Dogs, 375 g",0,2024,7,1
+Walmart,3.4699999999999998,8.97,"Schneiders Juicy Jumbos All Beef Hot Dogs, 375 g",0,2024,7,2
+Walmart,3.4699999999999998,8.97,"Schneiders Juicy Jumbos All Beef Hot Dogs, 375 g",0,2024,7,3
 Walmart,5.970000000000001,8.97,"Schneiders Juicy Jumbos All Beef Hot Dogs, 375 g",1.59,2024,8,1
 Walmart,5.970000000000001,8.97,"Schneiders Juicy Jumbos All Beef Hot Dogs, 375 g",1.59,2024,8,2
 Walmart,5.970000000000001,8.97,"Schneiders Juicy Jumbos All Beef Hot Dogs, 375 g",1.59,2024,8,3
@@ -961,6 +2840,40 @@ Walmart,5.970000000000001,8.97,"Schneiders Juicy Jumbos All Beef Hot Dogs, 375 g
 Walmart,5.970000000000001,8.97,"Schneiders Juicy Jumbos All Beef Hot Dogs, 375 g",1.59,2024,8,5
 Walmart,5.970000000000001,8.97,"Schneiders Juicy Jumbos All Beef Hot Dogs, 375 g",1.59,2024,8,6
 Walmart,5.970000000000001,8.97,"Schneiders Juicy Jumbos All Beef Hot Dogs, 375 g",1.59,2024,8,7
+Walmart,3.4699999999999998,8.97,"Schneiders Juicy Jumbos All Beef Hot Dogs, 375 g",0,2024,8,15
+Walmart,3.4699999999999998,8.97,"Schneiders Juicy Jumbos All Beef Hot Dogs, 375 g",0,2024,8,16
+Walmart,3.4699999999999998,8.97,"Schneiders Juicy Jumbos All Beef Hot Dogs, 375 g",0,2024,8,17
+Walmart,3.4699999999999998,8.97,"Schneiders Juicy Jumbos All Beef Hot Dogs, 375 g",0,2024,8,18
+Walmart,3.4699999999999998,8.97,"Schneiders Juicy Jumbos All Beef Hot Dogs, 375 g",0,2024,8,19
+Walmart,3.4699999999999998,8.97,"Schneiders Juicy Jumbos All Beef Hot Dogs, 375 g",0,2024,8,20
+Walmart,3.4699999999999998,8.97,"Schneiders Juicy Jumbos All Beef Hot Dogs, 375 g",0,2024,8,21
+Walmart,6.970000000000001,9.47,"Impossible Ground Beef - Made from Plants 340g, Cooks, looks and tastes just like ground beef",0,2024,11,14
+Walmart,6.970000000000001,9.47,"Impossible Ground Beef - Made from Plants 340g, Cooks, looks and tastes just like ground beef",0,2024,11,15
+Walmart,6.970000000000001,9.47,"Impossible Ground Beef - Made from Plants 340g, Cooks, looks and tastes just like ground beef",0,2024,11,16
+Walmart,6.970000000000001,9.47,"Impossible Ground Beef - Made from Plants 340g, Cooks, looks and tastes just like ground beef",0,2024,11,17
+Walmart,6.970000000000001,9.47,"Impossible Ground Beef - Made from Plants 340g, Cooks, looks and tastes just like ground beef",0,2024,11,18
+Walmart,6.970000000000001,9.47,"Impossible Ground Beef - Made from Plants 340g, Cooks, looks and tastes just like ground beef",0,2024,11,19
+Walmart,6.970000000000001,9.47,"Impossible Ground Beef - Made from Plants 340g, Cooks, looks and tastes just like ground beef",0,2024,11,20
+Walmart,2.9699999999999998,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",0,2024,6,10
+Walmart,2.9699999999999998,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",0,2024,6,11
+Walmart,2.9699999999999998,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",0,2024,6,12
+Walmart,2.9699999999999998,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",0,2024,6,12
+Walmart,2.9699999999999998,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",0,2024,6,13
+Walmart,2.9699999999999998,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",0,2024,6,15
+Walmart,2.9699999999999998,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",0,2024,6,15
+Walmart,2.9699999999999998,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",0,2024,6,16
+Walmart,2.9699999999999998,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",0,2024,6,17
+Walmart,2.9699999999999998,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",0,2024,6,18
+Walmart,2.9699999999999998,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",0,2024,6,19
+Walmart,2.9699999999999998,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",0,2024,6,20
+Walmart,2.9699999999999998,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",0,2024,6,20
+Walmart,2.9699999999999998,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",0,2024,6,20
+Walmart,2.9699999999999998,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",0,2024,6,21
+Walmart,2.9699999999999998,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",0,2024,6,22
+Walmart,2.9699999999999998,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",0,2024,6,23
+Walmart,2.9699999999999998,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",0,2024,6,24
+Walmart,2.9699999999999998,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",0,2024,6,25
+Walmart,2.9699999999999998,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",0,2024,6,26
 Walmart,3.77,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",1.11,2024,9,5
 Walmart,3.77,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",1.11,2024,9,6
 Walmart,3.77,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",1.11,2024,9,7
@@ -968,6 +2881,31 @@ Walmart,3.77,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",1.
 Walmart,3.77,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",1.11,2024,9,9
 Walmart,3.77,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",1.11,2024,9,10
 Walmart,3.77,4.970000000000001,"Hereford Corned Beef, A tradition since 1929",1.11,2024,9,11
+Walmart,0.77,1.87,"Franco American Beef Gravy, 284 mL",0,2024,9,19
+Walmart,0.77,1.87,"Franco American Beef Gravy, 284 mL",0,2024,9,20
+Walmart,0.77,1.87,"Franco American Beef Gravy, 284 mL",0,2024,9,21
+Walmart,0.77,1.87,"Franco American Beef Gravy, 284 mL",0,2024,9,22
+Walmart,0.77,1.87,"Franco American Beef Gravy, 284 mL",0,2024,9,23
+Walmart,0.77,1.87,"Franco American Beef Gravy, 284 mL",0,2024,9,24
+Walmart,0.77,1.87,"Franco American Beef Gravy, 284 mL",0,2024,9,25
+Walmart,0.77,1.87,"Franco American Beef Gravy, 284 mL",0,2024,9,26
+Walmart,0.77,1.87,"Franco American Beef Gravy, 284 mL",0,2024,9,27
+Walmart,0.77,1.87,"Franco American Beef Gravy, 284 mL",0,2024,9,28
+Walmart,0.77,1.87,"Franco American Beef Gravy, 284 mL",0,2024,9,29
+Walmart,0.77,1.87,"Franco American Beef Gravy, 284 mL",0,2024,9,30
+Walmart,0.77,1.87,"Franco American Beef Gravy, 284 mL",0,2024,10,1
+Walmart,0.77,1.87,"Franco American Beef Gravy, 284 mL",0,2024,10,2
+Walmart,0.77,1.87,"Franco American Beef Gravy, 284 mL",0,2024,10,3
+Walmart,0.77,1.87,"Franco American Beef Gravy, 284 mL",0,2024,10,4
+Walmart,0.77,1.87,"Franco American Beef Gravy, 284 mL",0,2024,10,5
+Walmart,0.77,1.87,"Franco American Beef Gravy, 284 mL",0,2024,10,6
+Walmart,0.77,1.87,"Franco American Beef Gravy, 284 mL",0,2024,10,7
+Walmart,0.77,1.87,"Franco American Beef Gravy, 284 mL",0,2024,10,8
+Walmart,0.77,1.87,"Franco American Beef Gravy, 284 mL",0,2024,10,9
+Walmart,0.77,1.87,"Franco American Beef Gravy, 284 mL",0,2024,10,10
+Walmart,0.77,1.87,"Franco American Beef Gravy, 284 mL",0,2024,10,11
+Walmart,0.77,1.87,"Franco American Beef Gravy, 284 mL",0,2024,10,13
+Walmart,0.77,1.87,"Franco American Beef Gravy, 284 mL",0,2024,10,16
 Walmart,1.97,2.67,"Knorr Beef Bouillon Cubes, 63 g Bouillon Cubes",3.13,2024,10,4
 Walmart,1.97,2.67,"Knorr Beef Bouillon Cubes, 63 g Bouillon Cubes",3.13,2024,10,5
 Walmart,1.97,2.67,"Knorr Beef Bouillon Cubes, 63 g Bouillon Cubes",3.13,2024,10,6
@@ -993,6 +2931,14 @@ Walmart,11.97,13.97,"JACK LINK'S ORIGINAL BEEF JERKY 230g, 230 g",5.2,2024,7,25
 Walmart,11.97,13.97,"JACK LINK'S ORIGINAL BEEF JERKY 230g, 230 g",5.2,2024,7,26
 Walmart,11.97,13.97,"JACK LINK'S ORIGINAL BEEF JERKY 230g, 230 g",5.2,2024,7,27
 Walmart,11.97,13.97,"JACK LINK'S ORIGINAL BEEF JERKY 230g, 230 g",5.2,2024,7,28
+Walmart,11.97,13.97,"JACK LINK'S ORIGINAL BEEF JERKY 230g, 230 g",0,2024,7,29
+Walmart,11.97,13.97,"JACK LINK'S ORIGINAL BEEF JERKY 230g, 230 g",0,2024,8,2
+Walmart,11.97,13.97,"JACK LINK'S ORIGINAL BEEF JERKY 230g, 230 g",0,2024,8,3
+Walmart,11.97,13.97,"JACK LINK'S ORIGINAL BEEF JERKY 230g, 230 g",0,2024,8,4
+Walmart,11.97,13.97,"JACK LINK'S ORIGINAL BEEF JERKY 230g, 230 g",0,2024,8,5
+Walmart,11.97,13.97,"JACK LINK'S ORIGINAL BEEF JERKY 230g, 230 g",0,2024,8,7
+Walmart,11.97,13.97,"JACK LINK'S ORIGINAL BEEF JERKY 230g, 230 g",0,2024,8,8
+Walmart,11.97,13.97,"JACK LINK'S ORIGINAL BEEF JERKY 230g, 230 g",0,2024,8,9
 Walmart,11.97,13.97,"JACK LINK'S ORIGINAL BEEF JERKY 230g, 230 g",5.2,2024,8,10
 Walmart,11.97,13.97,"JACK LINK'S ORIGINAL BEEF JERKY 230g, 230 g",5.2,2024,8,11
 Walmart,11.97,13.97,"JACK LINK'S ORIGINAL BEEF JERKY 230g, 230 g",5.2,2024,8,12
@@ -1037,6 +2983,13 @@ Walmart,11.97,13.97,"Jack Links Teriyaki Beef Jerky, 230 g",5.2,2024,7,26
 Walmart,11.97,13.97,"Jack Links Teriyaki Beef Jerky, 230 g",5.2,2024,7,27
 Walmart,11.97,13.97,"Jack Links Teriyaki Beef Jerky, 230 g",5.2,2024,7,28
 Walmart,11.97,13.97,"Jack Links Teriyaki Beef Jerky, 230 g",5.2,2024,7,29
+Walmart,11.97,13.97,"Jack Links Teriyaki Beef Jerky, 230 g",0,2024,8,2
+Walmart,11.97,13.97,"Jack Links Teriyaki Beef Jerky, 230 g",0,2024,8,3
+Walmart,11.97,13.97,"Jack Links Teriyaki Beef Jerky, 230 g",0,2024,8,4
+Walmart,11.97,13.97,"Jack Links Teriyaki Beef Jerky, 230 g",0,2024,8,5
+Walmart,11.97,13.97,"Jack Links Teriyaki Beef Jerky, 230 g",0,2024,8,7
+Walmart,11.97,13.97,"Jack Links Teriyaki Beef Jerky, 230 g",0,2024,8,8
+Walmart,11.97,13.97,"Jack Links Teriyaki Beef Jerky, 230 g",0,2024,8,9
 Walmart,11.97,13.97,"Jack Links Teriyaki Beef Jerky, 230 g",5.2,2024,8,10
 Walmart,11.97,13.97,"Jack Links Teriyaki Beef Jerky, 230 g",5.2,2024,8,11
 Walmart,11.97,13.97,"Jack Links Teriyaki Beef Jerky, 230 g",5.2,2024,8,12
