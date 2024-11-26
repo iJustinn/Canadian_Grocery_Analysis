@@ -55,7 +55,7 @@ The structure of the paper is organized as follows: @sec-data outlines the data 
 
 # Data {#sec-data}
 
-This project is motivated and guided by Rohan Alexander and his book [@citeTbook]. Data used in this paper was cleaned, analyzed and modeled with the programming language R [@citeR]. Also with support of additional packages in R: `readr` [@citeReadr], `ggplot2` [@citeGgplot2], `tidyverse` [@citeTidyverse], `dplyr` [@citeDplyr], `here` [@citeHere], `knitr` [@citeKnitr], `kableExtra` [@citeKableExtra], `rstanarm` [@citeRstanarm], `modelsummary` [@citeModelsummary],
+This project is motivated and guided by Rohan Alexander and his book [@citeTbook]. Data used in this paper was cleaned, analyzed and modeled with the programming language R [@citeR]. Also with support of additional packages in R: `readr` [@citeReadr], `ggplot2` [@citeGgplot2], `tidyverse` [@citeTidyverse], `dplyr` [@citeDplyr], `here` [@citeHere], `knitr` [@citeKnitr], `kableExtra` [@citeKableExtra], `rstanarm` [@citeRstanarm], `modelsummary` [@citeModelsummary], `lme4` [@citeLme4], `tinytex` [@citeTinytex], `reshape2` [@citeReshape2].
 
 ## Source
 
@@ -208,7 +208,7 @@ vendor_summary %>%
 
 ```
 
-# Model
+# Model {#sec-model}
 
 Background details and diagnostics are included in [Appendix -@sec-model-details].
 
@@ -250,7 +250,7 @@ For the residual standard deviation, $\sigma$, we assume an **Exponential(1)** p
 
 This prior reflects our belief that the standard deviation should be positive and allows flexibility, while preferring smaller values over larger ones, consistent with the expectation of modest variability around the mean prediction.
 
-We run the model in R [@citeR] using the `rstanarm` package of @rstanarm. We use the default priors from `rstanarm`.
+We run the model in R [@citeR] using the `rstanarm` package of @citeRstanarm. We use the default priors from `rstanarm`.
 
 ## Model justification
 
@@ -274,7 +274,7 @@ In summary, the chosen model provides a comprehensive yet interpretable understa
 
 
 
-# Results
+# Results {#sec-result}
 
 ## Charts
 
@@ -438,7 +438,7 @@ In terms of model fit, the R-squared (R²) value of 0.945 and the adjusted R-squ
 
 These results together illustrate the strong relationship between past pricing and current pricing, as well as vendor influence on beef pricing. The Bayesian approach has provided robust parameter estimates while accounting for uncertainty, as reflected in the provided standard errors. Overall, the model appears to perform well, with high explained variance and reasonable prediction accuracy, making it a valuable tool for understanding and forecasting beef price trends.
 
-# Discussion
+# Discussion {#sec-discussion}
 
 ## Interpretation of Findings
 
