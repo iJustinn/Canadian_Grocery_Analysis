@@ -1,6 +1,6 @@
 ---
-title: "My title"
-subtitle: "My subtitle if needed"
+title: "Beef Pricing Dynamics in the Canadian Grocery Market: A Comparative Analysis of Walmart and T&T"
+subtitle: "Evidence of Cultural and Strategic Influences on Beef Pricing"
 author: 
   - Ziheng Zhong
 thanks: "Code and data are available at: [https://github.com/iJustinn/Canadian_Grocery_Analysis.git](https://github.com/iJustinn/Canadian_Grocery_Analysis.git)."
