@@ -442,19 +442,31 @@ These results together illustrate the strong relationship between past pricing a
 
 # Discussion
 
-## First discussion point {#sec-first-point}
+## Interpretation of Findings
 
-If my paper were 10 pages, then should be be at least 2.5 pages. The discussion is a chance to show off what you know and what you learnt from all this. 
+The findings of this study provide valuable insights into the dynamics of beef pricing in the Canadian grocery market. Through the application of Bayesian linear regression, it is evident that both historical pricing (i.e., old_price) and vendor-specific strategies significantly influence the current pricing of beef. The strong positive correlation between old_price and current_price suggests a consistency in pricing practices, potentially driven by factors like inflation and vendor pricing strategies, with beef products generally following historical pricing trends. The vendor effect, notably the difference between T&T and Walmart, reflects distinct market positioning strategies, with Walmart generally maintaining a more standardized pricing approach, whereas T&T displays greater variability, possibly influenced by its focus on specialty goods catering to specific cultural preferences. Seasonal trends, captured through the month variable, also indicate minor temporal price variations, pointing to possible supply and demand effects linked to particular times of the year.
 
-## Second discussion point
+The heatmap visualizations, scatter plots, and statistical summaries all pointed towards a consistent trend in pricing, with limited deviations from expected relationships between historical and current prices. The consistency observed in the heatmap between old and current price levels suggests that vendors are either directly responding to historical costs or that other external factors, such as cost of production, inflation, or market demand, are similarly affecting historical and current pricing. The results of the Bayesian model further support these findings, highlighting the importance of including historical price as a predictor in understanding current pricing trends. The high R-squared value of the model also indicates that the chosen predictors adequately capture most of the variability in beef prices, reinforcing the relevance of the variables selected.
 
-Please don't use these as sub-heading labels - change them to be what your point actually is.
+## Vendor-Specific Pricing Strategies
 
-## Third discussion point
+One critical point of discussion is the apparent distinction in pricing strategies between Walmart and T&T. Walmart's pricing, as evidenced by the relatively narrow spread of the boxplot, seems to prioritize consistency and predictability, possibly reflecting its brand strategy of offering everyday low prices. This approach may be designed to build consumer trust, ensuring customers that they are receiving competitive pricing without frequent fluctuations. On the other hand, T&T's wider range of price differences may reflect a more dynamic pricing strategy, potentially influenced by the specialty nature of its products, diverse supply chain, or its responsiveness to a different customer demographic. Such variability in pricing could indicate promotional efforts, targeted price differentiation, or a reflection of its broader range of product quality and types.
 
-## Weaknesses and next steps
+This analysis highlights the importance of understanding different vendor strategies when interpreting pricing data. Walmart's emphasis on standardized pricing could attract a broader, price-sensitive customer base, while T&T's more variable pricing might appeal to niche customers seeking specific products, regardless of price changes. Future research could delve deeper into these strategies by including additional variables that capture product-specific characteristics, customer demographics, or promotion periods to better understand the pricing differences observed.
 
-Weaknesses and next steps should also be included.
+## Price Stability and Market Forces
+
+The study also suggests that beef pricing is relatively stable, with most price adjustments being proportional to historical prices. This stability might imply a well-functioning market where historical prices act as an anchor, helping vendors and consumers set expectations. This could also be indicative of supply-side factors such as contracts with suppliers or production costs that do not fluctuate significantly. Additionally, the moderate decrease in prices observed during certain months might suggest seasonal promotions or shifts in consumer demand that lead vendors to adjust prices accordingly. Such trends could be driven by factors like increased competition, holiday promotions, or seasonal variations in meat consumption.
+
+Interestingly, the observed concentration of prices in the lower range might indicate that the majority of beef products are targeted towards value-oriented consumers, potentially reflecting broader consumer preferences or economic constraints. This could also point to the influence of retailer pricing power, where large players like Walmart are able to leverage economies of scale to keep prices low, thereby shaping overall market dynamics. An important next step in understanding these patterns would be to assess how external shocks, such as economic downturns or supply chain disruptions, influence this pricing stability, as well as whether similar patterns hold for other product categories.
+
+## Weaknesses and Future Directions
+
+While the study offers useful insights into beef pricing dynamics, it is important to acknowledge several limitations. First, the dataset used was limited to two vendors, Walmart and T&T, which may not fully represent the diversity of the Canadian grocery market. Including more vendors could provide a broader perspective on pricing strategies across different types of retailers, such as discount chains, premium grocers, or independent stores. Additionally, the current analysis did not account for factors like promotions, product quality differences, or customer loyalty programs, which could play significant roles in pricing decisions. Including such variables in future models could provide a more nuanced understanding of the factors influencing beef prices.
+
+The model assumes a linear relationship between predictors and the outcome variable, which might oversimplify the complexity of real-world pricing behavior. Future work could explore more sophisticated modeling techniques, such as non-linear models or machine learning approaches, to capture potential non-linearities in the data. Additionally, the study relied on a single dataset, and incorporating external data sources—such as economic indicators, weather data, or detailed sales information—could help validate and enrich the findings.
+
+Finally, the assumption of constant variance and normality of residuals may not hold perfectly in the context of pricing data, which can often exhibit heteroscedasticity or other forms of non-normality. Implementing more robust regression techniques or exploring heteroscedasticity-consistent estimators could help improve model reliability and accuracy. Another interesting avenue for future research would be to examine the impact of consumer behavior changes, such as shifts towards plant-based alternatives, on beef pricing trends, which could provide insights into evolving market dynamics.
 
 \newpage
 
