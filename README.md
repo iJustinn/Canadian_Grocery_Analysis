@@ -4,7 +4,7 @@ This repository provides all the necessary information to replicate Ziheng Zhong
 
 ## Paper Overview
 
-This paper utilized data from [Project Hammer](https://jacobfilipp.com/hammer/),
+This paper utilized data from [Project Hammer](https://jacobfilipp.com/hammer/), focusing on examine beef pricing in the Canadian retail sector, specifically comparing Walmart and T&T. Through Bayesian linear regression, we determined that both historical pricing trends and vendor strategies play a significant role in shaping current beef prices. Walmart tends to maintain stable prices, whereas T&T exhibits more pricing variability, likely reflecting different market approaches. The results highlight how broader market influences and vendor-specific practices impact beef pricing, providing valuable insights for retailers seeking to optimize pricing and for policymakers focused on food affordability. This study sheds light on the interaction between cultural preferences and retail strategies in setting food prices.
 
 ## File Structure
 
