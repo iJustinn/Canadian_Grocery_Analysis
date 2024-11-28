@@ -3,7 +3,7 @@ title: "Beef Pricing Dynamics in the Canadian Grocery Market: A Comparative Anal
 subtitle: "Evidence of Cultural and Strategic Influences on Beef Pricing"
 author: 
   - Ziheng Zhong
-thanks: "Code and data supporting this analysis is available at: [https://github.com/iJustinn/Canadian_Grocery_Analysis.git](https://github.com/iJustinn/Canadian_Grocery_Analysis.git)."
+thanks: "Code and data supporting this analysis is available at: [Link to repository](https://github.com/iJustinn/Canadian_Grocery_Analysis.git)."
 date: today
 date-format: long
 abstract: "This study analyzes beef pricing dynamics in the Canadian retail market, focusing on two vendors: Walmart and T&T. Using Bayesian linear regression, we found that historical pricing and vendor-specific strategies significantly influence current beef prices, with Walmart displaying more price stability and T&T showing greater variability. These findings reveal how both market-wide and vendor-specific factors shape beef pricing, offering insights that could help retailers refine their pricing strategies and support policymakers in addressing food affordability. This paper provides a clearer understanding of the interplay between cultural preferences and retail strategies in determining food prices."
@@ -43,9 +43,9 @@ beef_model <- readRDS (file = here:: here ("models/beef_model.rds"))
 
 # Introduction
 
-The pricing of grocery products, particularly beef, plays a significant role in understanding consumer behavior and market dynamics within the Canadian retail sector. Beef, as a staple of many households, exhibits complex pricing behaviors influenced by a variety of factors, including vendor strategies, historical pricing, and seasonal trends. The broader context for this study lies in exploring how large-scale retailers and specialty stores adjust their beef prices over time and how these changes reflect broader economic and cultural trends. Given the increasing concerns around food affordability and accessibility, understanding the dynamics of beef pricing is not only crucial for consumers but also for stakeholders involved in food distribution and policy-making.
+The pricing of grocery products, particularly beef, plays a significant role in understanding consumer behavior and market dynamics within the Canadian retail sector. Beef, as a staple of many households, exhibits complex pricing behaviors influenced by a variety of factors, including vendor strategies [@citePricingStrategies], historical pricing, and seasonal trends [@citeSeasonal]. The broader context for this study lies in exploring how large-scale retailers and specialty stores adjust their beef prices over time and how these changes reflect broader economic and cultural trends. Given the increasing concerns around food affordability and accessibility, understanding the dynamics of beef pricing is not only crucial for consumers but also for stakeholders involved in food distribution and policy-making.
 
-This paper specifically focuses on two prominent vendors, Walmart and T&T, to examine how beef pricing varies across different types of retail environments. Walmart, as a major multinational retailer, represents mainstream, standardized pricing strategies, while T&T, catering primarily to Asian communities, represents a more specialized market segment. By analyzing data from these two vendors, this paper aims to address an important gap in understanding how cultural preferences and retail strategies influence product pricing. While previous studies have highlighted general trends in food pricing, they often overlook the nuanced differences between general retail chains and culturally specific stores. This paper fills that gap by providing an in-depth analysis of beef pricing patterns across these two distinct retail settings.
+This paper specifically focuses on two prominent vendors, Walmart and T&T, to examine how beef pricing varies across different types of retail environments. Walmart, as a major multinational retailer, represents mainstream [@citeWalmart], standardized pricing strategies, while T&T, catering primarily to Asian communities, represents a more specialized market segment [@citeTandT]. By analyzing data from these two vendors, this paper aims to address an important gap in understanding how cultural preferences and retail strategies influence product pricing. While previous studies have highlighted general trends in food pricing, they often overlook the nuanced differences between general retail chains and culturally specific stores. This paper fills that gap by providing an in-depth analysis of beef pricing patterns across these two distinct retail settings.
 
 The estimand of this study is the current price of beef, determined by factors such as vendor type, historical pricing, etc. By estimating how these variables impact the current pricing, the paper aims to provide a comprehensive understanding of the pricing mechanisms that affect retail beef prices in Canada.
 
@@ -453,19 +453,19 @@ The heatmap visualizations, scatter plots, and statistical summaries all pointed
 
 ## Vendor-Specific Pricing Strategies
 
-One critical point of discussion is the apparent distinction in pricing strategies between Walmart and T&T. Walmart's pricing, as evidenced by the relatively narrow spread of the boxplot, seems to prioritize consistency and predictability, possibly reflecting its brand strategy of offering everyday low prices. This approach may be designed to build consumer trust, ensuring customers that they are receiving competitive pricing without frequent fluctuations. On the other hand, T&T's wider range of price differences may reflect a more dynamic pricing strategy, potentially influenced by the specialty nature of its products, diverse supply chain, or its responsiveness to a different customer demographic. Such variability in pricing could indicate promotional efforts, targeted price differentiation, or a reflection of its broader range of product quality and types.
+One critical point of discussion is the apparent distinction in pricing strategies between Walmart and T&T. Walmart's pricing, as evidenced by the relatively narrow spread of the boxplot, seems to prioritize consistency and predictability, possibly reflecting its brand strategy of offering everyday low prices [@citeWalmartLowPrice]. This approach may be designed to build consumer trust, ensuring customers that they are receiving competitive pricing without frequent fluctuations. On the other hand, T&T's wider range of price differences may reflect a more dynamic pricing strategy, potentially influenced by the specialty nature of its products [@citeTandT], diverse supply chain, or its responsiveness to a different customer demographic. Such variability in pricing could indicate promotional efforts, targeted price differentiation, or a reflection of its broader range of product quality and types.
 
 This analysis highlights the importance of understanding different vendor strategies when interpreting pricing data. Walmart's emphasis on standardized pricing could attract a broader, price-sensitive customer base, while T&T's more variable pricing might appeal to niche customers seeking specific products, regardless of price changes. Future research could delve deeper into these strategies by including additional variables that capture product-specific characteristics, customer demographics, or promotion periods to better understand the pricing differences observed.
 
 ## Price Stability and Market Forces
 
-The study also suggests that beef pricing is relatively stable, with most price adjustments being proportional to historical prices. This stability might imply a well-functioning market where historical prices act as an anchor, helping vendors and consumers set expectations. This could also be indicative of supply-side factors such as contracts with suppliers or production costs that do not fluctuate significantly. Additionally, the moderate decrease in prices observed during certain months might suggest seasonal promotions or shifts in consumer demand that lead vendors to adjust prices accordingly. Such trends could be driven by factors like increased competition, holiday promotions, or seasonal variations in meat consumption.
+The study also suggests that beef pricing is relatively stable, with most price adjustments being proportional to historical prices. This stability might imply a well-functioning market where historical prices act as an anchor, helping vendors and consumers set expectations. This could also be indicative of supply-side factors such as contracts with suppliers or production costs that do not fluctuate significantly. Additionally, the moderate decrease in prices observed during certain months might suggest seasonal promotions or shifts in consumer demand that lead vendors to adjust prices accordingly. Such trends could be driven by factors like increased competition, holiday promotions [@citeHoliday], or seasonal variations in meat consumption.
 
-Interestingly, the observed concentration of prices in the lower range might indicate that the majority of beef products are targeted towards value-oriented consumers, potentially reflecting broader consumer preferences or economic constraints. This could also point to the influence of retailer pricing power, where large players like Walmart are able to leverage economies of scale to keep prices low, thereby shaping overall market dynamics. An important next step in understanding these patterns would be to assess how external shocks, such as economic downturns or supply chain disruptions, influence this pricing stability, as well as whether similar patterns hold for other product categories.
+Interestingly, the observed concentration of prices in the lower range might indicate that the majority of beef products are targeted towards value-oriented consumers, potentially reflecting broader consumer preferences or economic constraints. This could also point to the influence of retailer pricing power, where large players like Walmart are able to leverage economies of scale to keep prices low, thereby shaping overall market dynamics. An important next step in understanding these patterns would be to assess how external shocks, such as economic downturns or supply chain disruptions [@citeSupplyChain], influence this pricing stability, as well as whether similar patterns hold for other product categories.
 
 ## Weaknesses and Future Directions
 
-While the study offers useful insights into beef pricing dynamics, it is important to acknowledge several limitations. First, the dataset used was limited to two vendors, Walmart and T&T, which may not fully represent the diversity of the Canadian grocery market. Including more vendors could provide a broader perspective on pricing strategies across different types of retailers, such as discount chains, premium grocers, or independent stores. Additionally, the current analysis did not account for factors like promotions, product quality differences, or customer loyalty programs, which could play significant roles in pricing decisions. Including such variables in future models could provide a more nuanced understanding of the factors influencing beef prices.
+While the study offers useful insights into beef pricing dynamics, it is important to acknowledge several limitations. First, the dataset used was limited to two vendors, Walmart and T&T, which may not fully represent the diversity of the Canadian grocery market. Including more vendors could provide a broader perspective on pricing strategies across different types of retailers, such as discount chains, premium grocers, or independent stores [@citeBrand]. Additionally, the current analysis did not account for factors like promotions, product quality differences, or customer loyalty programs [@citeProgram], which could play significant roles in pricing decisions. Including such variables in future models could provide a more nuanced understanding of the factors influencing beef prices.
 
 The model assumes a linear relationship between predictors and the outcome variable, which might oversimplify the complexity of real-world pricing behavior. Future work could explore more sophisticated modeling techniques, such as non-linear models or machine learning approaches, to capture potential non-linearities in the data. Additionally, the study relied on a single dataset, and incorporating external data sources—such as economic indicators, weather data, or detailed sales information—could help validate and enrich the findings.
 
@@ -610,6 +610,144 @@ The fact that all Rhat values are below 1.05 suggests that the different chains 
 plot(beef_model, plotfun = "rhat") + theme_minimal()
 
 ```
+
+\newpage
+
+# Idealized Methodology for a Survey on Beef Pricing {#sec-survey}
+
+## Overview
+
+To complement the quantitative analysis presented in this paper, an idealized survey methodology could provide direct insights into consumer behavior and perceptions regarding beef pricing at Walmart and T&T. This survey would aim to identify factors influencing purchasing decisions, perceptions of price fairness, and preferences for vendor-specific attributes, offering a holistic understanding of the dynamics underpinning beef pricing in the Canadian grocery market.
+
+## Sampling Approach
+
+A **stratified random sampling** method would be employed to ensure representation across key demographic groups, including age, income levels, and cultural background. Stratification variables would include:
+
+1. **Region**: Urban versus rural shoppers across Canada.
+2. **Vendor familiarity**: Regular Walmart shoppers, regular T&T shoppers, and those who shop at both.
+3. **Income brackets**: Low, middle, and high-income households.
+
+A sample size of approximately 1,200 respondents would be targeted, with 400 participants in each stratum (Walmart-focused, T&T-focused, and dual shoppers). This stratification would allow for meaningful comparisons between vendor-specific perceptions and strategies.
+
+## Survey Structure
+
+The survey would include a mix of **closed-ended** and **open-ended** questions.
+
+### Question Types
+
+1. **Demographics and Shopping Habits**
+   - Frequency of grocery shopping (weekly, bi-weekly, etc.).
+   - Preferred vendor for beef purchases and reasons for preference.
+   - Average budget allocated for beef purchases.
+
+2. **Price Perception**
+   - Rating the perceived fairness of beef prices on a Likert scale.
+   - Comparison of beef prices at Walmart and T&T (e.g., cheaper, equivalent, more expensive).
+   - Sensitivity to price changes (e.g., a 10% increase in beef prices would lead to…).
+
+3. **Cultural and Quality Preferences**
+   - Importance of cultural alignment in beef products (specific cuts, preparation styles, etc.).
+   - Perceived quality differences between Walmart and T&T beef products.
+   - Willingness to pay a premium for culturally tailored products.
+
+4. **External Factors**
+   - Awareness of seasonal price trends.
+   - Impact of promotions on purchasing decisions.
+   - Responses to supply chain disruptions (e.g., alternative purchasing strategies).
+
+### Question List
+
+1. How often do you shop for groceries?
+   - Weekly
+   - Bi-weekly
+   - Monthly
+   - Less often
+
+2. Which retailer do you prefer for buying beef products?
+   - Walmart
+   - T&T
+   - Both
+
+3. What factors influence your choice of retailer for beef purchases? (Select all that apply)
+   - Price
+   - Quality
+   - Availability of specific cuts
+   - Cultural preferences
+   - Convenience
+   - Promotions
+
+4. On average, how much do you spend on beef per shopping trip?
+   - Less than $20
+   - \$20 - \$50
+   - \$50 - \$100
+   - More than $100
+
+5. How fair do you find the current beef prices at Walmart/T&T?
+   - Very unfair
+   - Somewhat unfair
+   - Neutral
+   - Somewhat fair
+   - Very fair
+
+6. How would you rate the quality of beef at Walmart compared to T&T?
+   - Much lower quality
+   - Slightly lower quality
+   - About the same quality
+   - Slightly higher quality
+   - Much higher quality
+
+7. If beef prices increased by 10%, would you consider switching to an alternative product or retailer?
+   - Definitely would switch
+   - Probably would switch
+   - Might switch
+   - Probably would not switch
+   - Definitely would not switch
+
+8. How important is it for you that beef products align with your cultural preferences (e.g., specific cuts, preparation styles)?
+   - Not important at all
+   - Slightly important
+   - Moderately important
+   - Very important
+   - Extremely important
+
+9. Are you willing to pay more for beef products that are culturally tailored to your preferences?
+   - Not willing at all
+   - Slightly willing
+   - Moderately willing
+   - Very willing
+   - Extremely willing
+
+10. How aware are you of seasonal price changes in beef products?
+    - Not aware at all
+    - Slightly aware
+    - Moderately aware
+    - Very aware
+    - Extremely aware
+
+11. How do promotions impact your decision to purchase beef?
+    - No impact
+    - Slight impact
+    - Moderate impact
+    - Significant impact
+    - Very significant impact
+
+12. How do you typically respond to supply chain disruptions affecting beef availability?
+    - Purchase alternative products
+    - Purchase from a different retailer
+    - Reduce beef consumption
+    - No change in purchasing behavior
+
+## Recruitment Strategy
+
+Participants would be recruited using **multichannel outreach**, including:
+
+1. **Online Panels**: Partnering with Canadian consumer research platforms to recruit participants from diverse regions.
+2. **Retailer Partnerships**: Collaborating with Walmart and T&T to survey in-store shoppers (e.g., QR codes on receipts leading to the survey).
+3. **Community Outreach**: Engaging with cultural organizations to reach underrepresented groups, particularly for T&T shoppers.
+
+## Linkage to Literature
+
+
 
 
 
