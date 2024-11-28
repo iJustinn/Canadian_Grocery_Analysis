@@ -13,10 +13,11 @@
 # load library
 library(tidyverse)
 library(rstanarm)
+library(arrow)
 library(here)
 
 # laod data
-beef_data <- read_csv(here("data", "02-analysis_data", "beef_data.csv"))
+beef_data <- read_parquet(here("data", "02-analysis_data", "beef_data.parquet"))
 
 
 

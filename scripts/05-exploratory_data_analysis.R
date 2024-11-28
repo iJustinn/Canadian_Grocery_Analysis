@@ -13,10 +13,11 @@
 # load library
 library(tidyverse)
 library(bayesplot)
+library(arrow)
 library(here)
 
 # load data
-beef_data <- read_csv(here("data", "02-analysis_data", "beef_data.csv"), show_col_types = FALSE)
+beef_data <- read_parquet(here("data", "02-analysis_data", "beef_data.parquet"))
 
 # load model
 beef_model <- readRDS (file = here:: here ("models/beef_model.rds"))

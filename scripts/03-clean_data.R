@@ -11,6 +11,7 @@
 
 #### Workspace setup ####
 library(tidyverse)
+library(arrow)
 library(here)
 
 # load data
@@ -66,5 +67,5 @@ cleaned_data <- merge_data %>%
 
 
 #### Save data ####
-write_csv(ppu_data, here("data", "02-analysis_data", "ppu_data.csv"))
-write_csv(cleaned_data, here("data", "02-analysis_data", "beef_data.csv"))
+write_parquet(ppu_data, here("data", "02-analysis_data", "ppu_data.parquet"))
+write_parquet(cleaned_data, here("data", "02-analysis_data", "beef_data.parquet"))
