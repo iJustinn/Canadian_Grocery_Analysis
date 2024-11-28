@@ -331,7 +331,7 @@ Overall, the boxplots suggest that T&T has more variability in their pricing, po
 
 ```{r}
 #| label: fig-average_price_over_time
-#| fig-cap: "Average Current Price Over Time"
+#| fig-cap: "Average Daily Current Price Over Time"
 #| echo: false
 #| warning: false
 #| message: false
@@ -360,7 +360,7 @@ Entering September and October, there is a pronounced drop in prices, with avera
 
 ```{r}
 #| label: fig-current_vs_old_price
-#| fig-cap: "Heatmap of Price Levels between Current Price and Old Price of Beef"
+#| fig-cap: "Relationship Between Old and Current Beef Price Levels"
 #| echo: false
 #| warning: false
 #| message: false
@@ -420,7 +420,7 @@ The overall distribution is heavily right-skewed, suggesting that the majority o
 
 ```{r}
 #| label: tbl-modelresults
-#| tbl-cap: ""
+#| tbl-cap: "Beef model results"
 #| echo: false
 #| warning: false
 #| message: false
