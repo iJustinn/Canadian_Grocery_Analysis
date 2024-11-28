@@ -1,0 +1,542 @@
+write the Purpose and Pre-requisites in the Preamble section for this code:
+
+#### Preamble ####
+# Purpose: Simulates a dataset of Australian electoral divisions, including the 
+  #state and party that won each division.
+# Author: Ziheng Zhong
+# Date: 20 November 2024
+# Contact: ziheng.zhong@mail.utoronto.ca
+# License: MIT
+# Pre-requisites: The tidyverse package must be installed
+# Any other information needed? Make sure you are in the starter_folder rproj
+
+
+
+#### Workspace setup ####
+library(tidyverse)
+set.seed(304)
+
+
+
+#### Simulate data ####
+# rows of simulated data
+n <- 100
+
+# simulation
+simulated_data <- tibble(
+  vendor = sample(c("Walmart", "TandT"), n, replace = TRUE),
+  product_id = sample(1000:9999, n, replace = TRUE),
+  product_name = sample(c("beef steak", "beef ribs", "beef brisket", "beef shank"), n, replace = TRUE),
+  brand = sample(c("BrandA", "BrandB", "BrandC", "BrandD"), n, replace = TRUE),
+  current_price = round(runif(n, 5, 50), 2),
+  old_price = ifelse(runif(n) > 0.3, round(runif(n, 5, 50), 2), NA),
+  units = sample(1:10, n, replace = TRUE),
+  price_per_unit = current_price / units,
+  year = sample(2021:2023, n, replace = TRUE),
+  month = sample(1:12, n, replace = TRUE),
+  day = sample(1:28, n, replace = TRUE)
+)
+
+# replace NA values in old_price with current_price
+simulated_data <- simulated_data %>%
+  mutate(old_price = ifelse(is.na(old_price), current_price, old_price))
+
+
+
+#### Save data ####
+write_csv(simulated_data, "data/00-simulated_data/simulate_beef_data.csv")
+ChatGPT said:
+ChatGPT
+Preamble Section Update
+Purpose
+The purpose of this script is to simulate a dataset representing Australian electoral divisions and their corresponding characteristics, including state and party affiliations. It generates a random sample of data suitable for testing or analysis tasks related to Australian elections. Additionally, it demonstrates data manipulation techniques for creating datasets with categorical and numerical variables.
+
+Pre-requisites
+Required Packages: The script requires the tidyverse package for data manipulation and processing. Ensure it is installed and loaded before running the code.
+Working Directory: Ensure the working directory is set to the starter_folder R project to maintain proper file path references.
+Output Directory: Verify that the data/00-simulated_data/ directory exists within the working directory. If it does not exist, create it to avoid file-saving errors.
+
+
+
+
+
+You said:
+write purpose in one sentence
+ChatGPT said:
+ChatGPT
+The purpose of this script is to simulate a dataset of Australian electoral divisions with associated state and party affiliations for data analysis and testing purposes.
+
+
+
+
+
+
+You said:
+write one sentence purpose for this:
+
+
+#### Workspace setup ####
+# load library
+library(tidyverse)
+library(testthat)
+library(here)
+
+# Define file path
+file_path <- here("data", "00-simulated_data", "simulate_beef_data.csv")
+
+# Check if file exists before running tests
+if (!file.exists(file_path)) {
+  stop("The file 'simulate_soy_data.csv' does not exist. Ensure 00-simulate_data.R has been run to generate the file.")
+}
+
+
+
+#### Test data ####
+# test if the data was successfully loaded
+test_that("Dataset loading", {
+  simulate_data <- read_csv(file_path)
+  expect_true(exists("simulate_data"), label = "The dataset should be successfully loaded.")
+})
+
+# Check for missing values in each column
+test_that("Missing values check", {
+  simulate_data <- read_csv(file_path)
+  missing_values <- colSums(is.na(simulate_data))
+  expect_true(is.numeric(missing_values), label = "Missing values should be calculated correctly.")
+})
+
+# Ensure there are no negative values in price columns
+test_that("No negative values in price columns", {
+  simulate_data <- read_csv(file_path)
+  expect_false(any(simulate_data$current_price < 0), label = "current_price should not contain negative values.")
+  expect_false(any(simulate_data$old_price < 0), label = "old_price should not contain negative values.")
+})
+
+# Check unique values in categorical columns
+test_that("Unique values in categorical columns", {
+  simulate_data <- read_csv(file_path)
+  unique_vendors <- unique(simulate_data$vendor)
+  expect_true(length(unique_vendors) > 0, label = "Vendor column should have unique values.")
+  
+  unique_products <- unique(simulate_data$product_name)
+  expect_true(length(unique_products) > 0, label = "Product name column should have unique values.")
+  
+  unique_brands <- unique(simulate_data$brand)
+  expect_true(length(unique_brands) > 0, label = "Brand column should have unique values.")
+})
+
+# Check that vendor column contains only allowed values
+test_that("Vendor column allowed values", {
+  simulate_data <- read_csv(file_path)
+  allowed_vendors <- c("Walmart", "TandT")
+  expect_true(all(simulate_data$vendor %in% allowed_vendors), label = "Vendor column should contain only allowed values.")
+})
+
+# Check that product_name contains "beef"
+test_that("Product name contains beef", {
+  simulate_data <- read_csv(file_path)
+  expect_true(all(str_detect(tolower(simulate_data$product_name), "beef")), label = "All product names should contain 'beef'.")
+})
+
+# Check that year, month, and day columns contain valid values
+test_that("Date columns validation", {
+  simulate_data <- read_csv(file_path)
+  expect_true(all(simulate_data$year >= 2021 & simulate_data$year <= 2023), label = "Year column should contain values between 2021 and 2023.")
+  expect_true(all(simulate_data$month >= 1 & simulate_data$month <= 12), label = "Month column should contain values between 1 and 12.")
+  expect_true(all(simulate_data$day >= 1 & simulate_data$day <= 28), label = "Day column should contain values between 1 and 28.")
+})
+
+# Check that price_per_unit is correctly calculated
+test_that("Price per unit calculation", {
+  simulate_data <- read_csv(file_path)
+  expect_equal(simulate_data$price_per_unit, simulate_data$current_price / simulate_data$units, label = "Price per unit should be correctly calculated as current_price divided by units.")
+})
+
+ChatGPT said:
+ChatGPT
+The purpose of this script is to validate the integrity and consistency of the simulated beef dataset through a series of unit tests, ensuring accurate data loading, logical constraints, and adherence to expected value ranges.
+
+
+
+
+
+
+You said:
+
+#### Workspace setup ####
+# load library
+library(httr)
+library(here)
+library(utils)
+
+
+
+#### Download data ####
+# Specify the URL of the zip file
+url <- "https://jacobfilipp.com/hammerdata/hammer-5-csv.zip"
+
+# Specify the local file path for the zip file using here
+zip_file <- here("data", "01-raw_data", "raw.zip")
+
+# Create the directory structure if it doesn't exist
+dir.create(dirname(zip_file), recursive = TRUE, showWarnings = FALSE)
+
+# Download the zip file
+response <- GET(url, write_disk(zip_file, overwrite = TRUE))
+
+# Check the status of the download
+if (status_code(response) == 200) {
+  message("Zip file downloaded successfully and saved as: ", zip_file)
+  
+  # Extract the zip file directly into the 01-raw_data folder
+  unzip_dir <- here("data", "01-raw_data")
+  unzip(zip_file, exdir = unzip_dir)
+  message("Zip file extracted directly to the directory: ", unzip_dir)
+  
+  # List the extracted files
+  extracted_files <- list.files(unzip_dir, full.names = TRUE)
+  print("Extracted files:")
+  print(extracted_files)
+  
+  # Optional: Load and preview the first CSV file
+  csv_file <- extracted_files[grep("\\.csv$", extracted_files)][1] # Select the first CSV
+  if (!is.na(csv_file)) {
+    dataset <- read.csv(csv_file)
+    print(head(dataset))
+  } else {
+    message("No CSV files found in the extracted content.")
+  }
+  
+} else {
+  message("Failed to download the zip file. Status code: ", status_code(response))
+}
+ChatGPT said:
+ChatGPT
+The purpose of this script is to download a zip file containing raw data from a specified URL, extract its contents into a structured directory, and optionally preview the first CSV file for verification.
+
+
+
+
+
+
+You said:
+use sentences like:
+
+To download a zip file containing raw data from a specified URL, extract its contents into a structured directory, and optionally preview the first CSV file for verification.
+ChatGPT said:
+ChatGPT
+To download a zip file containing raw data from a specified URL, extract its contents into a structured directory, and optionally load and preview the first CSV file to ensure successful extraction and data integrity.
+
+
+1/2
+
+You said:
+
+#### Workspace setup ####
+library(tidyverse)
+library(arrow)
+library(here)
+
+# load data
+product_data <- read_csv(here("data", "01-raw_data", "hammer-4-product.csv"), show_col_types = FALSE)
+raw_data <- read_csv(here("data", "01-raw_data", "hammer-4-raw.csv"), show_col_types = FALSE)
+
+
+
+#### Clean data ####
+# merge data
+merge_data <- raw_data %>%
+  inner_join(product_data, by = c("product_id" = "id")) %>%
+  select(
+    nowtime,
+    vendor,
+    product_id,
+    product_name,
+    brand,
+    current_price,
+    old_price,
+    units,
+    price_per_unit
+  )
+
+# ppu data (price_per_unit)
+ppu_data <- merge_data %>%
+  filter(vendor %in% c("Walmart", "TandT")) %>%
+  filter(str_detect(tolower(product_name), "beef")) %>%
+  select(vendor, price_per_unit)
+
+# clean data
+cleaned_data <- merge_data %>%
+  filter(vendor %in% c("Walmart", "TandT")) %>%
+  select(nowtime, vendor, current_price, old_price, product_name, price_per_unit) %>%
+  mutate(
+    year = year(nowtime),
+    month = month(nowtime),
+    day = day(nowtime),
+    current_price = parse_number(current_price),
+    old_price = parse_number(old_price),
+    price_per_unit = str_extract(price_per_unit, "\\$[0-9\\.]+") %>% 
+      str_remove("\\$") %>%
+      as.numeric(),
+    price_per_unit = ifelse(is.na(price_per_unit), 0, price_per_unit)
+  ) %>%
+  filter(str_detect(tolower(product_name), "beef")) %>%
+  filter(!str_detect(tolower(product_name), 
+                     "flavour|vermicelli|rice|noodles|noodle|seasoning|lasagna|broth|soup|ravioli|pasta|plant-based|bun"
+  )) %>%
+  select(-nowtime) %>%
+  tidyr::drop_na()
+
+
+
+#### Save data ####
+write_parquet(ppu_data, here("data", "02-analysis_data", "ppu_data.parquet"))
+write_parquet(cleaned_data, here("data", "02-analysis_data", "beef_data.parquet"))
+
+ChatGPT said:
+ChatGPT
+To load raw product and transaction data, merge and clean the datasets by filtering and transforming columns, and save the cleaned and processed data into parquet files for further analysis.
+
+
+
+
+
+
+You said:
+
+
+#### Workspace setup ####
+# load library
+library(tidyverse)
+library(testthat)
+library(here)
+
+# Define file path
+file_path <- here("data", "02-analysis_data", "beef_data.csv")
+
+# Check if file exists before running tests
+if (!file.exists(file_path)) {
+  stop("The file 'soy_data.csv' does not exist. Ensure the dataset is available.")
+}
+
+
+
+#### Test data ####
+# test if the data was successfully loaded
+test_that("Dataset loading", {
+  soy_data <- read_csv(file_path)
+  expect_true(exists("soy_data"), label = "The dataset should be successfully loaded.")
+})
+
+# Check for missing values in each column
+test_that("Missing values check", {
+  soy_data <- read_csv(file_path)
+  missing_values <- colSums(is.na(soy_data))
+  expect_true(is.numeric(missing_values), label = "Missing values should be calculated correctly.")
+})
+
+# Ensure there are no negative values in price columns
+test_that("No negative values in price columns", {
+  soy_data <- read_csv(file_path)
+  expect_false(any(soy_data$current_price < 0), label = "current_price should not contain negative values.")
+  expect_false(any(soy_data$old_price < 0), label = "old_price should not contain negative values.")
+})
+
+# Check unique values in categorical columns
+test_that("Unique values in categorical columns", {
+  soy_data <- read_csv(file_path)
+  unique_vendors <- unique(soy_data$vendor)
+  expect_true(length(unique_vendors) > 0, label = "Vendor column should have unique values.")
+  
+  unique_products <- unique(soy_data$product_name)
+  expect_true(length(unique_products) > 0, label = "Product name column should have unique values.")
+  
+  if("brand" %in% colnames(soy_data)) {
+    unique_brands <- unique(soy_data$brand)
+    expect_true(length(unique_brands) > 0, label = "Brand column should have unique values.")
+  }
+})
+
+# Check that vendor column contains only allowed values
+test_that("Vendor column allowed values", {
+  soy_data <- read_csv(file_path)
+  allowed_vendors <- c("TandT", "Walmart")
+  expect_true(all(soy_data$vendor %in% allowed_vendors), label = "Vendor column should contain only allowed values.")
+})
+
+# Check that product_name contains "soy" or "sauce"
+test_that("Product name contains soy or sauce", {
+  soy_data <- read_csv(file_path)
+  expect_true(any(str_detect(tolower(soy_data$product_name), "beef")), label = "At least one product name should contain 'beef'.")
+})
+
+# Check that year, month, and day columns contain valid values
+test_that("Date columns validation", {
+  soy_data <- read_csv(file_path)
+  if("year" %in% colnames(soy_data)) {
+    expect_true(all(soy_data$year >= 2021 & soy_data$year <= 2024), label = "Year column should contain values between 2021 and 2024.")
+  }
+  if("month" %in% colnames(soy_data)) {
+    expect_true(all(soy_data$month >= 1 & soy_data$month <= 12), label = "Month column should contain values between 1 and 12.")
+  }
+  if("day" %in% colnames(soy_data)) {
+    expect_true(all(soy_data$day >= 1 & soy_data$day <= 31), label = "Day column should contain values between 1 and 31.")
+  }
+})
+
+# Check that price_per_unit is correctly calculated
+test_that("Price per unit calculation", {
+  soy_data <- read_csv(file_path)
+  if("price_per_unit" %in% colnames(soy_data) & "units" %in% colnames(soy_data)) {
+    expect_equal(soy_data$price_per_unit, soy_data$current_price / soy_data$units, label = "Price per unit should be correctly calculated as current_price divided by units.")
+  }
+})
+
+# Check that old_price is not less than current_price
+test_that("old_price greater than or equal to current_price", {
+  soy_data <- read_csv(file_path)
+  if("old_price" %in% colnames(soy_data) & "current_price" %in% colnames(soy_data)) {
+    expect_true(all(soy_data$old_price >= soy_data$current_price), label = "old_price should be greater than or equal to current_price.")
+  }
+})
+ChatGPT said:
+ChatGPT
+To validate the integrity of the cleaned beef dataset by testing for successful data loading, logical consistency of column values, adherence to specified constraints, and correct calculations for derived metrics.
+
+
+
+
+
+
+You said:
+
+#### Workspace setup ####
+# load library
+library(tidyverse)
+library(bayesplot)
+library(arrow)
+library(here)
+
+# load data
+beef_data <- read_parquet(here("data", "02-analysis_data", "beef_data.parquet"))
+
+# load model
+beef_model <- readRDS (file = here:: here ("models/beef_model.rds"))
+
+
+
+#### Chart 1 ####
+# Distribution of Current Price
+ggplot(beef_data, aes(x = current_price)) +
+  geom_histogram(binwidth = 1, fill = "lightgrey", color = "darkgrey", alpha = 0.7) +
+  geom_density(aes(y = ..count..), color = "red", size = 1) +
+  labs(title = "Distribution of Current Prices", x = "Current Price (in $)", y = "Frequency") +
+  theme_minimal()
+
+
+
+#### Chart 2 ####
+# Price Difference
+beef_data <- beef_data %>%
+  mutate(price_difference = old_price - current_price)
+
+ggplot(beef_data, aes(x = vendor, y = price_difference)) +
+  geom_boxplot(fill = "lightgrey", color = "darkgrey", alpha = 0.7) +
+  labs(title = "Price Difference by Vendor", x = "Vendor", y = "Price Difference (in $)") +
+  theme_minimal()
+
+
+
+#### Chart 3 ####
+# Average Current Price Over Time
+beef_data <- beef_data %>%
+  mutate(date = as.Date(paste(year, month, day, sep = "-"), format = "%Y-%m-%d"))
+
+avg_price_per_date <- beef_data %>%
+  group_by(date) %>%
+  summarise(avg_current_price = mean(current_price, na.rm = TRUE))
+
+ggplot(avg_price_per_date, aes(x = date, y = avg_current_price)) +
+  geom_line(color = "darkgrey", size = 1) +
+  labs(title = "Average Current Price Over Time", x = "Date", y = "Average Current Price (in $)") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+
+#### Chart 4 ####
+# Distribution of Current vs. Old Price
+ggplot(beef_data, aes(x = old_price, y = current_price)) +
+  geom_point(color = 'lightgrey', alpha = 0.7) +
+  geom_smooth(method = 'loess', color = 'darkgrey', fill = 'red', alpha = 0.8, se = TRUE) +
+  labs(title = "Distribution of Current vs. Old Price of Beef", x = "Old Price (in $)", y = "Current Price (in $)") +
+  theme_minimal()
+
+
+
+#### Chart 5 ####
+# Unit Price Distribution
+ggplot(beef_data, aes(x = price_per_unit)) +
+  geom_histogram(binwidth = 0.1, fill = "lightgrey", color = "darkgrey", alpha = 0.7) +
+  geom_density(aes(y = after_stat(count)), color = "red", linewidth = 1) +
+  labs(title = "Distribution of Unit Prices", x = "Unit Price ($ per 100 grams)", y = "Frequency") +
+  theme_minimal()
+
+
+
+#### Model 1 ####
+# Visual summary
+pp_check(beef_model) +
+  ggtitle("Posterior Predictive Check for Beef Model")
+
+
+
+#### Model 2 ####
+# Text summary
+summary(beef_model)
+ChatGPT said:
+ChatGPT
+To explore and visualize trends in beef pricing data, this script includes analyses of price distributions, vendor-based differences, temporal trends, and price relationships, while leveraging a Bayesian model to assess data patterns and perform posterior predictive checks.
+
+
+
+
+
+
+You said:
+
+
+#### Workspace setup ####
+# load library
+library(tidyverse)
+library(rstanarm)
+library(arrow)
+library(here)
+
+# laod data
+beef_data <- read_parquet(here("data", "02-analysis_data", "beef_data.parquet"))
+
+
+
+#### Model data ####
+beef_model <-
+  stan_glm(
+    formula = current_price ~ month + old_price + vendor,
+    data = beef_data,
+    family = gaussian(),
+    prior = normal(location = 0, scale = 2.5, autoscale = TRUE),
+    prior_intercept = normal(location = 0, scale = 2.5, autoscale = TRUE),
+    prior_aux = exponential(rate = 1, autoscale = TRUE),
+    seed = 304
+  )
+
+
+
+#### Save model ####
+saveRDS(
+  beef_model,
+  file = here("models", "beef_model.rds")
+)
+ChatGPT said:
+ChatGPT
+To build and save a Bayesian regression model that predicts the current price of beef based on month, old price, and vendor, using the rstanarm package with specified priors and a Gaussian family.
