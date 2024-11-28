@@ -68,6 +68,7 @@ cleaned_data <- merge_data %>%
 
 
 #### Save data ####
+write_parquet(merge_data, here("data", "02-analysis_data", "merged_data.parquet"))
 write_parquet(ppu_data, here("data", "02-analysis_data", "ppu_data.parquet"))
 write_parquet(cleaned_data, here("data", "02-analysis_data", "beef_data.parquet"))
 
