@@ -4,9 +4,8 @@ subtitle: "The Project Hammer Dataset"
 author: 
   - Ziheng Zhong
 thanks: "Code and data are available at: [https://jacobfilipp.com/hammer/](https://jacobfilipp.com/hammer/)."
-date: "`r Sys.time()`"
-date-format: "D MMMM YYYY"
-abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
+date: today
+date-format: long
 format: pdf
 number-sections: true
 bibliography: references.bib
