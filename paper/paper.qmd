@@ -3,7 +3,7 @@ title: "Beef Pricing Dynamics in the Canadian Grocery Market: A Comparative Anal
 subtitle: "Evidence of Cultural and Strategic Influences on Beef Pricing"
 author: 
   - Ziheng Zhong
-thanks: "Code and data are available at: [https://github.com/iJustinn/Canadian_Grocery_Analysis.git](https://github.com/iJustinn/Canadian_Grocery_Analysis.git)."
+thanks: "Code and data supporting this analysis is available at: [https://github.com/iJustinn/Canadian_Grocery_Analysis.git](https://github.com/iJustinn/Canadian_Grocery_Analysis.git)."
 date: today
 date-format: long
 abstract: "This study analyzes beef pricing dynamics in the Canadian retail market, focusing on two vendors: Walmart and T&T. Using Bayesian linear regression, we found that historical pricing and vendor-specific strategies significantly influence current beef prices, with Walmart displaying more price stability and T&T showing greater variability. These findings reveal how both market-wide and vendor-specific factors shape beef pricing, offering insights that could help retailers refine their pricing strategies and support policymakers in addressing food affordability. This paper provides a clearer understanding of the interplay between cultural preferences and retail strategies in determining food prices."
@@ -46,6 +46,8 @@ beef_model <- readRDS (file = here:: here ("models/beef_model.rds"))
 The pricing of grocery products, particularly beef, plays a significant role in understanding consumer behavior and market dynamics within the Canadian retail sector. Beef, as a staple of many households, exhibits complex pricing behaviors influenced by a variety of factors, including vendor strategies, historical pricing, and seasonal trends. The broader context for this study lies in exploring how large-scale retailers and specialty stores adjust their beef prices over time and how these changes reflect broader economic and cultural trends. Given the increasing concerns around food affordability and accessibility, understanding the dynamics of beef pricing is not only crucial for consumers but also for stakeholders involved in food distribution and policy-making.
 
 This paper specifically focuses on two prominent vendors, Walmart and T&T, to examine how beef pricing varies across different types of retail environments. Walmart, as a major multinational retailer, represents mainstream, standardized pricing strategies, while T&T, catering primarily to Asian communities, represents a more specialized market segment. By analyzing data from these two vendors, this paper aims to address an important gap in understanding how cultural preferences and retail strategies influence product pricing. While previous studies have highlighted general trends in food pricing, they often overlook the nuanced differences between general retail chains and culturally specific stores. This paper fills that gap by providing an in-depth analysis of beef pricing patterns across these two distinct retail settings.
+
+The estimand of this study is the current price of beef, determined by factors such as vendor type, historical pricing, etc. By estimating how these variables impact the current pricing, the paper aims to provide a comprehensive understanding of the pricing mechanisms that affect retail beef prices in Canada.
 
 Using a Bayesian linear regression approach, this study examines the effect of historical pricing, vendor-specific strategies, and seasonal factors on current beef prices. The analysis finds that old prices significantly predict current pricing, indicating a high degree of price consistency. Additionally, notable differences in pricing strategies between Walmart and T&T suggest that these vendors approach their markets with distinct pricing objectives, with Walmart favoring price stability and T&T showing more variability in pricing, possibly to cater to niche preferences. The findings are significant as they reveal the underlying mechanisms of price determination in a diverse retail environment, highlighting both market-wide factors and vendor-specific influences. Such insights could be useful for retailers looking to optimize their pricing strategies and for policymakers interested in addressing food affordability concerns.
 
@@ -113,11 +115,14 @@ In addition to the summary table, the distribution of current_price is visualize
 #| echo: false
 #| warning: false
 #| message: false
+#| fig-width: 5
 
 ggplot(beef_data, aes(y = current_price)) +
   geom_boxplot(fill = "lightgrey", color = "darkgrey", alpha = 0.7) +
-  labs(title = "Boxplot of the Distribution of Current Prices", y = "Current Price (in $)") +
-  theme_minimal()
+  labs(y = "Current Price (in $)") +
+  theme_minimal() +
+  theme(axis.text.x = element_blank(),
+        axis.ticks.x = element_blank())
 
 ```
 
@@ -212,11 +217,11 @@ vendor_summary %>%
 
 Background details and diagnostics are included in [Appendix -@sec-model-details].
 
-## Model overview
+## Overview
 
-To model the current price of beef, $y_i$, at time $i$, we use a Bayesian linear regression model implemented with the `stan_glm` function in the R package `rstanarm`. The response variable, $y_i$, represents the **current price of beef** in dollars. Our predictors include $x_1$, $x_2$, and $x_3$, which represent the **month**, **old price**, and **vendor**, respectively. Each component of the model is defined and justified below.
+To model the current price of beef, $y_i$, at time $i$, we use a Bayesian linear regression model implemented with the `stan_glm` function in the R package `rstanarm`. The response variable, $y_i$, represents the current price of beef in dollars. Our predictors include $x_1$, $x_2$, and $x_3$, which represent the month, old price, and vendor, respectively. Each component of the model is defined and justified below.
 
-## Model set-up
+## Set-up
 
 Define $y_i$ as the current price of beef at time $i$, measured in dollars. Let $x_1$, $x_2$, and $x_3$ represent the predictors: $x_1$ is the month (categorical variable), $x_2$ is the old price, and $x_3$ is the vendor (categorical variable).
 
@@ -226,10 +231,10 @@ y_i | \mu_i, \sigma &\sim \text{Normal}(\mu_i, \sigma) \\
 \end{align}
 
 In this model:
-- $\alpha$ represents the **intercept** term, capturing the baseline price of beef.
-- $\beta_1$ corresponds to the **effect of the month** on the current price, allowing us to capture **seasonal variations** that may impact beef pricing. The month is treated as a categorical variable, acknowledging that different months can bring different demand or supply effects due to holidays, weather, or other seasonal factors.
-- $\beta_2$ represents the **effect of the old price** on the current price. This allows us to account for price inertia or trends where past pricing influences current pricing.
-- $\beta_3$ represents the **effect of the vendor**, also treated as a categorical variable. Different vendors may have distinct pricing strategies, and including vendor as a categorical predictor helps us capture this vendor-specific pricing variation.
+- $\alpha$ represents the intercept term, capturing the baseline price of beef.
+- $\beta_1$ corresponds to the effect of the month on the current price, allowing us to capture seasonal variations that may impact beef pricing. The month is treated as a categorical variable, acknowledging that different months can bring different demand or supply effects due to holidays, weather, or other seasonal factors.
+- $\beta_2$ represents the effect of the old price on the current price. This allows us to account for price inertia or trends where past pricing influences current pricing.
+- $\beta_3$ represents the effect of the vendor, also treated as a categorical variable. Different vendors may have distinct pricing strategies, and including vendor as a categorical predictor helps us capture this vendor-specific pricing variation.
 
 We assume normal priors for the model coefficients and intercept, with mean 0 and standard deviation 2.5:
 
@@ -240,9 +245,9 @@ We assume normal priors for the model coefficients and intercept, with mean 0 an
 \beta_3 &\sim \text{Normal}(0, 2.5)
 \end{align}
 
-These priors are chosen to be **weakly informative**, allowing the data to speak for itself while still providing a reasonable range for the coefficients based on prior expectations. Specifically, a standard deviation of 2.5 reflects our expectation that most reasonable effects should fall within a plausible range without being overly restrictive.
+These priors are chosen to be weakly informative, allowing the data to speak for itself while still providing a reasonable range for the coefficients based on prior expectations. Specifically, a standard deviation of 2.5 reflects our expectation that most reasonable effects should fall within a plausible range without being overly restrictive.
 
-For the residual standard deviation, $\sigma$, we assume an **Exponential(1)** prior:
+For the residual standard deviation, $\sigma$, we assume an Exponential(1) prior:
 
 \begin{align}
 \sigma &\sim \text{Exponential}(1)
@@ -252,22 +257,22 @@ This prior reflects our belief that the standard deviation should be positive an
 
 We run the model in R [@citeR] using the `rstanarm` package of @citeRstanarm. We use the default priors from `rstanarm`.
 
-## Model justification
+## Justification
 
-The choice of predictors is well-balanced in terms of complexity and appropriateness for this scenario. By including **month** and **vendor** as categorical variables, we acknowledge the significant impact that both seasonal changes and vendor-specific factors can have on the current price of beef. The inclusion of the **old price** reflects the idea of price inertia, where historical prices are likely to influence current pricing trends.
+The choice of predictors is well-balanced in terms of complexity and appropriateness for this scenario. By including month and vendor as categorical variables, we acknowledge the significant impact that both seasonal changes and vendor-specific factors can have on the current price of beef. The inclusion of the old price reflects the idea of price inertia, where historical prices are likely to influence current pricing trends.
 
-The model is neither **overly simplistic** nor **unnecessarily complex**: it captures important predictors without adding extraneous complexity that could lead to overfitting. **Month** and **vendor** are treated as categorical variables rather than grouping by more arbitrary categories, which maintains the expressiveness of our model while being parsimonious.
+The model is neither overly simplistic nor unnecessarily complex: it captures important predictors without adding extraneous complexity that could lead to overfitting. Month and vendor are treated as categorical variables rather than grouping by more arbitrary categories, which maintains the expressiveness of our model while being parsimonious.
 
-The model is implemented using `stan_glm` from the `rstanarm` package, a high-level interface to Stan for Bayesian modeling. **Stan** provides powerful sampling algorithms, making it an appropriate tool for fitting our Bayesian model efficiently, ensuring **robust convergence** and accurate posterior estimation.
+The model is implemented using `stan_glm` from the `rstanarm` package, a high-level interface to Stan for Bayesian modeling. Stan provides powerful sampling algorithms, making it an appropriate tool for fitting our Bayesian model efficiently, ensuring robust convergence and accurate posterior estimation.
 
-### Model Assumptions and Limitations
+### Assumptions and Limitations
 - **Linearity**: The model assumes a linear relationship between the predictors and the response variable. This may be a limitation if the true relationship is nonlinear.
 - **Normality of Residuals**: The residuals are assumed to follow a normal distribution. If this assumption does not hold, it could bias the model predictions.
 - **Priors**: We used weakly informative priors to allow flexibility. However, if we had prior knowledge of specific pricing patterns, more informative priors could be used for better inference.
 
-### Model Validation and Diagnostics
+### Validation and Diagnostics
 - **Posterior Predictive Checks**: We performed posterior predictive checks to verify that the model adequately captures the variation in the data. These checks involve comparing simulated data from the posterior distribution to the observed data to check for any discrepancies.
-- **Convergence**: Model convergence was assessed using **trace plots** and the **R-hat statistic**, with all values being close to 1, indicating successful convergence.
+- **Convergence**: Model convergence was assessed using trace plots and the R-hat statistic, with all values being close to 1, indicating successful convergence.
 - **Alternative Models**: We also considered fitting simpler linear models that did not include the vendor or seasonal components. These models showed significantly lower predictive performance, indicating the importance of including both the vendor and seasonal factors for accuracy.
 
 In summary, the chosen model provides a comprehensive yet interpretable understanding of how different factors influence the current price of beef. The Bayesian approach allows us to incorporate uncertainty and prior beliefs, while our specific choice of priors and predictors ensures that the model is well-suited for the available data and research questions.
@@ -276,7 +281,7 @@ In summary, the chosen model provides a comprehensive yet interpretable understa
 
 # Results {#sec-result}
 
-## Charts
+## Charting
 
 ```{r}
 #| label: fig-current_price_distribution
@@ -287,7 +292,7 @@ In summary, the chosen model provides a comprehensive yet interpretable understa
 
 ggplot(beef_data, aes(x = current_price)) +
   geom_histogram(binwidth = 1, fill = "lightgrey", color = "darkgrey", alpha = 0.7) +
-  geom_density(aes(y = ..count..), color = "red", size = 1) +
+  geom_density(aes(y = ..count..), color = "red", size = 0.8) +
   labs(x = "Current Price (in $)", y = "Frequency") +
   theme_minimal()
 
@@ -339,7 +344,8 @@ avg_price_per_date <- beef_data %>%
   summarise(avg_current_price = mean(current_price, na.rm = TRUE))
 
 ggplot(avg_price_per_date, aes(x = date, y = avg_current_price)) +
-  geom_line(color = "darkgrey", size = 1) +
+  geom_point(color = "grey", size = 1.5, alpha = 0.7) +
+  geom_smooth(method = "loess", color = "red", fill = "darkgrey", alpha = 0.3, se = TRUE) +
   labs(x = "Date", y = "Average Current Price (in $)") +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
@@ -396,9 +402,8 @@ Overall, the heatmap effectively illustrates the overall pattern of pricing cons
 #| message: false
 
 ggplot(beef_data, aes(x = price_per_unit)) +
-  geom_histogram(binwidth = 0.1, fill = "lightgrey", color = "darkgrey", alpha = 0.7) +
-  geom_density(aes(y = after_stat(count)), color = "red", linewidth = 1) +
-  labs(x = "Unit Price ($ per 100 grams)", y = "Frequency") +
+  geom_density(fill = "lightgrey", color = "red", , linewidth = 0.8, alpha = 0.5, bw = 0.5) +
+  labs(x = "Unit Price ($ per 100 grams)", y = "Density") +
   theme_minimal()
 
 ```
@@ -411,7 +416,7 @@ The overall distribution is heavily right-skewed, suggesting that the majority o
 
 
 
-## Model
+## Modeling
 
 ```{r}
 #| label: tbl-modelresults
@@ -481,17 +486,24 @@ On the other hand, T&T Supermarket represents a niche segment of the market, cat
 
 The combination of Walmart and T&T enables the analysis to explore both mainstream and culturally specific market behaviors. This choice of vendors thus enriches the study by accounting for variations in consumer preferences, pricing strategies, and market positioning. Walmart's emphasis on scale and cost-efficiency contrasts with T&T's specialization and cultural targeting, allowing us to draw meaningful comparisons in terms of beef pricing strategies between a general and a specialized market context. Such a nuanced understanding is essential for capturing the diversity within the beef retail market, providing a more holistic view of the factors driving beef prices in different retail settings.
 
+\newpage
+
 ## Price per unit
 
+In cleaning the `price_per_unit` variable, I began by extracting the numerical value using `str_extract()`, which allowed me to identify the dollar amounts in the original string (`\\$[0-9\\.]+`), as shown in @tbl-price_per_unit-1. This step ensured that only valid price values, starting with a dollar sign, were captured, removing any extraneous text or symbols.
+
+Next, I removed the dollar sign itself with `str_remove("\\$")` to convert the extracted value into a format suitable for numerical operations. After this, I used `as.numeric()` to convert the string into a numeric type, allowing for further quantitative analysis.
+
+To handle missing values, I applied `ifelse(is.na(price_per_unit), 0, price_per_unit)`, which replaced any `NA` values in the `price_per_unit` column with `0`. This step ensured that all rows had a value for `price_per_unit`, preventing issues during subsequent analysis. Using zero as the replacement helped maintain continuity in the dataset, although I acknowledge that this choice could imply that missing values are negligible, which might require additional context or consideration during interpretation. The price_per_unit column in the dataset after cleaning looks like @tbl-price_per_unit-2.
+
 ```{r}
-#| label: tbl-raw_price_per_unit
+#| label: tbl-price_per_unit
 #| tbl-cap: "Price per Unit Data for TandT and Walmart"
 #| tbl-subcap: ["Raw Data", "Cleaned Data"]
 #| echo: false
 #| warning: false
 #| message: false
 #| layout-ncol: 2
-
 
 ppu_data %>%
   filter(vendor == "TandT") %>%
@@ -519,42 +531,70 @@ beef_data %>%
 
 ```
 
-In cleaning the `price_per_unit` variable, I began by extracting the numerical value using `str_extract()`, which allowed me to identify the dollar amounts in the original string (`\\$[0-9\\.]+`), as shown in @tbl-price_per_unit-1. This step ensured that only valid price values, starting with a dollar sign, were captured, removing any extraneous text or symbols.
-
-Next, I removed the dollar sign itself with `str_remove("\\$")` to convert the extracted value into a format suitable for numerical operations. After this, I used `as.numeric()` to convert the string into a numeric type, allowing for further quantitative analysis.
-
-To handle missing values, I applied `ifelse(is.na(price_per_unit), 0, price_per_unit)`, which replaced any `NA` values in the `price_per_unit` column with `0`. This step ensured that all rows had a value for `price_per_unit`, preventing issues during subsequent analysis. Using zero as the replacement helped maintain continuity in the dataset, although I acknowledge that this choice could imply that missing values are negligible, which might require additional context or consideration during interpretation. The price_per_unit column in the dataset after cleaning looks like @tbl-price_per_unit-2.
+\newpage
 
 # Model details {#sec-model-details}
 
 ## Posterior predictive check
-In @fig-ppcheckandposteriorvsprior-1, we implement a posterior predictive check. This plot shows the observed data distribution (in dark lines) compared with simulated datasets from the posterior (in light grey lines). The purpose of this check is to evaluate how well the model can reproduce the observed data. The close alignment between the simulated posterior predictive distributions and the observed data suggests that the model is accurately capturing the underlying patterns in the data. Specifically, we observe that the peaks and troughs in the observed data are well represented by the posterior samples, indicating that the model is capable of capturing key features such as the general shape and spread of the data distribution. The variability across the posterior predictive samples is consistent with the observed variability, suggesting no significant model misfit.
-
-In @fig-ppcheckandposteriorvsprior-2, we compare the posterior with the prior distributions for each parameter. The posterior distribution (shown on the left) is more concentrated compared to the prior (shown on the right), which demonstrates how the data has influenced and updated our beliefs about the model parameters. For instance, the posterior distribution for the intercept has shrunk considerably compared to its prior, indicating that the data has substantially informed our estimate of the baseline price level. Similarly, for the other parameters (month, old_price, sigma, and vendorWalmart), the posteriors are less dispersed than the priors, suggesting a meaningful reduction in uncertainty. Notably, the posterior intervals are much narrower, especially for the intercept and old price parameters, indicating that the data has provided strong information about these effects. The results demonstrate that the priors were sufficiently weak, allowing the data to dominate the inference and significantly refine the parameter estimates.
+In @fig-ppcheck, we implement a posterior predictive check. This plot shows the observed data distribution (in dark lines) compared with simulated datasets from the posterior (in light grey lines). The purpose of this check is to evaluate how well the model can reproduce the observed data. The close alignment between the simulated posterior predictive distributions and the observed data suggests that the model is accurately capturing the underlying patterns in the data. Specifically, we observe that the peaks and troughs in the observed data are well represented by the posterior samples, indicating that the model is capable of capturing key features such as the general shape and spread of the data distribution. The variability across the posterior predictive samples is consistent with the observed variability, suggesting no significant model misfit.
 
 ```{r}
 #| eval: true
 #| echo: false
 #| message: false
 #| warning: false
-#| label: fig-ppcheckandposteriorvsprior
-#| layout-ncol: 2
-#| fig-cap: "Examining how the model fits, and is affected by, the data"
-#| fig-subcap: ["Posterior prediction check", "Comparing the posterior with the prior"]
+#| label: fig-ppcheck
+#| fig-cap: "Posterior prediction check result"
 
 # Posterior predictive check
 pp_check(beef_model, plotfun = "dens_overlay")
 
-# Comparing posterior with prior
-posterior_vs_prior(beef_model, color_by = "parameter") + theme_minimal() + scale_fill_grey() + scale_color_grey()
 ```
 
+\newpage
+
+In @fig-posteriorvsprior, we compare the posterior with the prior distributions for each parameter. The posterior distribution (shown on the left) is more concentrated compared to the prior (shown on the right), which demonstrates how the data has influenced and updated our beliefs about the model parameters. For instance, the posterior distribution for the intercept has shrunk considerably compared to its prior, indicating that the data has substantially informed our estimate of the baseline price level. Similarly, for the other parameters (month, old_price, sigma, and vendorWalmart), the posteriors are less dispersed than the priors, suggesting a meaningful reduction in uncertainty. Notably, the posterior intervals are much narrower, especially for the intercept and old price parameters, indicating that the data has provided strong information about these effects. The results demonstrate that the priors were sufficiently weak, allowing the data to dominate the inference and significantly refine the parameter estimates.
+
+```{r}
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+#| label: fig-posteriorvsprior
+#| fig-cap: "Comparing the posterior with the prior"
+
+# Comparing posterior with prior
+posterior_vs_prior(beef_model, color_by = "parameter") +
+  theme_minimal() +
+  scale_fill_grey() +
+  scale_color_grey() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+
+\newpage
+
 ## Diagnostics
-In @fig-stanareyouokay-1, we present a trace plot. This plot shows the sampled values for each parameter across the MCMC iterations. The trace plot helps assess whether the chains have converged to a stationary distribution. In these plots, we see that each parameter's chains are well mixed, with no discernible trends, indicating that the MCMC algorithm has adequately explored the parameter space. The lack of significant upward or downward drift suggests that all chains are consistently sampling from the target distribution, which is a strong indicator of convergence.
+In @fig-trace, we present a trace plot. This plot shows the sampled values for each parameter across the MCMC iterations. The trace plot helps assess whether the chains have converged to a stationary distribution. In these plots, we see that each parameter's chains are well mixed, with no discernible trends, indicating that the MCMC algorithm has adequately explored the parameter space. The lack of significant upward or downward drift suggests that all chains are consistently sampling from the target distribution, which is a strong indicator of convergence.
 
 Specifically, the chains for each parameter appear to oscillate around a constant mean, and the overlap between the four chains is extensive. This well-mixed appearance across all parameters, including the intercept, month, old price, vendorWalmart, and sigma, gives us confidence that our model has reached convergence, with each chain sampling from similar regions of the posterior distribution.
 
-In @fig-stanareyouokay-2, we present an Rhat plot. The Rhat statistic (also known as the potential scale reduction factor) measures the ratio of the variance between chains to the variance within chains, and values close to 1 indicate that the chains have converged. In this plot, we see that all Rhat values for the parameters are very close to 1, specifically below the threshold of 1.05, suggesting that convergence has been achieved across all parameters.
+```{r}
+#| echo: false
+#| eval: true
+#| message: false
+#| warning: false
+#| label: fig-trace
+#| fig-cap: "Trace plot"
+
+# Trace plot
+plot(beef_model, plotfun = "trace") + theme_minimal()
+
+```
+
+\newpage
+
+In @fig-rhat, we present an Rhat plot. The Rhat statistic (also known as the potential scale reduction factor) measures the ratio of the variance between chains to the variance within chains, and values close to 1 indicate that the chains have converged. In this plot, we see that all Rhat values for the parameters are very close to 1, specifically below the threshold of 1.05, suggesting that convergence has been achieved across all parameters.
 
 The fact that all Rhat values are below 1.05 suggests that the different chains are in agreement about the underlying posterior distributions. This indicates that our model's parameter estimates are stable, and the MCMC algorithm has effectively converged. As such, we can be confident in the reliability of the estimates provided by our Bayesian model.
 
@@ -563,16 +603,12 @@ The fact that all Rhat values are below 1.05 suggests that the different chains 
 #| eval: true
 #| message: false
 #| warning: false
-#| label: fig-stanareyouokay
-#| fig-cap: "Checking the convergence of the MCMC algorithm"
-#| fig-subcap: ["Trace plot", "Rhat plot"]
-#| layout-ncol: 2
-
-# Trace plot
-plot(beef_model, plotfun = "trace") + theme_minimal()
+#| label: fig-rhat
+#| fig-cap: "Rhat plot"
 
 # Rhat plot
 plot(beef_model, plotfun = "rhat") + theme_minimal()
+
 ```
 
 
