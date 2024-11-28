@@ -18,7 +18,7 @@ bibliography: references.bib
 #| warning: false
 #| message: false
 # load library
-package_list <- c("tidyverse", "kableExtra", "ggplot2", "dplyr", "here", "knitr", "rstanarm", "modelsummary", "readr", "lme4", "tinytex", "reshape2")
+package_list <- c("tidyverse", "kableExtra", "ggplot2", "dplyr", "here", "knitr", "rstanarm", "modelsummary", "readr", "lme4", "tinytex", "reshape2", "arrow")
 
 install_and_load <- function(package_list) {
   for (package in package_list) {
@@ -32,8 +32,8 @@ install_and_load <- function(package_list) {
 install_and_load(package_list)
 
 # load data
-ppu_data <- read_csv(here("data", "02-analysis_data", "ppu_data.csv"), show_col_types = FALSE)
-beef_data <- read_csv(here("data", "02-analysis_data", "beef_data.csv"), show_col_types = FALSE)
+ppu_data <- read_parquet(here("data", "02-analysis_data", "ppu_data.parquet"))
+beef_data <- read_parquet(here("data", "02-analysis_data", "beef_data.parquet"))
 
 # load model
 beef_model <- readRDS (file = here:: here ("models/beef_model.rds"))
@@ -55,7 +55,7 @@ The structure of the paper is organized as follows: @sec-data outlines the data 
 
 # Data {#sec-data}
 
-This project is motivated and guided by Rohan Alexander and his book [@citeTbook]. Data used in this paper was cleaned, analyzed and modeled with the programming language R [@citeR]. Also with support of additional packages in R: `readr` [@citeReadr], `ggplot2` [@citeGgplot2], `tidyverse` [@citeTidyverse], `dplyr` [@citeDplyr], `here` [@citeHere], `knitr` [@citeKnitr], `kableExtra` [@citeKableExtra], `rstanarm` [@citeRstanarm], `modelsummary` [@citeModelsummary], `lme4` [@citeLme4], `tinytex` [@citeTinytex], `reshape2` [@citeReshape2].
+This project is motivated and guided by Rohan Alexander and his book [@citeTbook]. Data used in this paper was cleaned, analyzed and modeled with the programming language R [@citeR]. Also with support of additional packages in R: `readr` [@citeReadr], `ggplot2` [@citeGgplot2], `tidyverse` [@citeTidyverse], `dplyr` [@citeDplyr], `here` [@citeHere], `knitr` [@citeKnitr], `kableExtra` [@citeKableExtra], `rstanarm` [@citeRstanarm], `modelsummary` [@citeModelsummary], `lme4` [@citeLme4], `tinytex` [@citeTinytex], `reshape2` [@citeReshape2], `arrow` [@citeArrow].
 
 ## Source
 
