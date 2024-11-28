@@ -34,6 +34,7 @@ install_and_load(package_list)
 # load data
 ppu_data <- read_parquet(here("data", "02-analysis_data", "ppu_data.parquet"))
 beef_data <- read_parquet(here("data", "02-analysis_data", "beef_data.parquet"))
+merge_data  <- read_parquet(here("data", "02-analysis_data", "merged_data.parquet"))
 
 # load model
 beef_model <- readRDS (file = here:: here ("models/beef_model.rds"))
@@ -56,6 +57,8 @@ The paper is structured as follows: @sec-data describes the data collection and 
 # Data {#sec-data}
 
 This project is motivated and guided by Rohan Alexander and his book [@citeTbook]. Data used in this paper was cleaned, analyzed and modeled with the programming language R [@citeR]. Also with support of additional packages in R: `readr` [@citeReadr], `ggplot2` [@citeGgplot2], `tidyverse` [@citeTidyverse], `dplyr` [@citeDplyr], `here` [@citeHere], `knitr` [@citeKnitr], `kableExtra` [@citeKableExtra], `rstanarm` [@citeRstanarm], `modelsummary` [@citeModelsummary], `lme4` [@citeLme4], `tinytex` [@citeTinytex], `reshape2` [@citeReshape2], `arrow` [@citeArrow].
+
+Details about data cleaning and variable selection can be found in [Appendix -@sec-data_details].
 
 ## Source
 
@@ -511,7 +514,79 @@ Finally, the assumptions of constant variance and normality of residuals may not
 
 # Appendix {-}
 
-# Additional data details
+# Data details  {#sec-data_details}
+
+## Cleaning methods
+
+In this data cleaning process, the goal was to load raw product and transaction data, merge them, filter and transform the necessary columns, and finally save the cleaned data for further analysis. The process began with loading two CSV files: "hammer-4-product.csv" and "hammer-4-raw.csv". These files contained information about different products and transactions related to them. After loading the data, the next step was to merge the two datasets to create a combined dataset for a more complete product information, as @tbl-merge_data shown.
+
+```{r}
+#| label: tbl-merge_data
+#| tbl-cap: "Raw Merged Data"
+#| echo: false
+#| warning: false
+#| message: false
+
+merge_data %>%
+  head() %>%
+  kable(
+    col.names = c(
+      "Time", 
+      "Vendor", 
+      "Product ID", 
+      "Product Name", 
+      "Brand", 
+      "Current Price", 
+      "Old Price", 
+      "Units", 
+      "Price per Unit"
+    ),
+    booktabs = TRUE
+  )
+
+```
+
+The merging of the two datasets was accomplished using an inner join on the `product_id` and `id` columns. This allowed for the selection of relevant columns, such as product details (`product_name`, `brand`), vendor information, and pricing (`current_price`, `old_price`, and `price_per_unit`). The goal was to retain only those data attributes that were essential for subsequent analyses.
+
+Once the datasets were merged, the next stage was to focus specifically on price-per-unit data (`price_per_unit`) and create a subset, `ppu_data`, which only included vendors Walmart and TandT. Additionally, this subset included only those records where the product names contained "beef", helping to narrow down the dataset to beef-related items. Only the `vendor` and `price_per_unit` columns were selected to generate this subset, which would later be saved as a separate parquet file for analysis.
+
+The main cleaning process involved creating a cleaned dataset (@tbl-clean_data), `cleaned_data`, by filtering out only those records from the merged dataset that belonged to Walmart and TandT. The data was further refined by selecting important columns, such as transaction time (`nowtime`), vendor, product pricing, and product details. Several transformations were then applied to ensure the data was suitable for analysis. For example, the `nowtime` column was parsed to extract `year`, `month`, and `day` values, which provided a more granular breakdown of transaction time. The `current_price` and `old_price` columns were converted to numeric values using `parse_number()` to handle any non-numeric characters.
+
+```{r}
+#| label: tbl-clean_data
+#| tbl-cap: "Cleaned Data"
+#| echo: false
+#| warning: false
+#| message: false
+
+beef_data %>%
+  select(vendor, current_price, old_price, product_name, price_per_unit, year, month, day) %>%
+  head() %>%
+  kable(
+    col.names = c(
+      "vendor", 
+      "current_price", 
+      "old_price", 
+      "product_name", 
+      "price_per_unit", 
+      "year", 
+      "month", 
+      "day"
+      ),
+    booktabs = TRUE
+  ) %>%
+  kable_styling(full_width = FALSE) %>%
+  column_spec(4, width = "7em")
+
+```
+
+For the `price_per_unit` column, the values were cleaned to ensure consistency. The dollar sign was extracted using `str_extract()` and subsequently removed using `str_remove()`. The result was then converted to numeric values for accurate comparison and analysis. In cases where `price_per_unit` was missing, the `ifelse()` function was used to assign a default value of 0, ensuring no missing data points could interfere with subsequent operations.
+
+To focus specifically on beef products, the `cleaned_data` dataset was filtered to include only those rows where `product_name` contained "beef" while excluding records with terms like "flavour", "vermicelli", "rice", and other similar terms that indicated non-beef products. This filtering step was crucial to ensure the final dataset contained only relevant beef-related products, reducing noise from irrelevant items. The `nowtime` column, which was no longer needed, was dropped, and rows containing any `NA` values were also removed using `drop_na()`. 
+
+Finally, the cleaned data was saved into parquet files: `ppu_data.parquet` for the price-per-unit data subset and `beef_data.parquet` for the full cleaned dataset.
+
+\newpage
 
 ## Vendor Choice
 The selection of Walmart and T&T as representative vendors for this analysis was driven by their distinctive characteristics and market coverage, which together offer a comprehensive view of beef pricing dynamics. Walmart is a prominent multinational retailer with a broad presence across North America, making it a well-suited representative of mainstream, large-scale grocery retailing. Its extensive reach and emphasis on standardized pricing provide valuable insights into the general market trends and pricing behaviors that are accessible to a wide segment of consumers. By including Walmart in the analysis, we can capture a perspective that is reflective of the typical shopping experience for many consumers, characterized by competitive pricing and a broad product selection.
@@ -655,11 +730,13 @@ To complement the quantitative analysis presented in this paper, an idealized su
 
 ## Sampling Approach
 
-A **stratified random sampling** method would be employed to ensure representation across key demographic groups, including age, income levels, and cultural background. Stratification variables would include:
+A **stratified random sampling** method would be employed to ensure comprehensive representation across key demographic groups, including age, income levels, and cultural background. This approach aims to capture the diversity in shopping preferences and behaviors, particularly as they relate to beef pricing in the Canadian grocery market. By employing stratified random sampling, the survey would not only provide insights into how different demographic segments make purchasing decisions but also allow for more granular comparisons between consumer groups, which is critical for understanding pricing dynamics in diverse retail environments.
 
-1. **Region**: Urban versus rural shoppers across Canada.
-2. **Vendor familiarity**: Regular Walmart shoppers, regular T&T shoppers, and those who shop at both.
-3. **Income brackets**: Low, middle, and high-income households.
+1. **Region**: The sample would be divided into urban and rural shoppers across Canada. This stratification would ensure representation of different population densities, as consumer preferences and shopping patterns can differ significantly between urban and rural areas. Urban shoppers, for example, might have more convenient access to both Walmart and T&T locations, whereas rural shoppers may be limited to fewer options or specific local vendors. This distinction is crucial for understanding geographical influences on grocery purchasing behavior, particularly in terms of access, convenience, and price sensitivity.
+
+2. **Vendor familiarity**: The survey would categorize respondents into three groups: regular Walmart shoppers, regular T&T shoppers, and those who shop at both retailers. Regular Walmart shoppers may prioritize price consistency and availability of products, whereas regular T&T shoppers might be more focused on product variety and specialty items that cater to cultural preferences. Including those who shop at both retailers would provide insights into consumer behaviors that shift between general and specialty retail environments, offering a comparative view of how brand familiarity and loyalty shape beef purchasing decisions.
+
+3. **Income brackets**: Respondents would be classified into low, middle, and high-income households. This stratification is essential for analyzing the impact of financial constraints on beef purchasing patterns. Lower-income households might be more sensitive to price fluctuations and promotions, often choosing products based on affordability. Middle-income households may exhibit a mix of price sensitivity and preference for product quality, whereas high-income households could prioritize premium product quality over price. By segmenting the respondents into income brackets, the survey could identify how economic factors influence both the frequency and type of beef products purchased at Walmart and T&T, revealing the varying levels of price elasticity among different socioeconomic groups.
 
 A sample size of approximately 1,200 respondents would be targeted, with 400 participants in each stratum (Walmart-focused, T&T-focused, and dual shoppers). This stratification would allow for meaningful comparisons between vendor-specific perceptions and strategies.
 
@@ -775,18 +852,25 @@ The survey would include a mix of **closed-ended** and **open-ended** questions.
 
 Participants would be recruited using **multichannel outreach**, including:
 
-1. **Online Panels**: Partnering with Canadian consumer research platforms to recruit participants from diverse regions.
-2. **Retailer Partnerships**: Collaborating with Walmart and T&T to survey in-store shoppers (e.g., QR codes on receipts leading to the survey).
-3. **Community Outreach**: Engaging with cultural organizations to reach underrepresented groups, particularly for T&T shoppers.
+1. **Online Panels**: The recruitment process would involve partnering with established Canadian consumer research platforms to access existing online panels. These platforms typically have large databases of participants that are segmented based on various demographics such as age, income, and geographic region, allowing for targeted recruitment. By collaborating with these platforms, the survey can include participants from diverse regions—spanning urban centers like Toronto and Vancouver, as well as rural areas across provinces. Online panels are advantageous as they provide quick access to a variety of respondents, increasing the efficiency of data collection while allowing for quotas to be set to ensure representativeness across the stratification variables (e.g., income brackets, vendor familiarity).
+
+2. **Retailer Partnerships**: Collaborating directly with Walmart and T&T stores would allow for in-store recruitment, making it possible to capture insights from shoppers at the point of purchase. A key aspect of this strategy would involve placing QR codes on receipts or at store exits, inviting shoppers to participate in the survey by scanning the code with their mobile devices. This in-store recruitment tactic not only encourages immediate participation from shoppers but also provides the opportunity to capture data from consumers while their purchasing experience is still fresh. Additionally, leveraging in-store displays, posters, or handouts could help draw more attention to the survey. Walmart and T&T staff could also provide gentle prompts to shoppers, further promoting survey participation. This approach would help ensure that insights are gathered directly from those actively engaged with these retailers, offering real-time perspectives on beef purchasing behavior.
+
+3. **Community Outreach**: To reach underrepresented groups, particularly T&T shoppers from culturally diverse backgrounds, targeted community outreach would be conducted in collaboration with cultural organizations, community centers, and local events. Engaging with organizations that have strong connections to the Asian community—such as cultural associations, language schools, or ethnic community centers—would help ensure that the sample includes individuals who may not be as reachable through online panels or in-store promotions alone. Additionally, outreach could include attending cultural festivals, placing ads in community newsletters, or utilizing social media channels that serve specific cultural groups. This grassroots strategy would be particularly useful in accessing populations that may have different shopping patterns or dietary needs, thereby providing richer insights into how cultural preferences influence beef purchasing decisions. Engaging directly with cultural communities would help ensure a higher level of trust and response rate from these groups, who might otherwise be hesitant to participate in market research.
 
 ## Linkage to Literature
 
+The survey design for this study draws on established methodologies in consumer behavior and retail pricing research. By employing **stratified random sampling**, this study ensures that the key factors influencing purchasing decisions, such as income, cultural background, and shopping preferences, are effectively captured. This approach is informed by existing literature emphasizing the importance of **representative sampling** to understand market segmentation, particularly in heterogeneous consumer markets [@citeSegmentation]. Stratified sampling is particularly beneficial in capturing the variations in consumer preferences that may be linked to demographic differences, as suggested by **demographic-based segmentation theories** in consumer research.
 
+The use of **multichannel recruitment** has also been shown to be effective in increasing participation rates, especially when attempting to reach a diverse population base [@citeMultichannel]. Studies have demonstrated that combining online recruitment with community engagement enhances the inclusiveness of the survey sample, thereby reducing selection bias and ensuring that underrepresented groups are adequately represented. This is particularly relevant for this study, which aims to understand pricing strategies across different consumer segments, including culturally specific shoppers who might not be well-represented through online-only recruitment.
 
+The inclusion of both **vendor-specific** and **cultural factors** in the survey aligns with research that highlights the role of retail environments and cultural preferences in shaping consumer behavior. Literature on cultural consumption patterns suggests that different retail formats, such as mainstream versus culturally specialized stores, influence purchasing decisions based on familiarity, trust, and cultural alignment [@citeCulturalAlignment]. Therefore, the stratification variables and recruitment strategies are designed to capture these nuanced consumer preferences, providing a comprehensive understanding of how pricing dynamics differ across vendor types and cultural backgrounds.
 
+Moreover, the focus on **vendor familiarity** builds on findings from **brand loyalty** literature, which suggests that consumers' familiarity with a brand or retailer can significantly impact their price sensitivity and shopping behavior [@citeBranding]. By including vendor familiarity as a key stratification criterion, the survey is structured to better understand how loyalty and brand perception contribute to the pricing dynamics of beef in different retail contexts.
+
+In summary, the survey design leverages established theories and methodologies from consumer behavior, market segmentation, and cultural studies to ensure that the data collected is robust, representative, and capable of answering the core research questions about beef pricing dynamics in the Canadian retail market.
 
 \newpage
-
 
 # References
 
