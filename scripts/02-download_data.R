@@ -1,10 +1,11 @@
 #### Preamble ####
-# Purpose: Downloads and saves the data from [...UPDATE THIS...]
-# Author: Rohan Alexander [...UPDATE THIS...]
-# Date: 11 February 2023 [...UPDATE THIS...]
-# Contact: rohan.alexander@utoronto.ca [...UPDATE THIS...]
+# Purpose: To download a zip file containing raw data from a specified URL, extract its contents into a structured directory, and optionally load and preview the first CSV file to ensure successful extraction and data integrity.
+# Author: Ziheng Zhong
+# Date: 20 November 2024
+# Contact: ziheng.zhong@mail.utoronto.ca
 # License: MIT
-# Pre-requisites: package must be installed
+# Pre-requisites: 
+  # - Package must be installed
 
 
 
@@ -55,6 +56,5 @@ if (status_code(response) == 200) {
 } else {
   message("Failed to download the zip file. Status code: ", status_code(response))
 }
-
 
          

@@ -1,11 +1,12 @@
 #### Preamble ####
-# Purpose: Models... [...UPDATE THIS...]
-# Author: Rohan Alexander [...UPDATE THIS...]
-# Date: 11 February 2023 [...UPDATE THIS...]
-# Contact: rohan.alexander@utoronto.ca [...UPDATE THIS...]
+# Purpose: To build and save a Bayesian regression model that predicts the current price of beef based on month, old price, and vendor, using the `rstanarm` package with specified priors and a Gaussian family.
+# Author: Ziheng Zhong
+# Date: 20 November 2024
+# Contact: ziheng.zhong@mail.utoronto.ca
 # License: MIT
-# Pre-requisites: [...UPDATE THIS...]
-# Any other information needed? [...UPDATE THIS...]
+# Pre-requisites: 
+  # - Package must be installed
+  # - 03-clean_data.R must have been run
 
 
 

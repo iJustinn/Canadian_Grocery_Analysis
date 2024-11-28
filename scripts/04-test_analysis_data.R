@@ -1,11 +1,12 @@
 #### Preamble ####
-# Purpose: Tests... [...UPDATE THIS...]
-# Author: Rohan Alexander [...UPDATE THIS...]
-# Date: 26 September 2024 [...UPDATE THIS...]
-# Contact: rohan.alexander@utoronto.ca [...UPDATE THIS...]
+# Purpose: To validate the integrity of the cleaned beef dataset by testing for successful data loading, logical consistency of column values, adherence to specified constraints, and correct calculations for derived metrics.
+# Author: Ziheng Zhong
+# Date: 20 November 2024
+# Contact: ziheng.zhong@mail.utoronto.ca
 # License: MIT
-# Pre-requisites: [...UPDATE THIS...]
-# Any other information needed? [...UPDATE THIS...]
+# Pre-requisites: 
+  # - Package must be installed
+  # - 03-clean_data.R must have been run
 
 
 

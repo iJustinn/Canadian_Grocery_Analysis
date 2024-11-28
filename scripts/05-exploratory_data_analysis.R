@@ -1,11 +1,13 @@
 #### Preamble ####
-# Purpose: Models and visualizes beef price trends from a dataset.
+# Purpose: To explore and visualize trends in beef pricing data, this script includes analyses of price distributions, vendor-based differences, temporal trends, and price relationships, while leveraging a Bayesian model to assess data patterns and perform posterior predictive checks.
 # Author: Ziheng Zhong
-# Date: 22 November 2024
-# Contact: ziheng.zhong@example.com
+# Date: 20 November 2024
+# Contact: ziheng.zhong@mail.utoronto.ca
 # License: MIT
-# Pre-requisites: Ensure the 'beef_data.csv' file is available in the appropriate directory.
-# Any other information needed? This script creates three different visualizations for analysis.
+# Pre-requisites: 
+  # - Package must be installed
+  # - 03-clean_data.R must have been run
+  # - 06-model_data.R must have been run
 
 
 
