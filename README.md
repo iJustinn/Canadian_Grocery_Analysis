@@ -9,17 +9,23 @@ This paper utilized data from [Project Hammer](https://jacobfilipp.com/hammer/) 
 
 The files for this research are organized in this repository as follows:
 
--   `data/raw_data`: the raw data used for analysis
+-   `data/00-simulated_data`: the simulated data used as the preview of actual dataset
 
--   `data/analysis_data`: the cleaned data used for fuurther analysis
+-   `data/01-raw_data`: the raw data used for analysis
 
--   `other/llm`: records of multiple conversations with ChatGPT that assisted in building this project
+-   `data/02-analysis_data`: the cleaned data used for fuurther analysis
+
+-   `models`: the model used in the paper
+
+-   `other/datasheet`: the detailed datasheet of Project Hammer dataset
 
 -   `other/sketches`: previews of the charts and models included in the final research paper
 
+-   `other/llm`: records of multiple conversations with ChatGPT that assisted in building this project
+
 -   `paper`: files used to generate the paper, such as Quarto and bibliography files, as well as the research paper itself
 
--   `scripts`: R code used for data simulation, download data, clean data, charting and testing
+-   `scripts`: R code used for data simulation, downloading, cleaning, charting , modeling and testing
 
 ## Large Language Model (LLM) usage statement
 
