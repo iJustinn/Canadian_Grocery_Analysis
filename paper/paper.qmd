@@ -6,7 +6,7 @@ author:
 thanks: "Code and data supporting this analysis is available at: [Link to repository](https://github.com/iJustinn/Canadian_Grocery_Analysis.git)."
 date: today
 date-format: long
-abstract: "This study analyzes beef pricing dynamics in the Canadian retail market, focusing on two vendors: Walmart and T&T. Using Bayesian linear regression, we found that historical pricing and vendor-specific strategies significantly influence current beef prices, with Walmart displaying more price stability and T&T showing greater variability. These findings reveal how both market-wide and vendor-specific factors shape beef pricing, offering insights that could help retailers refine their pricing strategies and support policymakers in addressing food affordability. This paper provides a clearer understanding of the interplay between cultural preferences and retail strategies in determining food prices."
+abstract: "This study examines beef pricing in the Canadian grocery market, focusing on Walmart and T&T as representative vendors. Using Bayesian linear regression, it analyzes how historical prices, vendor-specific strategies, and seasonal effects impact current beef prices. The findings indicate that historical pricing strongly predicts current prices, while vendor approaches differ significantly, with Walmart maintaining consistent pricing and T&T showing greater variability. This research highlights how cultural preferences and retail strategies influence food pricing, enhancing our understanding of market behavior and supporting both consumer choices and policy development."
 format: pdf
 toc: true
 number-sections: true
@@ -50,7 +50,7 @@ This paper centers on two significant vendors, Walmart and T&T, to investigate h
 
 The estimand of this study is the current price of beef, determined by factors such as vendor type, historical pricing, etc. By estimating how these variables impact the current pricing, the paper aims to provide a comprehensive understanding of the pricing mechanisms that affect retail beef prices in Canada.
 
-Using a Bayesian linear regression model, the study examines how historical pricing, vendor-specific strategies, and seasonal factors impact current beef prices. The analysis indicates that past prices strongly predict current pricing, suggesting a high degree of consistency. Differences in pricing strategies between Walmart and T&T further highlight distinct market approaches, with Walmart focusing on stable pricing and T&T displaying greater variability, potentially to address specific consumer preferences. These results provide a clearer understanding of pricing strategies in a diverse retail landscape and offer insights into factors that shape affordability and market behavior.
+Using a Bayesian linear regression model, this study analyzes the effects of historical pricing, vendor strategies, and seasonal factors on current beef prices. The findings show that past prices are strong predictors of current pricing, indicating a high level of consistency. Walmart’s pricing strategy emphasizes stability, while T&T exhibits more variability, likely catering to specific consumer needs. These results enhance our understanding of pricing practices across different retail contexts and shed light on factors influencing affordability and purchasing patterns in the market.
 
 The paper is structured as follows: @sec-data describes the data collection and cleaning methods, as well as the outcome and predictor variables used in the analysis. @sec-model introduces the forecasting models and explains their selection for predicting beef prices. @sec-result presents the key findings, including vendor-specific pricing effects and seasonal trends. Lastly, @sec-discussion interprets these results, comparing vendor strategies, identifying significant patterns, and discussing the study's limitations.
 
@@ -506,7 +506,7 @@ While this study provides a useful analysis of beef pricing dynamics, it has som
 
 The assumption of a linear relationship between predictors and the outcome may oversimplify the complexity of real-world pricing. Future studies could explore more flexible modeling techniques, such as non-linear models or machine learning approaches, to better capture these relationships. Incorporating external data sources, such as economic indicators, weather patterns, or detailed sales records, could further validate and enrich the findings.
 
-Finally, the assumptions of constant variance and normality of residuals may not hold perfectly in pricing data, which often exhibit heteroscedasticity or other deviations. Employing more robust regression techniques or heteroscedasticity-consistent estimators could improve model accuracy and reliability. An interesting avenue for future research would be to explore the impact of shifts in consumer preferences, such as increased demand for plant-based alternatives, on beef pricing trends, providing insight into evolving market dynamics.
+The assumptions of constant variance and normality of residuals may not fully apply to pricing data, which often show heteroscedasticity or other deviations. Using more robust regression methods or heteroscedasticity-consistent estimators could enhance the model's accuracy and reliability. Future research could investigate how changes in consumer preferences, such as the growing interest in plant-based alternatives, influence beef pricing trends, offering a deeper understanding of shifting market dynamics.
 
 \newpage
 
@@ -518,7 +518,7 @@ Finally, the assumptions of constant variance and normality of residuals may not
 
 ## Cleaning methods
 
-In this data cleaning process, the goal was to load raw product and transaction data, merge them, filter and transform the necessary columns, and finally save the cleaned data for further analysis. The process began with loading two CSV files: "hammer-4-product.csv" and "hammer-4-raw.csv". These files contained information about different products and transactions related to them. After loading the data, the next step was to merge the two datasets to create a combined dataset for a more complete product information, as @tbl-merge_data shown.
+In the data cleaning process, the objective was to load raw product and transaction data, combine them, filter and transform relevant columns, and save the cleaned dataset for further analysis. The process started by loading two CSV files: "hammer-4-product.csv" and "hammer-4-raw.csv." These files contained details about various products and related transactions. After loading the data, the datasets were merged to create a unified dataset, providing more complete product information, as shown in @tbl-merge_data.
 
 ```{r}
 #| label: tbl-merge_data
@@ -546,11 +546,11 @@ merge_data %>%
 
 ```
 
-The merging of the two datasets was accomplished using an inner join on the `product_id` and `id` columns. This allowed for the selection of relevant columns, such as product details (`product_name`, `brand`), vendor information, and pricing (`current_price`, `old_price`, and `price_per_unit`). The goal was to retain only those data attributes that were essential for subsequent analyses.
+The two datasets were merged using an inner join on the `product_id` and `id` columns. This approach ensured that only relevant columns were retained, such as product details (`product_name`, `brand`), vendor information, and pricing (`current_price`, `old_price`, and `price_per_unit`). The aim was to keep only the attributes necessary for further analysis.
 
-Once the datasets were merged, the next stage was to focus specifically on price-per-unit data (`price_per_unit`) and create a subset, `ppu_data`, which only included vendors Walmart and TandT. Additionally, this subset included only those records where the product names contained "beef", helping to narrow down the dataset to beef-related items. Only the `vendor` and `price_per_unit` columns were selected to generate this subset, which would later be saved as a separate parquet file for analysis.
+After merging the datasets, the focus shifted to creating a subset, `ppu_data`, specifically for price-per-unit data (`price_per_unit`). This subset included only records from vendors Walmart and T&T, with product names containing "beef," narrowing the dataset to beef-related items. Only the `vendor` and `price_per_unit` columns were selected for this subset, which was saved as a separate parquet file for further analysis.
 
-The main cleaning process involved creating a cleaned dataset (@tbl-clean_data), `cleaned_data`, by filtering out only those records from the merged dataset that belonged to Walmart and TandT. The data was further refined by selecting important columns, such as transaction time (`nowtime`), vendor, product pricing, and product details. Several transformations were then applied to ensure the data was suitable for analysis. For example, the `nowtime` column was parsed to extract `year`, `month`, and `day` values, which provided a more granular breakdown of transaction time. The `current_price` and `old_price` columns were converted to numeric values using `parse_number()` to handle any non-numeric characters.
+The main cleaning process resulted in the creation of the `cleaned_data` dataset (@tbl-clean_data), which included only records from Walmart and T&T. Key columns were retained, such as transaction time (`nowtime`), vendor, product pricing, and product details. Additional transformations ensured the dataset was ready for analysis. For instance, the `nowtime` column was parsed to extract `year`, `month`, and `day` for a more detailed breakdown of transaction timing. The `current_price` and `old_price` columns were converted to numeric values using `parse_number()` to handle any non-numeric characters.
 
 ```{r}
 #| label: tbl-clean_data
@@ -580,30 +580,31 @@ beef_data %>%
 
 ```
 
-For the `price_per_unit` column, the values were cleaned to ensure consistency. The dollar sign was extracted using `str_extract()` and subsequently removed using `str_remove()`. The result was then converted to numeric values for accurate comparison and analysis. In cases where `price_per_unit` was missing, the `ifelse()` function was used to assign a default value of 0, ensuring no missing data points could interfere with subsequent operations.
+The `price_per_unit` column was cleaned to ensure consistency. The dollar sign was first extracted using `str_extract()` and then removed with `str_remove()`. The resulting values were converted to numeric format to allow accurate comparisons and analysis. For cases where `price_per_unit` was missing, the `ifelse()` function assigned a default value of 0, ensuring that no missing data points interfered with subsequent operations.
 
-To focus specifically on beef products, the `cleaned_data` dataset was filtered to include only those rows where `product_name` contained "beef" while excluding records with terms like "flavour", "vermicelli", "rice", and other similar terms that indicated non-beef products. This filtering step was crucial to ensure the final dataset contained only relevant beef-related products, reducing noise from irrelevant items. The `nowtime` column, which was no longer needed, was dropped, and rows containing any `NA` values were also removed using `drop_na()`. 
+To refine the dataset for beef products, the `cleaned_data` dataset was filtered to retain only rows where `product_name` contained "beef." Records with terms such as "flavour," "vermicelli," and "rice," which indicated non-beef items, were excluded. This filtering step ensured the final dataset was focused on beef-related products, reducing noise from irrelevant entries. The `nowtime` column, which was no longer required, was dropped, and any rows containing `NA` values were removed using `drop_na()`.
 
-Finally, the cleaned data was saved into parquet files: `ppu_data.parquet` for the price-per-unit data subset and `beef_data.parquet` for the full cleaned dataset.
+The cleaned data was then saved into parquet files: `ppu_data.parquet` for the price-per-unit subset and `beef_data.parquet` for the complete cleaned dataset.
 
 \newpage
 
 ## Vendor Choice
-The selection of Walmart and T&T as representative vendors for this analysis was driven by their distinctive characteristics and market coverage, which together offer a comprehensive view of beef pricing dynamics. Walmart is a prominent multinational retailer with a broad presence across North America, making it a well-suited representative of mainstream, large-scale grocery retailing. Its extensive reach and emphasis on standardized pricing provide valuable insights into the general market trends and pricing behaviors that are accessible to a wide segment of consumers. By including Walmart in the analysis, we can capture a perspective that is reflective of the typical shopping experience for many consumers, characterized by competitive pricing and a broad product selection.
 
-On the other hand, T&T Supermarket represents a niche segment of the market, catering specifically to Asian communities and consumers seeking specialty goods that align with Asian culinary traditions. T&T's focus on products tailored to Asian tastes, along with its unique supply chains and vendor relationships, provides an important contrast to Walmart. The inclusion of T&T allows for an exploration of how cultural preferences and niche market positioning influence pricing. By analyzing T&T, we gain insights into pricing practices that reflect the demands of a distinct consumer group and how these differ from the broader market.
+The selection of Walmart and T&T as vendors for this analysis was based on their distinct characteristics and market coverage, offering a diverse view of beef pricing. Walmart, as a leading multinational retailer with a wide presence across North America, represents mainstream, large-scale grocery retailing. Its extensive reach and focus on standardized pricing make it a strong representative of general market trends. Including Walmart in the analysis helps capture pricing behaviors that reflect the typical shopping experience for a broad consumer base, characterized by competitive pricing and a wide product range.
 
-The combination of Walmart and T&T enables the analysis to explore both mainstream and culturally specific market behaviors. This choice of vendors thus enriches the study by accounting for variations in consumer preferences, pricing strategies, and market positioning. Walmart's emphasis on scale and cost-efficiency contrasts with T&T's specialization and cultural targeting, allowing us to draw meaningful comparisons in terms of beef pricing strategies between a general and a specialized market context. Such a nuanced understanding is essential for capturing the diversity within the beef retail market, providing a more holistic view of the factors driving beef prices in different retail settings.
+In contrast, T&T Supermarket caters to a niche market, serving Asian communities and consumers looking for specialty goods that align with Asian culinary traditions. T&T's emphasis on culturally specific products, unique supply chains, and vendor relationships provides a valuable comparison to Walmart. By analyzing T&T, this study examines how cultural preferences and niche market strategies influence pricing, reflecting the demands of a distinct consumer segment and highlighting differences from broader market trends.
+
+Including both Walmart and T&T allows this analysis to examine mainstream and culturally specific market behaviors. Walmart’s focus on scale and cost-efficiency contrasts with T&T’s specialization and cultural targeting, enabling meaningful comparisons in beef pricing strategies across different retail contexts. This approach provides a more detailed understanding of the factors shaping beef prices in diverse settings, highlighting variations in consumer preferences, pricing strategies, and market positioning.
 
 \newpage
 
 ## Price per unit
 
-In cleaning the `price_per_unit` variable, I began by extracting the numerical value using `str_extract()`, which allowed me to identify the dollar amounts in the original string (`\\$[0-9\\.]+`), as shown in @tbl-price_per_unit-1. This step ensured that only valid price values, starting with a dollar sign, were captured, removing any extraneous text or symbols.
+To clean the `price_per_unit` variable, I first extracted the numerical values using `str_extract()`, capturing valid price amounts formatted with a dollar sign (`\\$[0-9\\.]+`), as shown in @tbl-price_per_unit-1. This step ensured that only price-related information was retained, removing any extraneous text or symbols from the original string.
 
-Next, I removed the dollar sign itself with `str_remove("\\$")` to convert the extracted value into a format suitable for numerical operations. After this, I used `as.numeric()` to convert the string into a numeric type, allowing for further quantitative analysis.
+I then removed the dollar sign using `str_remove("\\$")` to prepare the extracted values for numerical operations. After this, the cleaned strings were converted into a numeric format using `as.numeric()`, enabling quantitative analysis.
 
-To handle missing values, I applied `ifelse(is.na(price_per_unit), 0, price_per_unit)`, which replaced any `NA` values in the `price_per_unit` column with `0`. This step ensured that all rows had a value for `price_per_unit`, preventing issues during subsequent analysis. Using zero as the replacement helped maintain continuity in the dataset, although I acknowledge that this choice could imply that missing values are negligible, which might require additional context or consideration during interpretation. The price_per_unit column in the dataset after cleaning looks like @tbl-price_per_unit-2.
+To address missing values, I used `ifelse(is.na(price_per_unit), 0, price_per_unit)`, replacing `NA` values in the `price_per_unit` column with `0`. This ensured that every row had a value for `price_per_unit`, preventing disruptions during further analysis. While assigning zero helped maintain dataset continuity, this approach assumes that missing values are negligible, which may require additional context during interpretation. The cleaned `price_per_unit` column is shown in @tbl-price_per_unit-2.
 
 ```{r}
 #| label: tbl-price_per_unit
@@ -645,7 +646,8 @@ beef_data %>%
 # Model details {#sec-model-details}
 
 ## Posterior predictive check
-In @fig-ppcheck, we implement a posterior predictive check. This plot shows the observed data distribution (in dark lines) compared with simulated datasets from the posterior (in light grey lines). The purpose of this check is to evaluate how well the model can reproduce the observed data. The close alignment between the simulated posterior predictive distributions and the observed data suggests that the model is accurately capturing the underlying patterns in the data. Specifically, we observe that the peaks and troughs in the observed data are well represented by the posterior samples, indicating that the model is capable of capturing key features such as the general shape and spread of the data distribution. The variability across the posterior predictive samples is consistent with the observed variability, suggesting no significant model misfit.
+
+In @fig-ppcheck, a posterior predictive check is performed to assess the model's ability to reproduce the observed data. The plot compares the observed data distribution (shown in dark lines) with simulated datasets from the posterior (represented by light grey lines). This check evaluates how well the model captures the underlying patterns in the data. The close alignment between the observed data and the simulated posterior distributions indicates that the model effectively reflects the data's characteristics. Specifically, the observed peaks and troughs are well represented by the posterior samples, demonstrating the model's ability to capture key features such as the overall shape and spread of the distribution. Additionally, the variability in the posterior predictive samples aligns with the observed variability, suggesting no significant issues with model fit.
 
 ```{r}
 #| eval: true
@@ -662,7 +664,9 @@ pp_check(beef_model, plotfun = "dens_overlay")
 
 \newpage
 
-In @fig-posteriorvsprior, we compare the posterior with the prior distributions for each parameter. The posterior distribution (shown on the left) is more concentrated compared to the prior (shown on the right), which demonstrates how the data has influenced and updated our beliefs about the model parameters. For instance, the posterior distribution for the intercept has shrunk considerably compared to its prior, indicating that the data has substantially informed our estimate of the baseline price level. Similarly, for the other parameters (month, old_price, sigma, and vendorWalmart), the posteriors are less dispersed than the priors, suggesting a meaningful reduction in uncertainty. Notably, the posterior intervals are much narrower, especially for the intercept and old price parameters, indicating that the data has provided strong information about these effects. The results demonstrate that the priors were sufficiently weak, allowing the data to dominate the inference and significantly refine the parameter estimates.
+In @fig-posteriorvsprior, the posterior and prior distributions for each parameter are compared. The posterior distributions (on the left) are more concentrated than the priors (on the right), showing how the data has updated the initial parameter estimates. For example, the posterior distribution for the intercept is much narrower than its prior, indicating that the data has strongly informed the estimate of the baseline price level. Similarly, the posterior distributions for the other parameters (month, old_price, sigma, and vendorWalmart) are less dispersed than the priors, reflecting a meaningful reduction in uncertainty.
+
+The posterior intervals are particularly narrow for the intercept and old_price parameters, suggesting that the data has provided substantial information about these effects. This comparison demonstrates that the priors were appropriately weak, allowing the data to play a dominant role in refining the parameter estimates. The results highlight how the model effectively incorporates data to improve the precision of the estimates.
 
 ```{r}
 #| eval: true
@@ -684,9 +688,10 @@ posterior_vs_prior(beef_model, color_by = "parameter") +
 \newpage
 
 ## Diagnostics
-In @fig-trace, we present a trace plot. This plot shows the sampled values for each parameter across the MCMC iterations. The trace plot helps assess whether the chains have converged to a stationary distribution. In these plots, we see that each parameter's chains are well mixed, with no discernible trends, indicating that the MCMC algorithm has adequately explored the parameter space. The lack of significant upward or downward drift suggests that all chains are consistently sampling from the target distribution, which is a strong indicator of convergence.
 
-Specifically, the chains for each parameter appear to oscillate around a constant mean, and the overlap between the four chains is extensive. This well-mixed appearance across all parameters, including the intercept, month, old price, vendorWalmart, and sigma, gives us confidence that our model has reached convergence, with each chain sampling from similar regions of the posterior distribution.
+In @fig-trace, a trace plot is presented, showing the sampled values for each parameter across the MCMC iterations. The trace plot is used to evaluate whether the chains have converged to a stationary distribution. In these plots, the chains for each parameter are well mixed, with no visible trends, indicating that the MCMC algorithm has effectively explored the parameter space. The absence of upward or downward drift suggests that the chains are consistently sampling from the target distribution, providing strong evidence of convergence.
+
+Each parameter’s chains oscillate around a stable mean, with significant overlap among the four chains. This consistent mixing is observed across all parameters, including the intercept, month, old price, vendorWalmart, and sigma. The overlap and stability across chains indicate that the model has achieved convergence, with all chains sampling from similar regions of the posterior distribution.
 
 ```{r}
 #| echo: false
@@ -703,9 +708,9 @@ plot(beef_model, plotfun = "trace") + theme_minimal()
 
 \newpage
 
-In @fig-rhat, we present an Rhat plot. The Rhat statistic (also known as the potential scale reduction factor) measures the ratio of the variance between chains to the variance within chains, and values close to 1 indicate that the chains have converged. In this plot, we see that all Rhat values for the parameters are very close to 1, specifically below the threshold of 1.05, suggesting that convergence has been achieved across all parameters.
+In @fig-rhat, an Rhat plot is presented to assess model convergence. The Rhat statistic (or potential scale reduction factor) compares the variance between chains to the variance within chains, with values close to 1 indicating convergence. In this plot, all Rhat values for the parameters are very close to 1 and below the threshold of 1.05, confirming that the chains have converged.
 
-The fact that all Rhat values are below 1.05 suggests that the different chains are in agreement about the underlying posterior distributions. This indicates that our model's parameter estimates are stable, and the MCMC algorithm has effectively converged. As such, we can be confident in the reliability of the estimates provided by our Bayesian model.
+The low Rhat values indicate that the chains are consistent and in agreement about the posterior distributions. This suggests that the model's parameter estimates are stable and that the MCMC algorithm has effectively converged. As a result, we can be confident in the reliability of the parameter estimates produced by the Bayesian model.
 
 ```{r}
 #| echo: false
@@ -726,19 +731,19 @@ plot(beef_model, plotfun = "rhat") + theme_minimal()
 
 ## Overview
 
-To complement the quantitative analysis presented in this paper, an idealized survey methodology could provide direct insights into consumer behavior and perceptions regarding beef pricing at Walmart and T&T. This survey would aim to identify factors influencing purchasing decisions, perceptions of price fairness, and preferences for vendor-specific attributes, offering a holistic understanding of the dynamics underpinning beef pricing in the Canadian grocery market.
+To enhance the quantitative analysis in this paper, an idealized survey methodology could capture consumer behavior and perceptions related to beef pricing at Walmart and T&T. The survey would aim to identify factors influencing purchasing decisions, perceptions of price fairness, and preferences for vendor-specific attributes. This approach would provide a broader understanding of the factors shaping beef pricing dynamics in the Canadian grocery market.
 
 ## Sampling Approach
 
-A **stratified random sampling** method would be employed to ensure comprehensive representation across key demographic groups, including age, income levels, and cultural background. This approach aims to capture the diversity in shopping preferences and behaviors, particularly as they relate to beef pricing in the Canadian grocery market. By employing stratified random sampling, the survey would not only provide insights into how different demographic segments make purchasing decisions but also allow for more granular comparisons between consumer groups, which is critical for understanding pricing dynamics in diverse retail environments.
+A **stratified random sampling** method would be used to ensure representation across key demographic groups, including age, income levels, and cultural background. This approach aims to reflect the diversity in shopping preferences and behaviors, particularly concerning beef pricing in the Canadian grocery market. Stratified random sampling would enable the survey to capture differences in purchasing decisions among various demographic segments and facilitate detailed comparisons between consumer groups, providing a clearer understanding of pricing patterns in diverse retail settings.
 
-1. **Region**: The sample would be divided into urban and rural shoppers across Canada. This stratification would ensure representation of different population densities, as consumer preferences and shopping patterns can differ significantly between urban and rural areas. Urban shoppers, for example, might have more convenient access to both Walmart and T&T locations, whereas rural shoppers may be limited to fewer options or specific local vendors. This distinction is crucial for understanding geographical influences on grocery purchasing behavior, particularly in terms of access, convenience, and price sensitivity.
+1. **Region**: The sample would include both urban and rural shoppers across Canada to account for differences in population density and shopping patterns. Urban consumers are likely to have easier access to Walmart and T&T locations, while rural shoppers may rely on fewer options or local vendors. This regional distinction is important for understanding how geography influences purchasing behavior, particularly regarding access, convenience, and sensitivity to price.
 
-2. **Vendor familiarity**: The survey would categorize respondents into three groups: regular Walmart shoppers, regular T&T shoppers, and those who shop at both retailers. Regular Walmart shoppers may prioritize price consistency and availability of products, whereas regular T&T shoppers might be more focused on product variety and specialty items that cater to cultural preferences. Including those who shop at both retailers would provide insights into consumer behaviors that shift between general and specialty retail environments, offering a comparative view of how brand familiarity and loyalty shape beef purchasing decisions.
+2. **Vendor Familiarity**: Respondents would be grouped into three categories: regular Walmart shoppers, regular T&T shoppers, and those who shop at both retailers. Walmart shoppers might focus on consistent pricing and product availability, while T&T shoppers may prioritize variety and specialty items that align with cultural preferences. Including consumers who shop at both stores would provide a comparative perspective on how purchasing behavior shifts between general and specialty retail settings, highlighting the role of brand familiarity and loyalty in shaping beef-buying decisions.
 
-3. **Income brackets**: Respondents would be classified into low, middle, and high-income households. This stratification is essential for analyzing the impact of financial constraints on beef purchasing patterns. Lower-income households might be more sensitive to price fluctuations and promotions, often choosing products based on affordability. Middle-income households may exhibit a mix of price sensitivity and preference for product quality, whereas high-income households could prioritize premium product quality over price. By segmenting the respondents into income brackets, the survey could identify how economic factors influence both the frequency and type of beef products purchased at Walmart and T&T, revealing the varying levels of price elasticity among different socioeconomic groups.
+3. **Income Brackets**: Respondents would be grouped into low-, middle-, and high-income households to assess how financial resources influence beef purchasing behaviors. Lower-income households are likely to emphasize affordability and may be more sensitive to price changes and promotions. Middle-income households might balance cost with considerations of quality, while high-income households could prioritize premium quality, showing less sensitivity to price. This stratification allows for a detailed analysis of how economic factors impact both the frequency and type of beef products purchased at Walmart and T&T, helping to identify variations in price elasticity across income levels.
 
-A sample size of approximately 1,200 respondents would be targeted, with 400 participants in each stratum (Walmart-focused, T&T-focused, and dual shoppers). This stratification would allow for meaningful comparisons between vendor-specific perceptions and strategies.
+A total sample size of approximately 1,200 respondents would be targeted, with 400 participants in each stratum (Walmart-focused, T&T-focused, and dual shoppers). This approach ensures meaningful comparisons of consumer perceptions and retailer strategies.
 
 ## Survey Structure
 
@@ -746,129 +751,129 @@ The survey would include a mix of **closed-ended** and **open-ended** questions.
 
 ### Question Types
 
-1. **Demographics and Shopping Habits**
-   - Frequency of grocery shopping (weekly, bi-weekly, etc.).
-   - Preferred vendor for beef purchases and reasons for preference.
-   - Average budget allocated for beef purchases.
+1. **Demographics and Shopping Habits**  
+   - Frequency of grocery shopping (e.g., weekly, bi-weekly).  
+   - Preferred vendor for beef purchases, along with reasons for the preference.  
+   - Average budget allocated specifically for beef purchases.
 
-2. **Price Perception**
-   - Rating the perceived fairness of beef prices on a Likert scale.
-   - Comparison of beef prices at Walmart and T&T (e.g., cheaper, equivalent, more expensive).
-   - Sensitivity to price changes (e.g., a 10% increase in beef prices would lead to…).
+2. **Price Perception**  
+   - Rating of beef price fairness on a Likert scale.  
+   - Comparison of beef prices between Walmart and T&T (e.g., cheaper, equivalent, or more expensive).  
+   - Sensitivity to price changes (e.g., how a 10% increase in beef prices might influence purchasing behavior).  
 
-3. **Cultural and Quality Preferences**
-   - Importance of cultural alignment in beef products (specific cuts, preparation styles, etc.).
-   - Perceived quality differences between Walmart and T&T beef products.
-   - Willingness to pay a premium for culturally tailored products.
+3. **Cultural and Quality Preferences**  
+   - Importance of cultural alignment in beef products (e.g., availability of specific cuts or preparation styles).  
+   - Perceptions of quality differences in beef products offered by Walmart and T&T.  
+   - Willingness to pay more for products that are culturally tailored.  
 
-4. **External Factors**
-   - Awareness of seasonal price trends.
-   - Impact of promotions on purchasing decisions.
-   - Responses to supply chain disruptions (e.g., alternative purchasing strategies).
+4. **External Factors**  
+   - Awareness of seasonal price trends and their impact on buying decisions.  
+   - Influence of promotions on purchasing behavior.  
+   - Adjustments made in response to supply chain disruptions (e.g., choosing alternative products or vendors).  
 
 ### Question List
 
-1. How often do you shop for groceries?
-   - Weekly
-   - Bi-weekly
-   - Monthly
-   - Less often
+1. How often do you shop for groceries?  
+   - Weekly  
+   - Bi-weekly  
+   - Monthly  
+   - Less often  
 
-2. Which retailer do you prefer for buying beef products?
-   - Walmart
-   - T&T
-   - Both
+2. Which retailer do you prefer for buying beef products?  
+   - Walmart  
+   - T&T  
+   - Both  
 
-3. What factors influence your choice of retailer for beef purchases? (Select all that apply)
-   - Price
-   - Quality
-   - Availability of specific cuts
-   - Cultural preferences
-   - Convenience
-   - Promotions
+3. What factors influence your choice of retailer for beef purchases? (Select all that apply)  
+   - Price  
+   - Quality  
+   - Availability of specific cuts  
+   - Cultural preferences  
+   - Convenience  
+   - Promotions  
 
-4. On average, how much do you spend on beef per shopping trip?
-   - Less than $20
-   - \$20 - \$50
-   - \$50 - \$100
-   - More than $100
+4. On average, how much do you spend on beef per shopping trip?  
+   - Less than $20  
+   - \$20 - \$50  
+   - \$50 - \$100  
+   - More than $100  
 
-5. How fair do you find the current beef prices at Walmart/T&T?
-   - Very unfair
-   - Somewhat unfair
-   - Neutral
-   - Somewhat fair
-   - Very fair
+5. How fair do you find the current beef prices at Walmart or T&T?  
+   - Very unfair  
+   - Somewhat unfair  
+   - Neutral  
+   - Somewhat fair  
+   - Very fair  
 
-6. How would you rate the quality of beef at Walmart compared to T&T?
-   - Much lower quality
-   - Slightly lower quality
-   - About the same quality
-   - Slightly higher quality
-   - Much higher quality
+6. How would you rate the quality of beef at Walmart compared to T&T?  
+   - Much lower quality  
+   - Slightly lower quality  
+   - About the same quality  
+   - Slightly higher quality  
+   - Much higher quality  
 
-7. If beef prices increased by 10%, would you consider switching to an alternative product or retailer?
-   - Definitely would switch
-   - Probably would switch
-   - Might switch
-   - Probably would not switch
-   - Definitely would not switch
+7. If beef prices increased by 10%, would you consider switching to an alternative product or retailer?  
+   - Definitely would switch  
+   - Probably would switch  
+   - Might switch  
+   - Probably would not switch  
+   - Definitely would not switch  
 
-8. How important is it for you that beef products align with your cultural preferences (e.g., specific cuts, preparation styles)?
-   - Not important at all
-   - Slightly important
-   - Moderately important
-   - Very important
-   - Extremely important
+8. How important is it that beef products match your cultural preferences (e.g., specific cuts, preparation styles)?  
+   - Not important at all  
+   - Slightly important  
+   - Moderately important  
+   - Very important  
+   - Extremely important  
 
-9. Are you willing to pay more for beef products that are culturally tailored to your preferences?
-   - Not willing at all
-   - Slightly willing
-   - Moderately willing
-   - Very willing
-   - Extremely willing
+9. Are you willing to pay more for beef products tailored to your cultural preferences?  
+   - Not willing at all  
+   - Slightly willing  
+   - Moderately willing  
+   - Very willing  
+   - Extremely willing  
 
-10. How aware are you of seasonal price changes in beef products?
-    - Not aware at all
-    - Slightly aware
-    - Moderately aware
-    - Very aware
-    - Extremely aware
+10. How aware are you of seasonal price changes in beef products?  
+    - Not aware at all  
+    - Slightly aware  
+    - Moderately aware  
+    - Very aware  
+    - Extremely aware  
 
-11. How do promotions impact your decision to purchase beef?
-    - No impact
-    - Slight impact
-    - Moderate impact
-    - Significant impact
-    - Very significant impact
+11. How much do promotions influence your decision to purchase beef?  
+    - No influence  
+    - Slight influence  
+    - Moderate influence  
+    - Significant influence  
+    - Very significant influence  
 
-12. How do you typically respond to supply chain disruptions affecting beef availability?
-    - Purchase alternative products
-    - Purchase from a different retailer
-    - Reduce beef consumption
-    - No change in purchasing behavior
+12. How do you typically respond to supply chain disruptions affecting beef availability?  
+    - Purchase alternative products  
+    - Purchase from a different retailer  
+    - Reduce beef consumption  
+    - No change in purchasing behavior  
 
 ## Recruitment Strategy
 
 Participants would be recruited using **multichannel outreach**, including:
 
-1. **Online Panels**: The recruitment process would involve partnering with established Canadian consumer research platforms to access existing online panels. These platforms typically have large databases of participants that are segmented based on various demographics such as age, income, and geographic region, allowing for targeted recruitment. By collaborating with these platforms, the survey can include participants from diverse regions—spanning urban centers like Toronto and Vancouver, as well as rural areas across provinces. Online panels are advantageous as they provide quick access to a variety of respondents, increasing the efficiency of data collection while allowing for quotas to be set to ensure representativeness across the stratification variables (e.g., income brackets, vendor familiarity).
+1. **Online Panels**: Recruitment would involve partnering with established Canadian consumer research platforms to access existing online panels. These platforms have extensive databases of participants segmented by demographics such as age, income, and geographic location, enabling targeted recruitment. Collaborating with these platforms ensures the inclusion of participants from diverse areas, spanning urban centers like Toronto and Vancouver to rural regions across the provinces. Online panels offer a quick and efficient way to reach respondents while allowing quotas to be set for representativeness based on stratification variables, such as income levels and familiarity with specific retailers.
 
-2. **Retailer Partnerships**: Collaborating directly with Walmart and T&T stores would allow for in-store recruitment, making it possible to capture insights from shoppers at the point of purchase. A key aspect of this strategy would involve placing QR codes on receipts or at store exits, inviting shoppers to participate in the survey by scanning the code with their mobile devices. This in-store recruitment tactic not only encourages immediate participation from shoppers but also provides the opportunity to capture data from consumers while their purchasing experience is still fresh. Additionally, leveraging in-store displays, posters, or handouts could help draw more attention to the survey. Walmart and T&T staff could also provide gentle prompts to shoppers, further promoting survey participation. This approach would help ensure that insights are gathered directly from those actively engaged with these retailers, offering real-time perspectives on beef purchasing behavior.
+2. **Retailer Partnerships**: Collaborating with Walmart and T&T stores for in-store recruitment would capture input directly from shoppers at the point of purchase. QR codes placed on receipts or near store exits could invite shoppers to participate by scanning with their mobile devices. This approach encourages immediate participation while the shopping experience is still fresh. Additional promotional efforts, such as in-store displays, posters, or handouts, would increase visibility, while staff could provide gentle reminders to shoppers about the survey. This strategy ensures the inclusion of active shoppers at Walmart and T&T, providing real-time feedback on beef purchasing habits and preferences.
 
-3. **Community Outreach**: To reach underrepresented groups, particularly T&T shoppers from culturally diverse backgrounds, targeted community outreach would be conducted in collaboration with cultural organizations, community centers, and local events. Engaging with organizations that have strong connections to the Asian community—such as cultural associations, language schools, or ethnic community centers—would help ensure that the sample includes individuals who may not be as reachable through online panels or in-store promotions alone. Additionally, outreach could include attending cultural festivals, placing ads in community newsletters, or utilizing social media channels that serve specific cultural groups. This grassroots strategy would be particularly useful in accessing populations that may have different shopping patterns or dietary needs, thereby providing richer insights into how cultural preferences influence beef purchasing decisions. Engaging directly with cultural communities would help ensure a higher level of trust and response rate from these groups, who might otherwise be hesitant to participate in market research.
+3. **Community Outreach**: To reach underrepresented groups, particularly T&T shoppers from diverse cultural backgrounds, targeted outreach would be conducted through partnerships with cultural organizations, community centers, and local events. Collaborating with groups such as cultural associations, language schools, or ethnic community centers would help include participants who might not be reachable through online panels or in-store recruitment alone. Outreach efforts could also involve attending cultural festivals, placing advertisements in community newsletters, and utilizing social media platforms tailored to specific cultural groups. This approach ensures the inclusion of shoppers with unique cultural preferences and shopping behaviors. Engaging directly with these communities fosters trust and encourages participation, leading to a more complete understanding of how cultural factors shape beef purchasing decisions.
 
 ## Linkage to Literature
 
-The survey design for this study draws on established methodologies in consumer behavior and retail pricing research. By employing **stratified random sampling**, this study ensures that the key factors influencing purchasing decisions, such as income, cultural background, and shopping preferences, are effectively captured. This approach is informed by existing literature emphasizing the importance of **representative sampling** to understand market segmentation, particularly in heterogeneous consumer markets [@citeSegmentation]. Stratified sampling is particularly beneficial in capturing the variations in consumer preferences that may be linked to demographic differences, as suggested by **demographic-based segmentation theories** in consumer research.
+The survey design for this study is informed by established methodologies in consumer behavior and retail pricing research. By using **stratified random sampling**, the study ensures that key factors influencing purchasing decisions—such as income, cultural background, and shopping preferences—are effectively represented. This approach draws on research highlighting the importance of **representative sampling** to analyze market segmentation in diverse consumer markets [@citeSegmentation]. Stratified sampling is particularly useful for capturing differences in preferences that may arise from demographic variations, as outlined in **demographic-based segmentation theories** in consumer studies.
 
-The use of **multichannel recruitment** has also been shown to be effective in increasing participation rates, especially when attempting to reach a diverse population base [@citeMultichannel]. Studies have demonstrated that combining online recruitment with community engagement enhances the inclusiveness of the survey sample, thereby reducing selection bias and ensuring that underrepresented groups are adequately represented. This is particularly relevant for this study, which aims to understand pricing strategies across different consumer segments, including culturally specific shoppers who might not be well-represented through online-only recruitment.
+The adoption of **multichannel recruitment** is also important for increasing participation rates, especially when targeting a diverse population [@citeMultichannel]. Combining online recruitment with community-based efforts has been shown to improve inclusivity, reduce selection bias, and ensure adequate representation of underrepresented groups. This approach is especially relevant for a study aiming to examine pricing strategies across various consumer segments, including culturally specific shoppers who may not engage with online-only recruitment methods.
 
-The inclusion of both **vendor-specific** and **cultural factors** in the survey aligns with research that highlights the role of retail environments and cultural preferences in shaping consumer behavior. Literature on cultural consumption patterns suggests that different retail formats, such as mainstream versus culturally specialized stores, influence purchasing decisions based on familiarity, trust, and cultural alignment [@citeCulturalAlignment]. Therefore, the stratification variables and recruitment strategies are designed to capture these nuanced consumer preferences, providing a comprehensive understanding of how pricing dynamics differ across vendor types and cultural backgrounds.
+Including both **vendor-specific** and **cultural factors** in the survey design aligns with research on the influence of retail environments and cultural preferences on consumer behavior. Studies on cultural consumption patterns suggest that mainstream and culturally specialized stores influence purchasing decisions differently, based on familiarity, trust, and cultural alignment [@citeCulturalAlignment]. As a result, the stratification variables and recruitment methods are structured to capture these consumer preferences, offering a detailed understanding of how pricing dynamics vary between vendor types and cultural groups.
 
-Moreover, the focus on **vendor familiarity** builds on findings from **brand loyalty** literature, which suggests that consumers' familiarity with a brand or retailer can significantly impact their price sensitivity and shopping behavior [@citeBranding]. By including vendor familiarity as a key stratification criterion, the survey is structured to better understand how loyalty and brand perception contribute to the pricing dynamics of beef in different retail contexts.
+The focus on **vendor familiarity** builds on findings from the **brand loyalty** literature, which emphasize the role of familiarity in shaping price sensitivity and shopping behavior [@citeBranding]. Including vendor familiarity as a stratification criterion allows the survey to investigate how loyalty and perceptions of brand reliability influence beef pricing dynamics in different retail settings.
 
-In summary, the survey design leverages established theories and methodologies from consumer behavior, market segmentation, and cultural studies to ensure that the data collected is robust, representative, and capable of answering the core research questions about beef pricing dynamics in the Canadian retail market.
+In conclusion, the survey design integrates established theories and practices from consumer behavior, market segmentation, and cultural studies. This approach ensures that the data collected is representative, thorough, and suited to addressing the research objectives regarding beef pricing dynamics in the Canadian retail market.
 
 \newpage
 
