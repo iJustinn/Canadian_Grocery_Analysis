@@ -1,5 +1,5 @@
 ---
-title: "Beef Pricing Dynamics in the Canadian Grocery Market: A Comparative Analysis of Walmart and T&T"
+title: "Beef Pricing Dynamics in the Canadian Grocery Market, 2024: A Comparative Analysis of Walmart and T&T"
 subtitle: "Evidence of Cultural and Strategic Influences on Beef Pricing"
 author: 
   - Ziheng Zhong
@@ -122,11 +122,11 @@ In addition to the summary table, @fig-current_price visualizes the distribution
 
 ```{r}
 #| label: fig-current_price
-#| fig-cap: "Boxplot of the distribution of current prices"
+#| fig-cap: "Distribution of current prices"
 #| echo: false
 #| warning: false
 #| message: false
-#| fig-width: 5
+#| fig-width: 3
 
 ggplot(beef_data, aes(y = current_price)) +
   geom_boxplot(fill = "lightgrey", color = "darkgrey", alpha = 0.7) +
