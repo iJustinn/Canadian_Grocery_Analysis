@@ -1,4 +1,4 @@
-# Canadian_Grocery_Analysis
+# Canadian Grocery Analysis
 
 This repository provides all the necessary information to replicate Ziheng Zhong's Canadian grocery analysis paper.
 
