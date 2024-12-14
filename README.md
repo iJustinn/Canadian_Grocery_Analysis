@@ -12,6 +12,7 @@ The files for this research are organized in this repository as follows:
 -   `data/00-simulated_data`: the simulated data used as the preview of actual dataset
 
 -   `data/01-raw_data`: the raw data used for analysis
+    -   due to the file size, raw data was not uploaded but can be downloaded using the script `scripts/02-download_data.R`
 
 -   `data/02-analysis_data`: the cleaned data used for fuurther analysis
 
